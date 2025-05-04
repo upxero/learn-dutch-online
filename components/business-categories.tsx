@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Logo01 from "@/public/images/logo-01.svg";
-import Logo02 from "@/public/images/logo-02.svg";
-import Logo03 from "@/public/images/logo-03.svg";
-import Logo04 from "@/public/images/logo-04.svg";
+import Logo01 from "@/public/images/logo-01.png";
+import Logo02 from "@/public/images/logo-02.png";
+import Logo03 from "@/public/images/logo-03.png";
+import Logo04 from "@/public/images/logo-03.svg";
 import Logo05 from "@/public/images/logo-05.svg";
 import Logo06 from "@/public/images/logo-06.svg";
 import Logo07 from "@/public/images/logo-07.svg";
 import Logo08 from "@/public/images/logo-08.svg";
-import Logo09 from "@/public/images/logo-09.svg";
+import Logo09 from "@/public/images/logo-04.svg";
 
 export default function BusinessCategories() {
   return (
@@ -180,8 +180,8 @@ export default function BusinessCategories() {
                   <Image
                     className="relative"
                     src={Logo01}
-                    width={32}
-                    height={32}
+                    width={40}
+                    height={40}
                     alt="Logo 01"
                   />
                 </div>
