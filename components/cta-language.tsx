@@ -21,11 +21,11 @@ export default function CtaDutchCourses() {
 
           {/* Stripes background */}
           <div
-            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
+            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 w-full max-w-3xl opacity-30 md:opacity-100"
             aria-hidden="true"
           >
             <Image
-              className="max-w-none"
+              className="w-full"
               src={Stripes}
               width={768}
               height={432}
