@@ -5,13 +5,13 @@ import PeopleHappy from "@/public/images/people_happy.jpg";
 
 export default function CtaBusiness() {
   return (
-    <section className="bg-slate-100" id="cta-business">
+    <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className="relative overflow-hidden rounded-2xl text-center shadow-xl before:content-[''] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
+          className="relative overflow-hidden rounded-2xl shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
           data-aos="zoom-y-out"
         >
-          {/* Glow effect */}
+          {/* Glow */}
           <div
             className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 translate-y-1/2"
             aria-hidden="true"
@@ -21,11 +21,11 @@ export default function CtaBusiness() {
 
           {/* Stripes background */}
           <div
-            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 w-full max-w-3xl opacity-30 md:opacity-100"
+            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
             aria-hidden="true"
           >
             <Image
-              className="w-full"
+              className="max-w-none"
               src={Stripes}
               width={768}
               height={432}

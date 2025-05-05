@@ -5,10 +5,10 @@ import VideoCall from "@/public/images/video_call.jpg";
 
 export default function CtaDutchCourses() {
   return (
-    <section className="bg-slate-100" id="cta-dutch">
+    <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className="relative overflow-hidden rounded-2xl shadow-xl before:content-[''] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
+          className="relative overflow-hidden rounded-2xl shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
           data-aos="zoom-y-out"
         >
           {/* Glow effect */}
@@ -21,11 +21,11 @@ export default function CtaDutchCourses() {
 
           {/* Stripes background */}
           <div
-            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 w-full max-w-3xl opacity-30 md:opacity-100"
+            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
             aria-hidden="true"
           >
             <Image
-              className="w-full"
+              className="max-w-none"
               src={Stripes}
               width={768}
               height={432}
@@ -35,8 +35,6 @@ export default function CtaDutchCourses() {
 
           {/* Content */}
           <div className="px-4 py-12 md:px-12 md:py-20 flex flex-col gap-20">
-
-            {/* Eerste tekstblok met afbeelding links */}
             <div className="flex flex-col items-center justify-center gap-10 md:flex-row">
               <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg">
                 <Image
@@ -57,7 +55,6 @@ export default function CtaDutchCourses() {
               </div>
             </div>
 
-            {/* Tweede tekstblok met afbeelding rechts */}
             <div className="flex flex-col items-center justify-center gap-10 md:flex-row-reverse">
               <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg">
                 <Image
@@ -83,7 +80,6 @@ export default function CtaDutchCourses() {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </div>
