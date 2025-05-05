@@ -76,7 +76,7 @@ export default function AboutCourses() {
                 href="contact"
                 >
                 <span className="relative inline-flex items-center">
-                Contact us to discuss your requirements {" "}
+                Reach out to us {" "}
                     <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                     -&gt;
                     </span>

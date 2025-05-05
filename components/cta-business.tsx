@@ -8,7 +8,7 @@ export default function CtaBusiness() {
     <section className="bg-slate-100" id="cta-business">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className="relative overflow-hidden rounded-2xl text-center shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
+          className="relative overflow-hidden rounded-2xl text-center shadow-xl before:content-[''] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
           data-aos="zoom-y-out"
         >
           {/* Glow effect */}
