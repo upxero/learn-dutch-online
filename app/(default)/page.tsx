@@ -15,6 +15,7 @@ import DutchTuitionIntro from "@/components/dutch-tuition";
 import PandemicProof from "@/components/pandemic-proof";
 import CookiePopup from "@/components/cookie-popup";
 import BackToTopButton from "@/components/back-to-top";
+import Cta from "@/components/cta";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <CtaLanguage />
       <PandemicProof />
       <LargeTestimonial />
+      <Cta />
       <CookiePopup />
       <BackToTopButton />
     </>
