@@ -1,6 +1,6 @@
 import PageIllustration from "@/components/page-illustration";
 
-export default function HeroCourses() {
+export default function HeroHome() {
   return (
     <section className="relative bg-gray-900 text-white">
       <PageIllustration />

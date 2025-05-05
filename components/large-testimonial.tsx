@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     name: "Hannah Debono",
-    role: "Midwife bij Mater Dei Hospital",
+    role: "Midwife Mater Dei Hospital",
     text: "I am a maltese midwife and wish to start working as a midwife in amsterdam. To do so I need to obtain a B2 level in dutch. I started learning dutch with this online school 5 months ago and I couldn’t be happier with my choice. Veronique is so nice and not only helps me with my dutch but helps me on a personal level with all the stress the move brings...",
   },
 ];
