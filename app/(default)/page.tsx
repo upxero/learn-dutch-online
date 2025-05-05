@@ -32,7 +32,6 @@ export default function Home() {
       <CtaLanguage />
       <PandemicProof />
       <LargeTestimonial />
-      <Cta />
       <CookiePopup />
       <BackToTopButton />
     </>
