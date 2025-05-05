@@ -54,7 +54,7 @@ export default function FeaturesPlanet() {
                     </div>
                     <div className="absolute left-56 top-7 z-10 animate-float delay-1000 opacity-80 transition-opacity duration-500 text-white text-center w-[241px] h-[56px] flex flex-col justify-center items-center">
                       <span className="text-sm font-semibold">Hannah Debono</span>
-                      <span className="text-xs opacity-50">Midwife bij Mater Dei Hospital</span>
+                      <span className="text-xs opacity-50">Midwife Mater Dei Hospital</span>
                       <a href="/testimonials" className="text-sm mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md shadow-md">
                         See Review →
                       </a>
