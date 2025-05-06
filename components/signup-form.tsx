@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, FormEvent } from "react";
+import { useRouter } from "next/navigation";
 
 interface FormData {
   name: string;
@@ -14,6 +15,7 @@ interface FormData {
 }
 
 const CourseSignupForm: React.FC = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -45,7 +47,7 @@ const CourseSignupForm: React.FC = () => {
       });
 
       if (res.ok) {
-        alert("Form successfully submitted!");
+        router.push("/thank-you");
       } else {
         alert("Something went wrong, please try again.");
       }
