@@ -33,7 +33,7 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3 md:mr-12">
             <li>
               <Link
-                href="#"
+                href="https://dashboard-learn-dutch.netlify.app/"
                 className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
               >
                 Login
