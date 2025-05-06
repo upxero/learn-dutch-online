@@ -43,7 +43,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <h3 className="text-sm font-medium">Help &amp; Info</h3>
             <ul className="space-y-2 text-sm">
               <li><Link className="text-gray-600 transition hover:text-gray-900" href="/privacy">Privacy Policy</Link></li>
-              <li><Link className="text-gray-600 transition hover:text-gray-900" href="https://dashboard-learn-dutch.netlify.app/">Dashboard</Link></li>
+              <li><Link className="text-gray-600 transition hover:text-gray-900" href="#">Dashboard</Link></li>
               <li><Link className="text-gray-600 transition hover:text-gray-900" href="/contact">Contact</Link></li>
             </ul>
           </div>
