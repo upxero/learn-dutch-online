@@ -25,7 +25,7 @@ export default function Header() {
             <Link href="/group-courses" className="text-gray-800 hover:text-gray-600 whitespace-nowrap">Group Courses</Link>
             <Link href="/test" className="text-gray-800 hover:text-gray-600 whitespace-nowrap">Test Your Level</Link>
             <Link href="/testimonials" className="text-gray-800 hover:text-gray-600 whitespace-nowrap">Testimonials</Link>
-            {/* <Link href="/blog" className="text-gray-800 hover:text-gray-600 whitespace-nowrap">Blog</Link> */}
+            <Link href="/blog" className="text-gray-800 hover:text-gray-600 whitespace-nowrap">Blog</Link> 
             <Link href="/privacy" className="text-gray-800 hover:text-gray-600 whitespace-nowrap">Privacy Policy</Link>
           </nav>
 
@@ -78,7 +78,7 @@ export default function Header() {
           <Link href="/group-courses" className="text-gray-800 hover:text-gray-600">Group Courses</Link>
           <Link href="/test" className="text-gray-800 hover:text-gray-600">Test Your Level</Link>
           <Link href="/testimonials" className="text-gray-800 hover:text-gray-600">Testimonials</Link>
-          {/*<Link href="/blog" className="text-gray-800 hover:text-gray-600">Blog</Link> */}
+          <Link href="/blog" className="text-gray-800 hover:text-gray-600">Blog</Link>
         </nav>
       </div>
     </header>
