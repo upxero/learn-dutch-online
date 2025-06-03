@@ -1,8 +1,3 @@
-export const metadata = {
-  title: "Blog - Learn Dutch Online",
-  description: "Read tips, explanations and updates about learning Dutch.",
-};
-
 import HeroBlog from "@/components/hero-blog";
 import { blogPosts } from "@/lib/blog-posts";
 import Link from "next/link";
@@ -16,6 +11,15 @@ export function generateStaticParams() {
   return Array.from({ length: totalPages - 1 }, (_, i) => ({
     page: `${i + 2}`,
   }));
+}
+
+// Dynamische metadata voor SEO per pagina
+export async function generateMetadata({ params }: { params: { page: string } }) {
+  const pageNumber = parseInt(params.page, 10);
+  return {
+    title: `Blog - Page ${pageNumber} | Learn Dutch Online`,
+    description: `Read helpful tips, grammar explanations and updates about learning Dutch online. Page ${pageNumber}.`,
+  };
 }
 
 export default function BlogPaginated({ params }: { params: { page: string } }) {
