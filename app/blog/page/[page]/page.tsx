@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import HeroBlog from "@/components/hero-blog";
 import { blogPosts } from "@/lib/blog-posts";
 import Link from "next/link";
@@ -5,32 +6,31 @@ import Image from "next/image";
 
 const POSTS_PER_PAGE = 9;
 
-// Static params voor paginatie
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const totalPages = Math.ceil(blogPosts.length / POSTS_PER_PAGE);
   return Array.from({ length: totalPages - 1 }, (_, i) => ({
     page: `${i + 2}`,
   }));
 }
 
-// Dynamische metadata voor SEO per pagina
-export function generateMetadata({ params }: { params: { page: string } }) {
-  const pageNumber = parseInt(params.page, 10);
+export async function generateMetadata({ params }: { params: Promise<{ page: string }> }): Promise<Metadata> {
+  const { page } = await params;
+  const pageNumber = parseInt(page, 10);
   return {
     title: `Blog - Page ${pageNumber} | Learn Dutch Online`,
     description: `Read helpful tips, grammar explanations and updates about learning Dutch online. Page ${pageNumber}.`,
   };
 }
 
-export default function BlogPaginated({ params }: { params: { page: string } }) {
-  const pageNumber = parseInt(params.page, 10);
+export default async function BlogPaginatedPage({ params }: { params: Promise<{ page: string }> }) {
+  const { page } = await params;
+  const pageNumber = parseInt(page, 10);
   const start = (pageNumber - 1) * POSTS_PER_PAGE;
   const posts = blogPosts.slice(start, start + POSTS_PER_PAGE);
 
   return (
     <>
       <HeroBlog />
-
       <main className="max-w-6xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-8 text-center">Blog - Page {pageNumber}</h1>
 
