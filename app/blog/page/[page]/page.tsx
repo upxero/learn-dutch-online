@@ -14,7 +14,7 @@ export function generateStaticParams() {
 }
 
 // Dynamische metadata voor SEO per pagina
-export async function generateMetadata({ params }: { params: { page: string } }) {
+export function generateMetadata({ params }: { params: { page: string } }) {
   const pageNumber = parseInt(params.page, 10);
   return {
     title: `Blog - Page ${pageNumber} | Learn Dutch Online`,
