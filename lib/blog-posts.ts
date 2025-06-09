@@ -177,7 +177,7 @@ export const blogPosts = [
     image: "/images/blog-2.jpg",
   },
   {
-    slug: "visit-ieper",
+    slug: "6-reasons-to-visit-ypres",
     title: "6 reasons to visit YPRES (Ieper) on the 11th of November.",
     description: "The 11th of November is the day of Armistice in Belgium. Ypres, situated in West-Flanders (West-Vlaanderen) also called the Westhoek, is...",
     date: "05-11-2019",
