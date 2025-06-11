@@ -140,7 +140,15 @@ export default function YpresBlog() {
 
         <p className="mt-4">
           For more information about the Flemish culture and language lessons,
-          feel free to contact Learn Dutch Online.
+          feel free to contact{' '}
+        <a
+            href="https://www.learn-dutch-online.eu/contact/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+        >
+            Learn Dutch Online
+        </a>.
         </p>
       </main>
     </>

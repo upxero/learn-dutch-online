@@ -170,7 +170,7 @@ export const blogPosts = [
     image: "/images/blog-3.jpg",
   },
   {
-    slug: "sint-maarten",
+    slug: "feest-sint-maarten",
     title: "4 things to know about the Dutch and Flemish feast of St. Martin (Sint-Maarten)",
     description: "Saint Martin of Tours was a Roman soldier who was baptised as an adult and became a bishop in a French town. The most famous legend...",
     date: "07-11-2019",
