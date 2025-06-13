@@ -37,7 +37,7 @@ export default function SinterklaasAccessoriesBlog() {
 
         <Section
           title="1. Staf (staff)"
-          image="/images/sinterklaas-staf.jpg"
+          image="/images/blog-6.1.jpeg"
           alt="Sinterklaas staff"
         >
           <p>
@@ -131,6 +131,17 @@ export default function SinterklaasAccessoriesBlog() {
           Want to learn more about Dutch holidays and traditions while improving your Dutch?
           Try our Beginners Dutch Course — your first introduction is free!
         </p>
+
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
       </main>
     </>
   );

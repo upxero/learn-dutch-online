@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "6 reasons to visit Ypres (Ieper) on November 11th | Learn Dutch Online",
+  description:
+    "Discover why Ypres (Ieper) is the place to be on November 11th. From remembrance ceremonies to WWI history — explore 6 compelling reasons to visit.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -142,7 +148,7 @@ export default function YpresBlog() {
           For more information about the Flemish culture and language lessons,
           feel free to contact{' '}
         <a
-            href="https://www.learn-dutch-online.eu/contact/"
+            href="/contact"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline"

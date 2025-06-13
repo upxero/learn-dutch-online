@@ -57,7 +57,7 @@ export default function NetherlandsChristmasBlog() {
 
         <Section
           title="2. Christmas Market in Maastricht"
-          image="/images/kerstmarkt-maastricht.jpg"
+          image="/images/blog-5.1.jpeg"
           alt="Christmas Market Maastricht"
         >
           <p>
@@ -79,7 +79,7 @@ export default function NetherlandsChristmasBlog() {
 
         <Section
           title="3. Floating Christmas Market in Leiden"
-          image="/images/drijvende-kerstmarkt-leiden.jpg"
+          image="/images/blog-5.2.jpeg"
           alt="Floating Christmas Market Leiden"
         >
           <p>
@@ -101,7 +101,7 @@ export default function NetherlandsChristmasBlog() {
 
         <Section
           title="4. Dickens Christmas Fair in Deventer"
-          image="/images/dickens-deventer.jpg"
+          image="/images/blog-5.3.jpeg"
           alt="Dickens Fair Deventer"
         >
           <p>
@@ -146,6 +146,14 @@ export default function NetherlandsChristmasBlog() {
           Would you like to learn more about Dutch traditions and learn Dutch at the same time? Subscribe to our Beginners course now!
           After a free introduction session, you'll learn in a fun and affordable way with your personal trainer.
         </p>
+        <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+        >
+            Contact us
+        </a>
       </main>
     </>
   );
