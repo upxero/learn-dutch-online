@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "5 Places in Belgium to Visit Around Christmas | Learn Dutch Culture",
+  description:
+    "Discover the most magical Christmas destinations in Belgium, including Bruges, Antwerp, Leuven and more. Cosy markets, lights, and festive traditions await!",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";

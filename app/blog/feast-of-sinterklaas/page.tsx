@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "5 Things to Know About the Dutch and Flemish Feast of Sinterklaas",
+  description:
+    "Discover the origins and modern traditions of the Dutch and Flemish Sinterklaas festival — from Pakjesavond to his legendary arrival by steamboat.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -28,7 +34,7 @@ export default function SinterklaasFestivalBlog() {
 
         <Section
           title="1. Who was Sinterklaas?"
-          image="/images/sinterklaas-history.jpg"
+          image="/images/blog-6.jpg"
           alt="Saint Nicholas painting"
         >
           <p>
@@ -103,6 +109,17 @@ export default function SinterklaasFestivalBlog() {
         <p className="mt-10 text-lg">
           Interested in learning more about Dutch or Flemish traditions while improving your language skills? Try our Beginners Dutch Course — the first lesson is free!
         </p>
+
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
       </main>
     </>
   );

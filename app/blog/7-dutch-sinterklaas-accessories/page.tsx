@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "7 Dutch Sinterklaas Accessories Explained | Learn Dutch Culture",
+  description:
+    "From the iconic red mitre to the mysterious bag and the white horse — discover 7 typical accessories used by Sinterklaas in Dutch tradition.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -49,7 +55,7 @@ export default function SinterklaasAccessoriesBlog() {
 
         <Section
           title="2. Zak (bag)"
-          image="/images/sinterklaas-zak.jpg"
+          image="/images/blog-6.2.jpeg"
           alt="Sinterklaas jute bag"
         >
           <p>
@@ -66,7 +72,7 @@ export default function SinterklaasAccessoriesBlog() {
 
         <Section
           title="3. Het Grote Boek (large book)"
-          image="/images/sinterklaas-boek.jpg"
+          image="/images/blog-6.3.jpeg"
           alt="Sinterklaas boek"
         >
           <p>
@@ -78,58 +84,70 @@ export default function SinterklaasAccessoriesBlog() {
 
         <Section
           title="4. Schimmel (literally: mold)"
-          image="/images/sinterklaas-paard.jpg"
+          image="/images/blog-6.4.jpeg"
           alt="Witte paard van Sinterklaas"
         >
           <p>
-            Sinterklaas rides a white horse with grey specks — a “schimmel.” In
-            the Netherlands, it’s called Amerigo; in Belgium, it’s known as
-            “Slecht Weer Vandaag” (bad weather today).
+          Santa is known for his reindeer and sleigh but Sinterklaas has a lipizzaner horse which is mostly 
+          white with tiny grey markings, resembling a "salt & pepper" shade. This shade is called "Schimmel" 
+          in Dutch which refers to the moldy shaded appearance.
           </p>
           <p>
-            And yes — the horse walks on rooftops like Santa's reindeer fly.
+          The horse is known as Amerigo to the Dutch people but to the Belgians he is known as "Slecht weer 
+          vandaag" (bad weather today), also making reference to the shades of white and grey of his coat.
+          </p>
+          <p>
+          Amerigo is Sinterklaas his means of transport after disembarking his steamship and carries him from rooftop 
+          to, rooftop to deliver gifts. Yes, the horse can walk on rooftops, just like a reindeer can fly in December ;) 
           </p>
         </Section>
 
         <Section
           title="5. Mijter (mitre)"
-          image="/images/sinterklaas-mijter.jpg"
+          image="/images/blog-6.5.jpeg"
           alt="Mijter van Sinterklaas"
         >
           <p>
-            Sinterklaas wears a bishop's hat, red with gold trim and a golden
-            cross. He only takes it off when he has to duck through a doorway —
-            quite often in the Netherlands, with all the tall people!
+          Sinterklass wears a Bishops hat which is known as a Mijter. It is usually a red hat, adorned with a 
+          golden cross on the front and golden trimmings.
+          </p>
+          <p>
+          Sinterklaas only removes the hat when he has to pass through a doorway, or enter a room, where 
+          the hat may collide with the door frame or ceiling. Since Dutch men are among the taller ones in the 
+          world, this tends to happen more often than you might think ;) 
           </p>
         </Section>
 
         <Section
           title="6. Fopcadeau (fake or joke gift)"
-          image="/images/fopcadeau.jpg"
+          image="/images/blog-6.6.jpg"
           alt="Fopcadeau"
         >
           <p>
-            One of the “Pieten” loves to prank! Sometimes, children find a gift
-            box with just a funny note inside. Perhaps Santa copied this idea when
-            he started gifting socks...
+          One of Sinterklaas many helpers, all named Piet, is known as "laughing" 
+          Piet and likes to pull pranks on unsuspecting recipients. He will occasionally 
+          wrap an empty gift or wrap a funny note and leave it for children to find. I 
+          suspect Santa Claus may have taken some advice from him when he decides to gift 
+          kids with socks, sweaters or underwear. 
           </p>
         </Section>
 
         <Section
-          title="7. Pietenpakken (Piet outfits)"
-          image="/images/pietenpakken.jpg"
-          alt="Pieten outfits"
+          title="7. Fopspeen (Dutch) / Tutje (Flemish)"
+          image="/images/blog-6.7.jpeg"
+          alt="Fopspeen"
         >
           <p>
-            The helpers of Sinterklaas — called Pieten — wear brightly colored costumes
-            that resemble the clothing of 16th-century pages. You’ll see them in parades,
-            climbing roofs, or handing out candy.
+          A public service that Sinterklaas offers, is to collect "dummies" (pacifiers) once 
+          small children have moved on from using them. They can leave the pacifier in the 
+          shoe for Sinterklaas to exchange for a present. Many Dutch parents make use of this service. 
           </p>
         </Section>
 
         <p className="mt-10 text-lg">
-          Want to learn more about Dutch holidays and traditions while improving your Dutch?
-          Try our Beginners Dutch Course — your first introduction is free!
+        Would you like to learn more about the Dutch or Belgian traditions and learn Dutch at the same time. 
+        Subscribe to our Beginners course now! After a free introduction session you will learn in a 
+        fun and affordable way with your personal trainer.  
         </p>
 
         <div className="mt-6 text-center">

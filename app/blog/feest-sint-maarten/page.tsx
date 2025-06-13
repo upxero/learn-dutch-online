@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Sint-Maarten – Dutch and Flemish Traditions | Learn Dutch Online",
+  description:
+    "Discover the story and traditions of Sint-Maarten, a beloved feast day in the Netherlands and Flanders. Learn about lanterns, songs, processions, and more.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
