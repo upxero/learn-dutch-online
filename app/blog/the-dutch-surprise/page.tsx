@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "All You Need to Know About the Dutch 'Surprise'",
+  description:
+    "Learn about the unique Dutch Sinterklaas tradition of 'Surprises' — creative, humorous gifts that bring laughter and joy to adults and teens alike.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -31,8 +37,8 @@ export default function DutchSurpriseBlog() {
 
         <Section 
             title="What is a 'Surprise'?"
-            image="/images/sinterklaas-history.jpg"
-            alt="Saint Nicholas painting"
+            image="/images/blog-7.jpg"
+            alt="Surprise"
         >
           <p>
             Surprises are personally crafted items that are gifted to one another, but it's not as simple as that. Mostly the idea behind the gift is to play a prank, or make fun of, the recipient in good humor and, it's important to mention, that no one is trying to offend anyone in the process. This is intended to keep the 5th of December filled with fun, laughter and a possible sense of minor humility.

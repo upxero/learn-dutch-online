@@ -38,36 +38,51 @@ export default function SinterklaasFestivalBlog() {
           alt="Saint Nicholas painting"
         >
           <p>
-            Sinterklaas, the person, was born around 300 AD in the ancient Greek port of Myra — now part of Turkey. He was a priest known for miraculous deeds, including saving three boys from a murderous innkeeper.
+          Sinterklaas, the person, was born around 300AD in the ancient Greek port of Myra which today is part of Turkey.
           </p>
           <p>
-            He also inspired the shoe tradition by throwing gold coins through a window to help three poor girls — one pouch landing in a shoe. Over time, he was made bishop and later sanctified after his death on December 6, 342 AD.
+          He was a priest who was renowned for performing exceptional and even miraculous deeds during his endeavors. Legend has it that he even saved 3 young boys in the most miraculous way. They were captured, killed and cut up into pieces by an evil innkeeper before being stuffed into a barrel. When hearing about this, Saint Nicholas, rushed to the scene to observe this terrible deed. He knelt down and performed a prayer over the barrel and, miraculously, the 3 boys stepped out unharmed and in good spirits.
+          </p>
+          <p>
+          Sinterklaas is know to put the gifts, and money or chocolate coins, he delivers inside the shoes left out by the children on the evening before hand. This practice started in his early days when he heard of 3 girls who were living in poverty and going to bed hungry most of the time.
+          </p>
+          <p>
+          Taking pity on the girls he snuck to their bedroom windows and threw a small pouch with gold coins for each of them to improve their fate. One of the pouches sailing into the window, found its way into the shoe of a girl where she found it the following morning. Thereafter the custom of placing a shoe was adopted and is still used to this day. 
+          </p>
+          <p>
+          As he was well known for living a selfless life while improving the lives of those who are in need Nicholas was promoted to the Bishop of Myra. He was eventually sanctified soon after his death, on the 6th of December in 342AD, and from then on became known as the beloved Sinterklaas.
           </p>
         </Section>
 
         <Section
-          title="2. Why does he live in Spain?"
-          image="/images/sinterklaas-spain.jpg"
+          title="2. Link with Spain?"
+          image="/images/blog-7.1.jpeg"
           alt="Sinterklaas arriving by boat"
         >
           <p>
-            Sinterklaas is said to live in Spain, although his relics were actually moved to Bari, Italy. During Spanish rule in the Southern Netherlands (1555–1715), it's believed the story was adapted by sailors who linked him with Spain.
+          Sinterklaas is said to live in Spain and travel to The Netherlands every December to perform his deeds, but there is not much clarity on how he ended up living in Spain. After his death, his relics were moved to the town of Bari, in Italy, which was later conquered by Spain for a while. It is thought that during this period, his relics were relocated to Spain which then became his new home. 
           </p>
           <p>
-            Whether by history or myth, this is now part of the tradition — he arrives by boat from Spain each November.
+            <strong>Did it come by sea? </strong>
+          </p>
+          <p>
+          The Southern Netherlands were occupied by the Spanish King Philip II in 1555 and ruled by Spain until 1715. It is theorized by some that the legend was brought to The Netherlands by Spanish sailors who traveled between the two regions during this era. 
           </p>
         </Section>
 
         <Section
-          title="3. The Annual Arrival"
+          title="3. The annual event"
           image="/images/sinterklaas-arrival.jpg"
           alt="Arrival of Sinterklaas in the Netherlands"
         >
           <p>
-            In November, Sinterklaas arrives in the Netherlands by steamboat — the “Pakjesboot 12.” He arrives in Belgium around the same time, often in Antwerp. In Wallonia, he travels by donkey.
+          Every year during the month of November, Sinterklaas arrives in The Netherlands on his steam boat named Hydrograaf, which is locally referred to as the "Pakjesboot 12". Around the same time he arrives in Belgium, usually in Antwerp harbor, or sometimes in smaller cities as well. He also makes his appearance in the Southern regions of Belgium, but there he travels by donkey.
           </p>
           <p>
-            His arrival is broadcast nationally and followed by children via a daily TV program:{" "}
+          His annual arrival is a joyous occasion and he is met by many grownups, and children, who line the docs to welcome him. The event is of such importance that it is broadcast on various national TV stations and talked about everywhere.
+          </p>
+          <p>
+          From this time onward, children can follow his progress by watching his dedicated daily news segment called "Het Sinterklaasjournaal" (The Sinterklaas Journal). With every episode, children get updates on his travels and activities as well as related traditional celebrations as shown here: {" "}
             <a
               href="https://sinterklaasjournaal.ntr.nl/"
               className="text-blue-600 underline"
@@ -82,32 +97,29 @@ export default function SinterklaasFestivalBlog() {
 
         <Section
           title="4. Pakjesavond in the Netherlands"
-          image="/images/pakjesavond.jpg"
+          image="/images/blog-7.2.jpeg"
           alt="Pakjesavond in the Netherlands"
         >
           <p>
-            “Pakjesavond” (present evening) became widespread after WWII, when people could afford gifts again. It began with handmade gifts and evolved to include store-bought ones, first for children and eventually for adults as well.
-          </p>
-          <p>
-            It’s now a major celebration on the evening of December 5th, filled with poems, “surprises,” and lots of gift-giving.
+          "Pakjesavond" (present evening) gradually became common practice as recently at the end of World War II. Before this, there was a financial crisis and gifts were unaffordable. With the improved post-war economy, gifts became more affordable and started with presents crafted at home. Eventually this practice was replaced by gifting store bought gifts. At the beginning, gifts were only given to the children but as time went by, it came to include grown-ups as well. More about this in the blog post: What is a surprise and how should you make one?. Pakjesavond has since become an exciting and important event for children and grownups alike.
           </p>
         </Section>
 
         <Section
           title="5. Pakjesochtend in Belgium"
-          image="/images/pakjesochtend.jpg"
+          image="/images/blog-7.3.jpeg"
           alt="Pakjesochtend in Belgium"
         >
           <p>
-            Unlike the Dutch evening celebration, Belgium celebrates “Pakjesochtend” (present morning) on December 6th. It resembles a Christmas morning — children wake up to find gifts in or near their shoes.
+          Contrary to The Netherlands, Belgians celebrate "Pakjesochtend" (present morning) which has a similar feel to the US version of Christmas morning. In preparation, on the evening of the 5th of December, children place a shoe with a few treats for the Sint and his helpers. In the shoe is usually a letter, wish list or drawing, for Sinterklaas, a beer, for Zwarte Piet and a carrot and sugar cubes for his steed, "Slecht weer vandaag".
           </p>
           <p>
-            It’s a magical morning tradition filled with excitement and chocolate letters.
+          Before bed, the children would traditionally sing a few Sinterklaas songs and engage in other related entertainment in anticipation of the arrival. Early the next morning the kids return to the shoe to see what the Sint has left for them. Besides the gifts they find sweets like chocolate coins and cookies called "pepernoten". 
           </p>
         </Section>
 
         <p className="mt-10 text-lg">
-          Interested in learning more about Dutch or Flemish traditions while improving your language skills? Try our Beginners Dutch Course — the first lesson is free!
+        Would you like to learn more about the Dutch or Belgian traditions and learn Dutch at the same time. Subscribe to our Beginners course now! After a free introduction session you will learn in a fun and affordable way with your personal trainer.   
         </p>
 
         <div className="mt-6 text-center">
