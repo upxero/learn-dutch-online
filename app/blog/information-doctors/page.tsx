@@ -1,3 +1,10 @@
+export const metadata = {
+  title:
+    "How Non-EEA Doctors, Dentists, and Psychologists Can Work in the Netherlands",
+  description:
+    "Step-by-step guide for non-EEA medical professionals who want to work in Dutch healthcare. Learn about BIG registration, Nuffic diploma validation, the AKV test, and more.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -16,42 +23,60 @@ export default function NonEEAHealthcareBlog() {
       <HeroBlog />
       <main className="max-w-3xl mx-auto px-4 py-8 text-gray-800">
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Working in the Netherlands as a Doctor, Dentist, Pharmacist or Psychologist from Outside the EEA
+        Information for doctors, pharmacists, dentists and psychologists from outside the EEA that want to work in the Netherlands
         </h1>
         <p className="text-sm text-gray-500 text-center mb-8">
           <strong>Published:</strong> 01/08/2020
         </p>
 
         <p className="mb-6">
-          For many professionals relocating to Europe, the maze of procedures and “how‑to’s” prove to be quite a headache. We have been asked many questions about this by our students and as a result, we decided to compile this article to help out.
+        For many professionals relocating to Europe the maze of procedures and "how-to's" prove to be quite a headache. We have been asked many questions about this by our students and as a result, we decided to compile this article to help out.
         </p>
         <p className="mb-6">
-          If you are a Doctor, Dentist, Pharmacist, or Psychologist (doctor in psychology) from outside the EEA (European Economic Area), here are some tips and links to help you get underway.
+        If you are a Doctor, Dentist, Pharmacist, Psycologist (doctor in psychology) from outside the EEA (European Economic Area), here are some tips and links to help you get underway.
         </p>
         <p className="mb-6">
-          When you are a practitioner in one of the above-mentioned professions, your emigration process to get to the Netherlands and work in your field will look a bit different from other work permit proceedings. Not only will you need to get some paperwork in place, you will also need to pass a specific exam called the “AKV-Toets”. In this blog, we give you the step-by-step procedures to follow to help clarify the process:
+        When you are a practitioner in one of the above mentioned professions your emigration process to get to the Netherlands and work in your field will look a bit different from other work permit proceedings. Not only will you need to get some paperwork in place, you will also need to pass a specific exam called "AKV-Toets". In this blog we are giving you the step by step procedures to follow to try and give you more clarity on the process:
         </p>
 
-        <Section title="1. Request registration at BIG register" image="/images/big-register.jpg" alt="BIG register form">
+        <Section title="1. Request registration at BIG register" image="/images/blog-10.jpg" alt="BIG register form">
           <p>
-            BIG stands for <strong>Beroepen in de individuele gezondheidszorg</strong> — professions in individual healthcare. It's the legal, online, public register containing details of registered professionals. Only those listed can use a protected title and perform reserved actions. It’s also where you get recognition for your non‑Dutch degree and certification.
+          BIG is an accronymn for <strong>Beroepen in de individuele gezondheidszorg</strong> or professions in the individual health care, that is a legal, online and public register containing all the relevant details of individuals listed. Only those in the BIG register are allowed to a protected professional title and may independently perform the reserved actions associated with the profession. Anyone can consult the BIG register and it is also the place to go for recognition/validation of your non Dutch degree and certification. To start this process you need to go to the BIG website and complete 2 forms. First is the "Algemeen aanvraagformulier" or General request form. The second for to complete is the "Bijlagen per beroep" or Attachments per profession form
           </p>
           <p>
-            To start, complete two forms from the BIG website:
-          </p>
-          <ul className="list-disc list-inside space-y-2">
-            <li><em>Algemeen aanvraagformulier</em> (General request form)</li>
-            <li><em>Bijlagen per beroep</em> (Attachments per profession form)</li>
-          </ul>
-          <p>
-            If your profession isn't listed in the attachments, only the general form may suffice.
-          </p>
-          <p>
-            Be thorough — BIG rejects incomplete applications. Ensure translations are by a <em>registered translator</em>, and include certified copies with the issuing institution’s seal or a Dutch notary’s stamp.
+          Both these forms can be downloaded from the following 
+          <a
+              href="https://www.bigregister.nl/buitenlands-diploma/procedures/erkenning-beroepskwalificaties/aanvraagformulieren"
+              className="text-blue-600 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            > page
+          </a>:
           </p>
           <p>
-            Send your application to:
+            Note, if you are a qualified practitioner in the above fields and your specific profession is not listed in the "bijlagen per beroep" form, all should be in order if you only submit the "Algemeen aanvraagformulier".
+          </p>  
+          <p>
+          It is very important to be thorough when dealing with these matters. Be sure to complete the forms entirely and attach all your required documentation as BIG will reject your submission if all the information it requires has not been included.
+          Some attachments are compulsory and others are a good include. and it is best to add as many relevant and verifiable documents as you can. The idea is to prove your professional competence and the more value you can add to the local field, the more favorable BIG will react to your application. 
           </p>
+          <p>
+          Very important to note, have your documents translated into Dutch or English (if not already) by a registered professional translator. If the translator is not registered, their translation will not be recognized and your documents will be rejected.
+          </p>
+          <p>
+          Keep certified copies of your certificates and make sure that they have the original seal of the institution or university that issued them. You can also have them verified by a Dutch Notary. Notaries are easy to find with a Google search and the terms "Dutch Notary" or Nederlandse Notaris" should get you in contact with the correct people. Also note that this is not a free service and industry related costs will apply. For more on Notaries and the services that they offer you can go 
+          <a
+              href="https://www.knb.nl/english/the-notary"
+              className="text-blue-600 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            > page
+          </a>.
+          </p>
+          <p>
+          Once you have attached all of the the required documents and completed and signed the form/s you can send it off to:
+          </p>
+          
           <address className="not-italic mb-4">
             CIBG<br />
             Erkenning buitenlandse diploma's<br />
@@ -59,11 +84,11 @@ export default function NonEEAHealthcareBlog() {
             2500 BC Den Haag
           </address>
           <p>
-            BIG will notify you by mail within around two weeks. If they need more documentation, it'll be stated in that letter.
+          Once they have received the documents, you should be notified via snail mail within 2 weeks of them receiving your application. If they require any more documentation from you, they will make note of it in this notification letter.
           </p>
         </Section>
 
-        <Section title="2. Assessment of diplomas and degrees by Nuffic" image="/images/nuffic-assessment.jpg" alt="Nuffic evaluation">
+        <Section title="2. Assessment of diplomas and degrees by Nuffic" image="/images/blog-10.1.png" alt="Nuffic evaluation">
           <p>
             Nuffic (the Dutch organization for internationalization in education) verifies diploma authenticity. BIG will ask you to send originals — <strong>only do so when requested</strong>. Sending them early may incur costs.
           </p>
@@ -77,7 +102,7 @@ export default function NonEEAHealthcareBlog() {
           </p>
         </Section>
 
-        <Section title="3. The dreaded “AKV” test" image="/images/akv-test.jpg" alt="AKV exam in progress">
+        <Section title="3. The dreaded “AKV” test" image="/images/blog-10.2.jpeg" alt="AKV exam in progress">
           <p>
             The AKV test evaluates general knowledge and Dutch language proficiency at C1 level. Learn Dutch Online can prepare you successfully — replace panic with peace of mind!
           </p>
@@ -94,7 +119,7 @@ export default function NonEEAHealthcareBlog() {
           </p>
         </Section>
 
-        <Section title="4. The CBGV (Foreign Health Graduates Committee)" image="/images/cbgv-committee.jpg" alt="CBGV interview">
+        <Section title="4. The CBGV (Foreign Health Graduates Committee)" image="/images/blog-10.3.jpeg" alt="CBGV interview">
           <p>
             After completing the AKV and professional tests, your results are reviewed by the CBGV, which reports to BIG. They may request an interview if clarification is needed.
           </p>
@@ -106,13 +131,13 @@ export default function NonEEAHealthcareBlog() {
           </p>
         </Section>
 
-        <Section title="Specialty Recognition" image="/images/specialty-recognition.jpg" alt="Specialty registration">
+        <Section title="Specialty Recognition">
           <p>
             You can request official recognition of your specialty (if not already recognized). After passing the AKV, BIG forwards your details to the specialist registration committee for evaluation and follow-up.
           </p>
         </Section>
 
-        <Section title="5. Final BIG Registration" image="/images/final-registration.jpg" alt="BIG registration issued">
+        <Section title="5. Final BIG Registration">
           <p>
             Doctors, pharmacists, physios, psychologists, dentists, obstetricians, physician assistants, and nurses must apply separately for BIG registration once they have the Certificate of Professional Competence. This is required to legally use the professional title and work in the Netherlands.
           </p>

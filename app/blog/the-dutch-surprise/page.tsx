@@ -47,7 +47,7 @@ export default function DutchSurpriseBlog() {
 
         <Section 
         title="How It Begins"
-        image="/images/surprise-lottery.jpg"
+        image="/images/blog-7.4.jpeg"
         alt="Drawing names for Sinterklaas surprise"
         >
         <p>
@@ -57,7 +57,7 @@ export default function DutchSurpriseBlog() {
 
         <Section 
         title="4 Characteristics That Make a Good Surprise"
-        image="/images/surprise-craft.jpg"
+        image="/images/blog-7.5.jpeg"
         alt="Crafted surprise gift made of cardboard"
         >
         <p>1. The surprise is specially made for an individual and emphasizes the relationship between giver and receiver. In a group environment, the surprise is usually an article that symbolizes the commonalities of the group or the shared interest that binds them together, like custom or humorous hockey sticks in hockey clubs or slogans on coffee mugs for a colleague.</p>
@@ -67,10 +67,7 @@ export default function DutchSurpriseBlog() {
         </Section>
 
         <Section 
-        title="The Celebration"
-        image="/images/sinterklaas-evening.jpg"
-        alt="Family enjoying Sinterklaas evening with snacks and drinks"
-        >
+        title="The Celebration">
         <p>
             The celebration of Sinterklaas with surprises is one of joy and laughter. Anything that adds to the laughter will be very well received by the group as a whole.
         </p>
@@ -106,6 +103,17 @@ export default function DutchSurpriseBlog() {
         <p className="mt-10 text-lg">
           Would you like to learn more about the Dutch traditions and learn Dutch at the same time? Subscribe to our Beginners course now! After a free introduction session you will learn in a fun and affordable way with your personal trainer.
         </p>
+
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
       </main>
     </>
   );

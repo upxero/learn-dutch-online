@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "4 Funny Questions Dutch Kids Ask About Sinterklaas (and Clever Answers)",
+  description:
+    "Discover four common questions Dutch children ask about Sinterklaas — and how parents creatively answer them to keep the magic alive.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -30,7 +36,7 @@ export default function DutchSinterklaasQuestionsBlog() {
 
         <Section
           title="1. How does the Sint, while on his horse, walk across the rooftops of the houses?"
-          image="/images/sinterklaas-rooftops.jpg"
+          image="/images/blog-11.1.jpeg"
           alt="Sinterklaas on rooftops"
         >
           <p>
@@ -40,7 +46,7 @@ export default function DutchSinterklaasQuestionsBlog() {
 
         <Section
           title="2. How are the 'Pieten' able to get the little presents in our shoes?"
-          image="/images/pieten-shoes.jpg"
+          image="/images/blog-11.2.jpeg"
           alt="Pieten placing presents in shoes"
         >
           <p>
@@ -50,7 +56,7 @@ export default function DutchSinterklaasQuestionsBlog() {
 
         <Section
           title="3. How can my friend from Maastricht meet him today, when I met him as well in Rotterdam at the same day?"
-          image="/images/assistent-sinterklaas.jpg"
+          image="/images/blog-11.3.jpeg"
           alt="Assistant Sinterklaas in purple uniform"
         >
           <p>
@@ -60,7 +66,7 @@ export default function DutchSinterklaasQuestionsBlog() {
 
         <Section
           title="4. How does the Sint know everything I did this year? How does he know all the children in The Netherlands (and/or Belgium)?"
-          image="/images/sinterklaas-red-book.jpg"
+          image="/images/blog-11.4.jpeg"
           alt="Sinterklaas red book"
         >
           <p>
@@ -80,9 +86,16 @@ export default function DutchSinterklaasQuestionsBlog() {
           Would you like to learn more about the Dutch traditions and learn Dutch at the same time? Subscribe to our Beginners course now! After a free introduction session you will learn in a fun and affordable way with your personal trainer.
         </p>
 
-        <p className="mt-4 text-center text-blue-600 cursor-pointer">
-          Contact
-        </p>
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
       </main>
     </>
   );

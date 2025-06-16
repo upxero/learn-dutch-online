@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "How to Remember the Dutch Irregular Verbs in the Past Tense",
+  description:
+    "Struggling with Dutch irregular past tense verbs? Learn smart tips and memory techniques to master the most common irregular verbs effectively.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -33,7 +39,19 @@ export default function DutchIrregularVerbsBlog() {
           Before the cold sweats break out and you feel the deep inner urge to completely give up on the Dutch language, read this post! Here are some tips we at Learn Dutch Online give to our students when we confront them with the irregular verbs in the past tense:
         </p>
 
-        <Section title="1. There is secretly a little bit of structure.">
+        <Image
+          src="/images/blog-8.1.jpeg"
+          alt="Highlighted Dutch verbs"
+          width={250}
+          height={150}
+          className="rounded shadow-md mt-4"
+        />
+
+        <Section 
+        title="1. There is secretly a little bit of structure."
+        image="/images/blog-8.2.jpeg"
+        alt="Drawing irregular verbs"
+        >
           <p>
             Although these are not set rules, and they don't count for all the verbs, there are some verbs that do show a bit of structure. Here are a few regularities among the irregular verbs:
           </p>
@@ -56,7 +74,11 @@ export default function DutchIrregularVerbsBlog() {
           </p>
         </Section>
 
-        <Section title="2. First start with verbs you use often.">
+        <Section 
+        title="2. First start with verbs you use often."
+        image="/images/blog-8.3.jpeg"
+        alt="Markings"
+        >
           <p>
             First of all, it is important to always use or work with the verbs in a context. Learning a list by heart helps you for 2 weeks max. If you work from a context, in the long term you will remember them easier and for longer.
           </p>
@@ -65,7 +87,11 @@ export default function DutchIrregularVerbsBlog() {
           </p>
         </Section>
 
-        <Section title="3. Every day a few sentences.">
+        <Section 
+        title="3. Every day a few sentences."
+        image="/images/blog-8.4.jpeg"
+        alt="Hearing"
+        >
           <p>
             Once you have established your priority list of past tense verbs which you gathered from articles, texts, books, social media posts, etc., it is time to start making their use automatic in your speech. Here are a few tips for automation:
           </p>
@@ -106,6 +132,17 @@ export default function DutchIrregularVerbsBlog() {
         <p className="mt-10 text-lg">
           Would you like to learn more about the Dutch language and become more confident using verbs? Subscribe to our Beginners course now! After a free introduction session you will learn in a fun and affordable way with your personal trainer.
         </p>
+
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
 
         <hr className="my-10" />
 
