@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "AKV Test Part A: Summary and Presentation – Tips and Preparation",
+  description:
+    "Get fully prepared for part A of the AKV test: summary writing and presentation. Learn what to expect, how to practice, and how to make a confident impression.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -47,8 +53,6 @@ export default function AKVSummaryPresentationBlog() {
 
         <Section
           title="1. Written exam overview"
-          image="/images/akv-writing.jpg"
-          alt="Handwritten Dutch summary"
         >
           <p className="mb-4">
             The allowed time for the written exam is 45 minutes and has to be written by hand. You are allowed a dictionary and that's where it ends. You are expected to summarize a given medical article to a maximum of 80 words. Exceeding or falling short on the word count will incur penalties so try and get it as close as possible to the desired number of words.
@@ -59,12 +63,26 @@ export default function AKVSummaryPresentationBlog() {
           <p className="mb-4">
             Another good source is the articles and texts used in previous Dutch exams for pre-university education, some of which can be found online.
           </p>
+          <Image
+              src="/images/blog-14.png"
+              alt="Handwritten Dutch summary"
+              width={500}
+              height={200}
+              className="rounded-lg shadow-md mx-auto my-6"
+            />
           <p className="mb-4">
             Next you practice at home with a word counter to get the formatting right. A desktop computer will make this step easier but only to get comfortable with the concept. After getting the word count in check it's time to focus on completing the summary within the allowed 45 minutes. We strongly advise our students to do this by hand, as you would in the test, because it does take longer to write the words out compared to typing. Time yourself during practice and write the duration of the summary at the end of the page.
           </p>
           <p className="mb-4">
             Although writing out 80 words by hand does not take as long, your progress can often be impeded as you are reading an unknown article in a language that is not your native tongue. It is also important to have enough time left to check your summary to correct any potential errors before submitting it.
           </p>
+          <Image
+              src="/images/blog-14.1.jpeg"
+              alt="Presenting summary"
+              width={300}
+              height={100}
+              className="rounded-lg shadow-md mx-auto my-6"
+            />
           <p className="mb-4">
             Insufficient preparation is a common mistake that many entrants have made and ended up running out of time before the test was completed.
           </p>
@@ -75,8 +93,6 @@ export default function AKVSummaryPresentationBlog() {
 
         <Section
           title="2. Presentation"
-          image="/images/akv-presentation.jpg"
-          alt="Presenting summary"
         >
           <p className="mb-4">
             Once your summary has been completed, you are then required to present it to an audience, consisting of Dutch language teachers. You are given 30 minutes to prepare for a 5-minute presentation.
@@ -115,6 +131,13 @@ export default function AKVSummaryPresentationBlog() {
               After your talk, the audience will ask a few related questions. You’ll have 5 minutes for this. Keep your answers short and on-topic. Don’t elaborate too much — you risk making language mistakes. Short and correct is better than long and flawed.
             </li>
           </ul>
+          <Image
+              src="/images/blog-14.2.jpeg"
+              alt="Handwritten Dutch summary"
+              width={300}
+              height={100}
+              className="rounded-lg shadow-md mx-auto my-6"
+            />
 
           <p className="mt-4">
             Once again your trainer becomes invaluable to prepare for your 10 minutes of scrutiny. They guide you with your content, pronunciations and grammar, as well as improving your confidence when presenting your summary.

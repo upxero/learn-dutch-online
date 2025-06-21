@@ -157,7 +157,7 @@ function Section({ title, image, alt, children }: SectionProps) {
       <h2 className="text-2xl font-semibold mb-3">{title}</h2>
       {image && (
         <div className="mb-4">
-          <Image src={image} alt={alt || ""} width={800} height={450} className="rounded shadow-md" />
+          <Image src={image} alt={alt || ""} width={400} height={250} className="rounded shadow-md" />
         </div>
       )}
       <div className="space-y-4">{children}</div>
