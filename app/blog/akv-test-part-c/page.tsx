@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "AKV Test Part C: English Reading Skills – What to Expect",
+  description:
+    "Learn everything about part C of the AKV test for medical professionals: English reading skills. Understand the format, timing, tips, and how to prepare effectively.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -53,13 +59,16 @@ export default function AKVPartCReadingSkills() {
           If you would like personal help and assistance with the AKV exam, feel free to contact us. We will gladly help you.
         </p>
 
-        <Section title="Contact">
-          <p>
-            <a href="/contact" className="text-blue-600 underline">
-              Contact us here
-            </a>
-          </p>
-        </Section>
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
       </main>
     </>
   );

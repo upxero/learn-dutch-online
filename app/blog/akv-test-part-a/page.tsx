@@ -137,7 +137,7 @@ export default function AKVSummaryPresentationBlog() {
               width={300}
               height={100}
               className="rounded-lg shadow-md mx-auto my-6"
-            />
+          />
 
           <p className="mt-4">
             Once again your trainer becomes invaluable to prepare for your 10 minutes of scrutiny. They guide you with your content, pronunciations and grammar, as well as improving your confidence when presenting your summary.

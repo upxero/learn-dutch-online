@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Funny Dutch Word: ‘Neushoorn’ – What Does It Really Mean?",
+  description:
+    "Explore the amusing Dutch word ‘neushoorn’ by breaking down its parts: ‘neus’ (nose) and ‘hoorn’ (horn). Learn the different meanings and fun language insights!",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -22,6 +28,14 @@ export default function FunnyDutchWordNeushoorn() {
           <strong>Published:</strong> 02/07/2020
         </p>
 
+        <Image
+              src="/images/blog-16.jpeg"
+              alt="funny Dutch word De neushoorn"
+              width={400}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+        />
+
         <p className="mb-6">
           The word <em>neushoorn</em> can be split into two separate words, <strong>de neus</strong> and <strong>de hoorn</strong>. Both words can have different meanings in Dutch:
         </p>
@@ -39,6 +53,25 @@ export default function FunnyDutchWordNeushoorn() {
               <strong>Example:</strong> De neus van het vliegtuig was beschadigd. <em>The nose of the plane was damaged.</em>
             </li>
           </ol>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4 justify-items-center my-6">
+            {[
+              { src: "/images/blog-16.1.jpeg", alt: "Nose" },
+              { src: "/images/blog-16.2.jpeg", alt: "Train" },
+              { src: "/images/blog-16.3.jpeg", alt: "Child nose" },
+            ].map(({ src, alt }, index) => (
+              <div
+                key={index}
+                className="w-[200px] h-[200px] relative overflow-hidden rounded-lg shadow-md"
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </Section>
 
         <Section title="b. De hoorn (m)">
@@ -63,6 +96,27 @@ export default function FunnyDutchWordNeushoorn() {
               <strong>Example:</strong> We kunnen aardig op de hoorn spelen. <em>We can play nicely on the horn.</em>
             </li>
           </ol>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4 justify-items-center my-6">
+            {[
+              { src: "/images/blog-16.4.jpeg", alt: "Deer horns" },
+              { src: "/images/blog-16.5.jpeg", alt: "Insect horn" },
+              { src: "/images/blog-16.6.jpeg", alt: "Beach horn" },
+              { src: "/images/blog-16.7.jpeg", alt: "Phone horn" },
+              { src: "/images/blog-16.8.jpeg", alt: "Music horn" },
+            ].map(({ src, alt }, index) => (
+              <div
+                key={index}
+                className="w-[200px] h-[200px] relative overflow-hidden rounded-lg shadow-md"
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </Section>
 
         <p className="mb-6">
@@ -77,17 +131,28 @@ export default function FunnyDutchWordNeushoorn() {
           </a>.
         </p>
 
+        <Image
+              src="/images/blog-16.9.jpeg"
+              alt="Child nose"
+              width={300}
+              height={300}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
+
         <p className="mb-6">
           Would you like to learn Dutch at your own pace and in your own time? Contact us now for more information about our Beginners Dutch course or our Intermediate Dutch course.
         </p>
 
-        <Section title="Contact">
-          <p>
-            <a href="/contact" className="text-blue-600 underline">
-              Contact us here
-            </a>
-          </p>
-        </Section>
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
       </main>
     </>
   );

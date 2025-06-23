@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Dutch Civic Integration Exam (Inburgeringsexamen) – What You Need to Know",
+  description:
+    "Learn everything about the Dutch civic integration exam, including its six components, timeline, and tips to pass. Essential for newcomers aiming for Dutch citizenship or permanent residence.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -130,13 +136,16 @@ export default function DutchIntegrationExam() {
           </p>
         </Section>
 
-        <Section title="Contact">
-          <p>
-            <a href="/contact" className="text-blue-600 underline">
-              Contact us here
-            </a>
-          </p>
-        </Section>
+        <div className="mt-6 text-center">
+          <a
+            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Contact us
+          </a>
+        </div>
       </main>
     </>
   );
