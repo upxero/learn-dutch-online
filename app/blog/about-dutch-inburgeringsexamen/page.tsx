@@ -36,6 +36,14 @@ export default function DutchIntegrationExam() {
           In this series of articles we give you more information, hints and tips on the <em>inburgeringsexamen</em> to improve your chances of passing the exam.
         </p>
 
+        <Image
+              src="/images/blog-17.jpeg"
+              alt="Exam Centre"
+              width={600}
+              height={200}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
+
         <Section title="1. Two types of inburgeringsexamen">
           <p className="mb-4">
             The first thing to know is that there are two types of <em>inburgeringsexamen</em>:
@@ -54,9 +62,23 @@ export default function DutchIntegrationExam() {
           <p className="mb-4">
             If you want to become a permanent resident or a Dutch citizen, you need to prove that you have, or are able to, integrate into Dutch society. Topics covered are based on daily Dutch life and practices. Most of these are fairly common and similar to daily life in most of the western world, only with Dutch characteristics.
           </p>
+          <Image
+              src="/images/blog-23.jpeg"
+              alt="Dutch outfit"
+              width={450}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
           <p className="mb-4">
             For this exam, a language proficiency level of A2 is required, but from 2023 the bar will be raised to B1 level in accordance with the Common European Framework of Reference (CEFR).
           </p>
+          <Image
+              src="/images/blog-17.1.jpeg"
+              alt="Dutch cartoon"
+              width={200}
+              height={200}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
           <p className="mb-4">
             This A2 level tests your ability to participate in daily conversation, such as with your child's teacher, a colleague, etc., and can also describe experiences and events such as dreams, hopes & ambitions, and briefly give reasons and explanations for opinions and plans. You need to be able to understand most of what is said, especially the key points, as well as be able to respond in an intelligible manner both in speech and writing. Native level proficiency is not expected but rather the ability to use short connected and coherent sentences. For more on the different CEFR levels: <a href="#" className="text-blue-600 underline">klik here</a>.
           </p>
@@ -104,6 +126,13 @@ export default function DutchIntegrationExam() {
           <p className="mb-4">
             To complete the process from application to receiving your diploma takes on average one year. This duration can be greatly influenced by how far apart your exam dates are scheduled as well as whether you pass all the tests the first time.
           </p>
+          <Image
+              src="/images/blog-17.2.png"
+              alt="Calender"
+              width={300}
+              height={300}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
           <p className="mb-4">
             Here is a breakdown:
           </p>
@@ -131,6 +160,13 @@ export default function DutchIntegrationExam() {
           <p className="mb-4">
             We offer a tailored beginners course to cover all aspects of the integration exam. The course includes all the components of the various tests in one place. For more info about our courses <a href="#" className="text-blue-600 underline">click here</a>.
           </p>
+          <Image
+              src="/images/blog-17.3.jpeg"
+              alt="Calender"
+              width={300}
+              height={300}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
           <p>
             We also provide help with the ONA exam. Contact us now to sign up or enquire. We are here to help you with the Dutch language as well as all the information you need about Learning Dutch Online.
           </p>
