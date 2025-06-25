@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "KNM Exam (Kennis van de Nederlandse Maatschappij) – Civic Integration Explained",
+  description:
+    "Everything you need to know about the KNM exam for Dutch civic integration. Understand Dutch society, prepare with tips, and get ready to pass with confidence.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -29,6 +35,13 @@ export default function KNMExamInfo() {
           <p>
             KNM stands for <em>Kennis van de Nederlandse Maatschappij</em> or "Knowledge of Dutch Society". It covers customs, systems, and social expectations in the Netherlands.
           </p>
+          <Image
+              src="/images/blog-23.jpeg"
+              alt="Dutch outfit"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+            />
         </Section>
 
         <Section title="2. What do you need to know to pass this exam?">
@@ -47,6 +60,13 @@ export default function KNMExamInfo() {
           <p>
             The exam simulates everyday situations to test your familiarity with Dutch society.
           </p>
+          <Image
+              src="/images/blog-23.1.jpeg"
+              alt="Mouse pointing Friesland"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+            />
         </Section>
 
         <Section title="4. How to prepare for this exam?">

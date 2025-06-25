@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Dutch Writing Exam (Schrijven) – Inburgeringsexamen Explained",
+  description:
+    "Everything you need to know about the writing (schrijven) section of the Dutch civic integration exam. Tips, tasks, and how to prepare for success.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -29,6 +35,13 @@ export default function WritingExamInfo() {
           <p>
             These texts should express experiences, opinions, feelings, and reactions in a structured and grammatically correct way.
           </p>
+          <Image
+              src="/images/blog-21.jpg"
+              alt="Writing paper"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+            />
         </Section>
 
         <Section title="2. Practical information about the exam">
@@ -38,6 +51,13 @@ export default function WritingExamInfo() {
           <p>
             The other three tasks involve writing short texts about basic topics like: asking a neighbor to water your plants during your vacation, rescheduling a dentist appointment, sending a birthday invitation, or writing a letter to the municipality about parking issues.
           </p>
+          <Image
+              src="/images/blog-21.1.jpeg"
+              alt="Paper written"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+            />
         </Section>
 
         <Section title="3. What do you need to know to pass this exam?">

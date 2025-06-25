@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "MVV Test – Everything You Need to Know About the Basic Civic Integration Examination",
+  description:
+    "Prepare for the Dutch MVV test with a full breakdown of the three parts: reading, speaking, and knowledge of Dutch society. Includes preparation tips and resources.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -32,6 +38,13 @@ export default function MVVExamInfo() {
           <p>
             If there’s no Dutch representative body in your country, the process can be completed in a neighboring country that has one.
           </p>
+          <Image
+              src="/images/blog-25.jpg"
+              alt="Pushing world"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
 
         <Section title="2. The exam consists of three parts">
@@ -71,6 +84,13 @@ export default function MVVExamInfo() {
           <p>
             Each question is accompanied by a photo and an audio prompt. You select your answer using an on-screen multiple-choice interface.
           </p>
+          <Image
+              src="/images/blog-25.1.jpeg"
+              alt="Computer exam"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
 
         <Section title="3. The results">
@@ -93,7 +113,7 @@ export default function MVVExamInfo() {
             Exposure makes a big difference and helps you build confidence and understanding faster.
           </p>
           <p>
-            You can also contact us for online Dutch lessons. Our native-speaking trainers can help you learn the language and offer tips, resources, and support to prepare for the MVV test.{" "}
+            You can also contact us for online Dutch lessons. Our native-speaking trainers can help you learn the language and offer tips, resources, and support to prepare for the MVV test.{' '}
             <a href="/contact" className="text-blue-600 underline">Click here to get started</a>.
           </p>
         </Section>
@@ -133,3 +153,4 @@ function Section({ title, image, alt, video, children }: SectionProps) {
     </section>
   );
 }
+

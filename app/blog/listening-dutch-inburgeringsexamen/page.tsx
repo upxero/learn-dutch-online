@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Dutch Listening Exam (Luisteren) – Inburgeringsexamen Explained",
+  description:
+    "Learn everything about the Dutch civic integration exam listening section (luisteren). Tips, structure, preparation, and B1-level listening skills.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "How Your Native Language Affects Learning Dutch – Tips for English, German, French, Spanish & Afrikaans Speakers",
+  description:
+    "Discover how your first language influences learning Dutch. Explore the pros, challenges, and key focus points for English, German, French, Spanish, and Afrikaans speakers.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -22,114 +28,162 @@ export default function LanguageInfluenceDutch() {
           <strong>Published:</strong> 04/23/2024
         </p>
 
+        <Section title="Introduction">
+          <p className="mb-6">
+            If you're interested in learning Dutch, it's helpful to know how your native language or other languages you speak might influence the learning process. In this blog post, we'll explore the advantages, challenges, and focus areas for learning Dutch from various language backgrounds.
+          </p>
+          <Image
+              src="/images/blog-26.png"
+              alt="USA Flag"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto mt-10 mb-6"
+          />
+          <Image
+              src="/images/blog-26.1.png"
+              alt="English Flag"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
+        </Section>
+
         <Section title="English">
           <p className="mb-4 font-semibold">Pros</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Similar Vocabulary – English and Dutch share many cognates and loanwords.</li>
-            <li>Grammar – Similar SVO sentence structure.</li>
+            <li>Similar Vocabulary – English and Dutch share many cognates and loanwords, which can make vocabulary acquisition easier.</li>
+            <li>Grammar – While not identical, English and Dutch have some similar grammatical structures, such as subject-verb-object (SVO) sentence order.</li>
           </ul>
 
           <p className="mb-4 font-semibold">Cons</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Pronunciation – Challenging sounds like the guttural "g" and schwa.</li>
-            <li>False Friends – Words that look similar but mean something different.</li>
+            <li>Pronunciation – Dutch pronunciation can be challenging for English speakers, with sounds like the guttural "g" and the schwa vowel.</li>
+            <li>False Friends – Some words look similar but have different meanings, which can lead to confusion.</li>
           </ul>
 
           <p className="mb-4 font-semibold">What to Focus On</p>
           <ul className="list-disc ml-6">
             <li>Pronunciation practice</li>
-            <li>Grammar (word order and verb conjugation)</li>
-            <li>Avoiding false friends</li>
+            <li>Mastering Dutch grammar, particularly word order and verb conjugations</li>
+            <li>Identifying and avoiding false friends</li>
           </ul>
+          <Image
+              src="/images/blog-26.2.png"
+              alt="German Flag"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto mt-10 mb-6"
+          />
         </Section>
 
         <Section title="German">
           <p className="mb-4 font-semibold">Pros</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Language Family – Both are West Germanic languages.</li>
-            <li>Grammar – Dutch has simpler verb conjugations and fewer cases.</li>
+            <li>Language Family – Dutch and German are both West Germanic languages, sharing similar grammatical structures and vocabulary.</li>
+            <li>Grammar – German speakers might find Dutch grammar more straightforward, as it has fewer cases and simpler verb conjugations.</li>
           </ul>
 
           <p className="mb-4 font-semibold">Cons</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Pronunciation – Vowels and diphthongs can be difficult.</li>
-            <li>Vocabulary – Some words may be unfamiliar or misleading.</li>
+            <li>Pronunciation – Dutch pronunciation can be challenging for German speakers, particularly the vowels and diphthongs.</li>
+            <li>Vocabulary – While there are similarities, some Dutch words might be unfamiliar or have different meanings in German.</li>
           </ul>
 
           <p className="mb-4 font-semibold">What to Focus On</p>
           <ul className="list-disc ml-6">
-            <li>Pronunciation of vowels and diphthongs</li>
-            <li>Vocabulary building</li>
-            <li>Grammar adaptation (word order, articles)</li>
+            <li>Pronunciation, especially vowels and diphthongs</li>
+            <li>Expanding vocabulary and understanding the nuances of Dutch words</li>
+            <li>Adapting to Dutch grammar, such as word order and article usage</li>
           </ul>
+          <Image
+              src="/images/blog-26.3.png"
+              alt="French Flag"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto mt-10 mb-6"
+          />
         </Section>
 
         <Section title="French">
           <p className="mb-4 font-semibold">Pros</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Geographical Proximity – Exposure via neighboring countries.</li>
-            <li>Cultural Exchange – Especially relevant in Belgium.</li>
+            <li>Geographical Proximity – French speakers from neighboring countries, such as Belgium or France, might have some exposure to Dutch.</li>
+            <li>Cultural Exchange – The Netherlands and Belgium share historical and cultural connections, which can motivate French speakers to learn Dutch.</li>
           </ul>
 
           <p className="mb-4 font-semibold">Cons</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Language Family – Less related; bigger differences in grammar and vocabulary.</li>
-            <li>Pronunciation – Difficult due to vowel sounds and consonant clusters.</li>
+            <li>Language Family – French is a Romance language, making it more distantly related to Dutch. This can result in more significant differences in grammar, vocabulary, and pronunciation.</li>
+            <li>Pronunciation – Dutch pronunciation can be challenging for French speakers due to different vowel sounds, consonant clusters, and intonation patterns.</li>
           </ul>
 
           <p className="mb-4 font-semibold">What to Focus On</p>
           <ul className="list-disc ml-6">
-            <li>Pronunciation, especially consonant clusters and intonation</li>
-            <li>Grammar (word order and gender)</li>
-            <li>Vocabulary via immersion</li>
+            <li>Pronunciation, particularly vowels, consonant clusters, and intonation</li>
+            <li>Building a strong foundation in Dutch grammar, such as word order and gender system</li>
+            <li>Developing vocabulary through immersion and practice</li>
           </ul>
+          <Image
+              src="/images/blog-26.4.png"
+              alt="Spanish Flag"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto mt-10 mb-6"
+          />
         </Section>
 
         <Section title="Spanish">
           <p className="mb-4 font-semibold">Pros</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Popularity – Many Dutch learning resources are available.</li>
-            <li>Phonetics – Rolled “r” may be familiar.</li>
+            <li>Popularity – Spanish speakers might find Dutch more accessible due to its popularity as a foreign language and the availability of learning resources.</li>
+            <li>Phonetics – Some Dutch sounds, like the rolled "r," might be familiar to Spanish speakers.</li>
           </ul>
 
           <p className="mb-4 font-semibold">Cons</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Language Family – Not closely related; grammar is quite different.</li>
-            <li>Grammar – Word order and gender system can be difficult.</li>
+            <li>Language Family – Spanish is a Romance language, making it more distantly related to Dutch. This can result in more significant differences in grammar, vocabulary, and pronunciation.</li>
+            <li>Grammar – Spanish speakers might find Dutch grammar challenging, with its complex word order and gender system.</li>
           </ul>
 
           <p className="mb-4 font-semibold">What to Focus On</p>
           <ul className="list-disc ml-6">
-            <li>Pronunciation practice</li>
-            <li>Grammar (especially gender and sentence structure)</li>
-            <li>Immersive vocabulary practice</li>
+            <li>Pronunciation, especially vowels and consonant clusters unfamiliar to Spanish speakers</li>
+            <li>Mastering Dutch grammar, particularly word order and gender system</li>
+            <li>Expanding vocabulary through immersion and practice</li>
           </ul>
+          <Image
+              src="/images/blog-26.5.jpeg"
+              alt="African Flag"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto mt-10 mb-6"
+          />
         </Section>
 
         <Section title="Afrikaans">
           <p className="mb-4 font-semibold">Pros</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Mutual Intelligibility – High degree of comprehension.</li>
-            <li>Vocabulary – Large overlap in word roots and meanings.</li>
+            <li>Mutual Intelligibility – Afrikaans is a daughter language of Dutch, which makes it easier for Afrikaans speakers to understand Dutch.</li>
+            <li>Similar Vocabulary – Afrikaans and Dutch share a significant amount of vocabulary, making vocabulary acquisition less challenging.</li>
           </ul>
 
           <p className="mb-4 font-semibold">Cons</p>
           <ul className="list-disc ml-6 mb-6">
-            <li>Grammar – Dutch is more complex with gender and verb forms.</li>
-            <li>Pronunciation – Some sounds differ and may cause confusion.</li>
+            <li>Grammar – While there are similarities, Afrikaans speakers might find Dutch grammar more complex, with its gender system and verb conjugations.</li>
+            <li>Pronunciation – Although Afrikaans and Dutch share similar sounds, some pronunciation aspects might still be challenging for Afrikaans speakers.</li>
           </ul>
 
           <p className="mb-4 font-semibold">What to Focus On</p>
           <ul className="list-disc ml-6">
-            <li>Mastering grammar (gender and conjugation)</li>
-            <li>Refining pronunciation</li>
-            <li>Strengthening orthography and writing</li>
+            <li>Mastering Dutch grammar, especially the gender system and verb conjugations</li>
+            <li>Pronunciation practice, focusing on the nuances and differences between Afrikaans and Dutch pronunciation</li>
+            <li>Building proficiency in reading and writing Dutch, as Afrikaans orthography is simplified compared to Dutch</li>
           </ul>
         </Section>
 
         <Section title="Conclusion">
           <p>
-          By understanding the pros, cons, and focus areas for learning Dutch from various language backgrounds, you can approach the learning process more strategically and maximize your success. Happy learning!
+            By understanding the pros, cons, and focus areas for learning Dutch from various language backgrounds, you can approach the learning process more strategically and maximize your success. Happy learning!
           </p>
         </Section>
       </main>
@@ -140,7 +194,7 @@ export default function LanguageInfluenceDutch() {
 function Section({ title, image, alt, video, children }: SectionProps) {
   return (
     <section className="mb-10">
-      <h2 className="text-2xl font-semibold mb-3">{title}</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">{title}</h2>
       <div className="flex flex-col gap-4 items-start">
         <div>{children}</div>
         {image && (

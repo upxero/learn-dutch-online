@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Dutch Inburgering Exam: Reading Section (Lezen) Explained",
+  description:
+    "Prepare for the 'lezen' part of the Dutch civic integration exam with practical tips, level guidance, and useful examples. Reach B1 level reading skills with confidence.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -32,74 +38,81 @@ export default function ReadingExamInfo() {
         </p>
 
         <p className="mb-6">
-          Since you are reading this post, you are considering, or preparing, to take the Dutch civic integration exam. In this blog we give you more practical information about the reading segment of the Dutch civic integration exam and we provide you with some hints and tips to improve your chances in passing the exam.
+          Since you are reading this post, you are considering—or already preparing—to take the Dutch civic integration exam. In this blog, we’ll share practical information about the reading component of the exam and provide helpful tips to increase your chances of passing.
         </p>
 
         <p className="mb-6">
-          Should you require more general information about the inburgeringsexamen, <a href="#" className="text-blue-600 underline">click here</a>.
+          Need more general information about the Inburgeringsexamen? <a href="#" className="text-blue-600 underline">Click here</a>.
         </p>
 
         <Section title="1. Level">
           <p className="mb-4">
-            It is important to note that, as with all other aspects mentioned in the overview, you need to be able to read at B1 level.
+            Like all sections of the exam, you need to demonstrate reading skills at the B1 level.
           </p>
           <p className="mb-4">
-            To read at B1 level means that you can clearly understand general formal and semi-formal Dutch text pertaining to everyday life. Part of this is to answer questions about the text in the correct context, as the answers are usually provided in the text itself.
+            Reading at B1 level means you can understand general formal and semi-formal Dutch texts related to daily life. You should also be able to answer questions based on the context—usually directly found in the text.
           </p>
           <p>
-            Some examples of the type of texts to expect include:
+            Examples of texts you may encounter:
           </p>
           <ul className="list-disc list-inside ml-4 mt-2">
-            <li>User manuals for your banking app</li>
-            <li>Documents from your 'gemeente'</li>
-            <li>General insurance-related documents</li>
-            <li>Letters from school for those with children</li>
-            <li>Emails from your Dutch trainer</li>
+            <li>User manuals (e.g., banking apps)</li>
+            <li>Letters or documents from your gemeente</li>
+            <li>Insurance documents</li>
+            <li>Letters from school (if you have children)</li>
+            <li>Emails from your Dutch language trainer</li>
             <li>Short newspaper articles</li>
             <li>Informative emails from social clubs</li>
           </ul>
+          <Image
+              src="/images/blog-18.jpg"
+              alt="Woman reading book"
+              width={300}
+              height={100}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
 
         <Section title="2. Practical information about the reading exam">
           <p>
-            The exam is completed on a computer and the allocated time is 65 minutes. You can expect to be presented with texts on similar topics as mentioned above, after which you answer a couple of multiple choice questions per text. This is to test your comprehension.
+            The reading test is completed on a computer and takes 65 minutes. You’ll read texts on familiar topics and answer multiple-choice questions to assess your comprehension.
           </p>
         </Section>
 
         <Section title="3. How to know when you are ready for this exam?">
           <p className="mb-4">
-            It is important that you understand most of the Dutch words ranked at B1 level. You can test this yourself by reading short newspaper articles, letters, emails, and other daily texts. If you understand ¾ of the words, as well as the topics and context, you are more than likely to achieve a satisfactory score.
+            You’re likely ready if you can understand at least 75% of B1-level Dutch texts, including their topic and context. Try reading newspaper articles, official letters, or emails. If you can grasp most of the content, you are on the right track.
           </p>
           <p>
-            We want you to score better than satisfactory though and prepare you accordingly.
+            Our goal is to help you feel more than just "ready"—we want you to feel confident and capable.
           </p>
         </Section>
 
         <Section title="4. How can you prepare for this exam?">
           <ol className="list-decimal list-inside space-y-4">
             <li>
-              <strong>Dutch newspapers:</strong> Sign up with Dutch publications and newspapers like De Telegraaf or AD. Read short articles about subjects of your interest every day and test your ability to comprehend. Do a word count and note how many words you understand vs. how many you don’t. Aim for 80% comprehension.
+              <strong>Dutch newspapers:</strong> Subscribe to Dutch news sites like De Telegraaf or AD. Read short articles daily. Count how many words you understand vs. don’t understand. Aim to comprehend 80% or more.
             </li>
             <li>
-              <strong>Official correspondence:</strong> Read letters, emails, etc. from your gemeente, school, or sport club. Track unfamiliar words and notice your vocabulary improve over time.
+              <strong>Official correspondence:</strong> Read letters and emails from your gemeente, school, or club. Do the same word-tracking exercise. Your confidence will grow as your vocabulary expands.
             </li>
             <li>
-              <strong>Electronic devices:</strong> Change the language settings of your devices to Dutch. Regular exposure to Dutch texts through your devices helps expand your vocabulary quickly.
+              <strong>Electronic devices:</strong> Change your phone, computer, tablet, and TV settings to Dutch. Constant exposure helps accelerate learning.
             </li>
             <li>
-              <strong>Get social:</strong> Join Dutch groups on social media and follow Dutch people and celebrities. Read lyrics of Dutch songs while they play to build your vocabulary.
+              <strong>Get social:</strong> Follow Dutch-speaking groups and celebrities on social media. Read along with Dutch song lyrics to familiarize yourself with informal vocabulary.
             </li>
             <li>
-              <strong>Practice exams:</strong> Return to practice exams periodically to assess your abilities and track your progress.
+              <strong>Practice exams:</strong> Regularly take practice exams to track your progress and highlight areas for improvement.
             </li>
             <li>
-              <strong>Learn Dutch Online:</strong> If you find it too challenging on your own, our beginner and intermediate courses emphasize B1-level texts, specifically designed to prepare you for the exam. Your trainer will guide you at your own pace with your success as the top priority.
+              <strong>Learn Dutch Online:</strong> If self-study is too difficult, consider our beginner and intermediate courses. We focus on B1-level reading material to prepare you thoroughly. Our trainers tailor lessons to your pace, with practical language use as a top priority.
             </li>
           </ol>
         </Section>
 
         <p className="mt-6">
-          Need help preparing for the reading exam? <a href="#" className="text-blue-600 underline">Contact us</a> for personal guidance or course options.
+          Ready to boost your reading skills for the exam? <a href="#" className="text-blue-600 underline">Contact us</a> for personalized training or course options.
         </p>
       </main>
     </>

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Dutch Speaking Exam (Spreekvaardigheid) – Inburgeringsexamen Explained",
+  description:
+    "Everything you need to know about the speaking (spreekvaardigheid) part of the Dutch civic integration exam. Get tips, example questions, and preparation strategies.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -26,6 +32,13 @@ export default function SpeakingExamInfo() {
           <p className="mb-6">
             Speaking at B1 level in Dutch means you can engage in daily conversations or simple discussions and express your opinions. Your basic vocabulary doesn’t hold you back, and you can form short sentences with minimal grammar errors. You understand more complex sentences but are not yet expected to use them actively.
           </p>
+          <Image
+              src="/images/blog-22.jpg"
+              alt="Writing paper"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
 
         <Section title="2. Practical information about the exam">
@@ -35,6 +48,13 @@ export default function SpeakingExamInfo() {
           <p>
             The exam lasts 35 minutes.
           </p>
+          <Image
+              src="/images/blog-22.1.gif"
+              alt="Writing paper"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
 
         <Section title="3. What do you need to know to pass this exam?">

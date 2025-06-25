@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "ONA Exam (Oriëntatie op de Nederlandse Arbeidsmarkt) – Civic Integration Explained",
+  description:
+    "Learn everything about the ONA exam for Dutch civic integration. Understand the portfolio requirements, exemption rules, and how to prepare for the interview.",
+};
+
 import Image from "next/image";
 import HeroBlog from "@/components/hero-blog";
 import React, { ReactNode } from "react";
@@ -29,6 +35,13 @@ export default function ONAExamInfo() {
           <p className="mb-6">
             Your portfolio should include your CV, job application letters, work experience, relevant vacancies, and more. After submission, you’ll be interviewed by two DUO examiners about your portfolio. The interview takes around 40 minutes and evaluates how well you understand the Dutch job market and its processes.
           </p>
+          <Image
+              src="/images/blog-24.jpg"
+              alt="Portfolio"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
 
         <Section title="2. Exemption from ONA exam">
@@ -43,6 +56,13 @@ export default function ONAExamInfo() {
           <p>
             If you qualify, you can submit your exemption request via <a href="https://mijninburgering.nl" className="text-blue-600 underline">mijninburgering.nl</a> using your eID.
           </p>
+          <Image
+              src="/images/blog-24.1.jpeg"
+              alt="Exempt"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
 
         <Section title="3. What do you need to do to pass this exam?">
@@ -73,6 +93,13 @@ export default function ONAExamInfo() {
             </a>{" "}
             to start your ONA preparation.
           </p>
+          <Image
+              src="/images/blog-24.2.jpeg"
+              alt="Interview"
+              width={350}
+              height={150}
+              className="rounded-lg shadow-md mx-auto my-6"
+          />
         </Section>
       </main>
     </>
