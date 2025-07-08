@@ -1,11 +1,13 @@
-'use client'
+'use client';
 
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { FormEvent } from "react";
 
 export default function SignIn() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const next = searchParams.get("next") || "/dashboard"; // fallback als next ontbreekt
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -14,29 +16,24 @@ export default function SignIn() {
     const password = (e.target as HTMLFormElement).password.value;
 
     try {
-      // API-aanroep naar Directus om in te loggen
-      const response = await fetch("http://localhost:8055/auth/login", {
+      const response = await fetch("https://upxero.be/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          email: email,
-          password: password,
-        }),
+        body: JSON.stringify({ email, password }),
       });
 
       const data = await response.json();
 
       if (response.ok) {
-        // Opslaan van token in localStorage of cookies voor gebruik in andere verzoeken
         localStorage.setItem("auth_token", data.data.access_token);
         localStorage.setItem("refresh_token", data.data.refresh_token);
 
-        // Redirect naar dashboard of andere pagina
-        window.location.href = 'http://localhost:5173/'; // externe redirect naar Vite dashboard
+        // ✅ Ga terug naar de originele inhoudspagina
+        window.location.href = `https://www.learn-dutch-online.netlify.app${next}`;
       } else {
-        alert(data.errors[0].message); // Foutmelding van Directus
+        alert(data.errors?.[0]?.message || "Inloggen mislukt.");
       }
     } catch (error) {
       console.error("Error during login:", error);
@@ -57,6 +54,7 @@ export default function SignIn() {
             </label>
             <input
               id="email"
+              name="email"
               className="form-input w-full py-2"
               type="email"
               placeholder="your@email.com"
@@ -69,6 +67,7 @@ export default function SignIn() {
             </label>
             <input
               id="password"
+              name="password"
               className="form-input w-full py-2"
               type="password"
               autoComplete="on"
@@ -91,3 +90,4 @@ export default function SignIn() {
     </>
   );
 }
+
