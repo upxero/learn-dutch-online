@@ -1,4 +1,7 @@
-'use client';
+export const metadata = {
+  title: 'Learn Dutch Online',
+  description: 'Login to your Dutch learning dashboard.',
+};
 
 import { Suspense } from "react";
 import SignInForm from "./sign-in-form";
@@ -10,4 +13,5 @@ export default function SignInPage() {
     </Suspense>
   );
 }
+
 

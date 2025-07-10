@@ -84,7 +84,7 @@ export default function SignInForm() {
       </form>
       <div className="mt-6 text-center">
         <Link className="text-sm text-gray-700 underline hover:no-underline" href="/reset-password">
-          Forgot password
+          
         </Link>
       </div>
     </>
