@@ -37,45 +37,44 @@ export default function AfrikaansDutchClient() {
   if (loading) return <p>Even laden...</p>;
 
   const items = [
-    { label: "Cursusoverzicht", link: "/afrikaans-dutch-1/overview" },
-    { label: "Sessie 1 - Uitspraak en groeten", link: "/afrikaans-dutch-1/session-1" },
-    { label: "Huiswerk na sessie 1", link: "/afrikaans-dutch-1/homework-1" },
-    { label: "Sessie 2 - Introducties", link: "/afrikaans-dutch-1/session-2" },
-    { label: "Huiswerk na sessie 2", link: "/afrikaans-dutch-1/homework-2" },
-    { label: "Sessie 3 - Afspreken", link: "/afrikaans-dutch-1/session-3" },
-    { label: "Huiswerk na sessie 3", link: "/afrikaans-dutch-1/homework-3" },
-    { label: "Sessie 4 - De familie", link: "/afrikaans-dutch-1/session-4" },
-    { label: "Huiswerk na sessie 4", link: "/afrikaans-dutch-1/homework-4" },
-    { label: "Sessie 5 - Feest", link: "/afrikaans-dutch-1/session-5" },
-    { label: "Huiswerk na sessie 5", link: "/afrikaans-dutch-1/homework-5" },
-    { label: "Sessie 6 - Smakelijk", link: "/afrikaans-dutch-1/session-6" },
-    { label: "Huiswerk na sessie 6", link: "/afrikaans-dutch-1/homework-6" },
-    { label: "Sessie 7 - Aan tafel", link: "/afrikaans-dutch-1/session-7" },
-    { label: "Huiswerk na sessie 7", link: "/afrikaans-dutch-1/homework-7" },
-    { label: "Sessie 8 - Geboorte en gelukwensen", link: "/afrikaans-dutch-1/session-8" },
-    { label: "Huiswerk na sessie 8", link: "/afrikaans-dutch-1/homework-8" },
-    { label: "Sessie 9 - Bevrijdingsdag", link: "/afrikaans-dutch-1/session-9" },
-    { label: "Huiswerk na sessie 9", link: "/afrikaans-dutch-1/homework-9" },
-    { label: "Sessie 10 - Review 1", link: "/afrikaans-dutch-1/session-10" },
-    { label: "Huiswerk na sessie 10", link: "/afrikaans-dutch-1/homework-10" },
-    { label: "Sessie 11 - Emoties", link: "/afrikaans-dutch-1/session-11" },
-    { label: "Huiswerk na sessie 11", link: "/afrikaans-dutch-1/homework-11" },
-    { label: "Sessie 12 - OVT regelmatige werkwoorden", link: "/afrikaans-dutch-1/session-12" },
-    { label: "Huiswerk na sessie 12", link: "/afrikaans-dutch-1/homework-12" },
-    { label: "Sessie 13 - Praten met collega’s", link: "/afrikaans-dutch-1/session-13" },
-    { label: "Huiswerk na sessie 13", link: "/afrikaans-dutch-1/homework-13" },
-    { label: "Sessie 14 - OVT onregelmatige werkwoorden", link: "/afrikaans-dutch-1/session-14" },
-    { label: "Huiswerk na sessie 14", link: "/afrikaans-dutch-1/homework-14" },
-    { label: "Sessie 15 - VTT regelmatige werkwoorden", link: "/afrikaans-dutch-1/session-15" },
-    { label: "Huiswerk na sessie 15", link: "/afrikaans-dutch-1/homework-15" },
-    { label: "Sessie 16 - Naar de dokter", link: "/afrikaans-dutch-1/session-16" },
-    { label: "Huiswerk na sessie 16", link: "/afrikaans-dutch-1/homework-16" },
-    { label: "Sessie 17 - VTT onregelmatige werkwoorden", link: "/afrikaans-dutch-1/session-17" },
-    { label: "Huiswerk na sessie 17", link: "/afrikaans-dutch-1/homework-17" },
-    { label: "Sessie 18 - Het weer", link: "/afrikaans-dutch-1/session-18" },
-    { label: "Huiswerk na sessie 18", link: "/afrikaans-dutch-1/homework-18" },
-    { label: "Sessie 19 - Herhaling verleden tijd + voorbereiding niveautest", link: "/afrikaans-dutch-1/session-19" },
-    { label: "Sessie 20 - Niveautest A2", link: "/afrikaans-dutch-1/session-20" },
+    { label: "Sessie 1 - Uitspraak en groeten", link: "https://sites.google.com/view/afri-ned-ses12112025/deel-1-uitspraak" },
+    { label: "Huiswerk na sessie 1", link: "https://sites.google.com/view/afridutchhuiswerk120012025/deel-1-luisteren" },
+    { label: "Sessie 2 - Introducties", link: "https://sites.google.com/view/afr-ned-s3-24-10/deel-1-de-het-een" },
+    { label: "Huiswerk na sessie 2", link: "https://sites.google.com/view/afridutchhuiswerk2-24-10/deel-1-getallen-en-cijfers" },
+    { label: "Sessie 3 - Afspreken", link: "https://sites.google.com/view/afr-nl-s3-24-10/deel-1-hoofdzin-vraagzinnen" },
+    { label: "Huiswerk na sessie 3", link: "https://sites.google.com/view/afridutchhuiswerk3-24-10/deel-1-de-familie" },
+    { label: "Sessie 4 - De familie", link: "https://sites.google.com/view/afr-nl-s4-24-10/deel-1-de-familie" },
+    { label: "Huiswerk na sessie 4", link: "https://sites.google.com/view/afridutchsessie4-24-10/deel-1-werkwoorden" },
+    { label: "Sessie 5 - Feest", link: "https://sites.google.com/view/afr-nl-s5-24-10/deel-1-spreken" },
+    { label: "Huiswerk na sessie 5", link: "https://sites.google.com/view/afridutchhuiswerk5-24-10/deel-1-grammatica" },
+    { label: "Sessie 6 - Smakelijk", link: "https://sites.google.com/view/afr-nl-s6-24-10/deel-1-positiewerkwoorden" },
+    { label: "Huiswerk na sessie 6", link: "https://sites.google.com/view/afridutchhuiswerk6-24-9/deel-1-grammatica" },
+    { label: "Sessie 7 - Aan tafel", link: "https://sites.google.com/view/afr-nl-s7-24-10/deel-1-modale-werkwoorden" },
+    { label: "Huiswerk na sessie 7", link: "https://sites.google.com/view/afridutchhuiswerk7-24-10/deel-1-grammatica" },
+    { label: "Sessie 8 - Geboorte en gelukwensen", link: "https://sites.google.com/view/afr-nl-s8-24-10/deel-1-er" },
+    { label: "Huiswerk na sessie 8", link: "https://sites.google.com/view/afridutchhuiswerk8-24-10/deel-1-bevrijdingsdag" },
+    { label: "Sessie 9 - Bevrijdingsdag", link: "https://sites.google.com/view/afr-nl-s9-7-07/deel-1grammatica-hoofdzin-bijzin" },
+    { label: "Huiswerk na sessie 9", link: "https://sites.google.com/view/afridutchhuiswerk9-24-10/deel-1-grammatica" },
+    { label: "Sessie 10 - Review 1", link: "https://sites.google.com/view/afr-nl-s10-24-10/deel-1-feedback-huiswerk" },
+    { label: "Huiswerk na sessie 10", link: "https://sites.google.com/view/afridutchhuiswerk10-24-10/deel-1-woordenschat" },
+    { label: "Sessie 11 - Emoties", link: "https://sites.google.com/view/afr-nl-s11-24-10/deel-1-spreken-reacties" },
+    { label: "Huiswerk na sessie 11", link: "https://sites.google.com/view/afridutchhuiswerk11-24-10/deel-1-pronomen" },
+    { label: "Sessie 12 - OVT regelmatige werkwoorden", link: "https://sites.google.com/view/afr-nl-s12-24-10/deel-1-onvoltooid-verleden-tijd" },
+    { label: "Huiswerk na sessie 12", link: "https://sites.google.com/view/afridutchhuiswerk12-24-10/deel-1-grammatica" },
+    { label: "Sessie 13 - Praten met collega’s", link: "https://sites.google.com/view/afr-nl-s13-24-10/deel-1-ochtendroutine" },
+    { label: "Huiswerk na sessie 13", link: "https://sites.google.com/view/afridutchhuiswerk13-24-10/deel-1-oefeningen" },
+    { label: "Sessie 14 - OVT onregelmatige werkwoorden", link: "https://sites.google.com/view/afr-nl-s14-24-10/deel-1-theorie" },
+    { label: "Huiswerk na sessie 14", link: "https://sites.google.com/view/afridutchhuiswerk14-24-10/deel-1-oefeningen-ovt" },
+    { label: "Sessie 15 - VTT regelmatige werkwoorden", link: "https://sites.google.com/view/afr-nl-s15-24-10/deel-1-vtt-zwak" },
+    { label: "Huiswerk na sessie 15", link: "https://sites.google.com/view/afridutchhuiswerk15-24-10/deel-1-grammatica" },
+    { label: "Sessie 16 - Naar de dokter", link: "https://sites.google.com/view/afr-nl-s16-24-10/praten" },
+    { label: "Huiswerk na sessie 16", link: "https://sites.google.com/view/afridutchhuiswerk-16-24-10/grammatica" },
+    { label: "Sessie 17 - VTT onregelmatige werkwoorden", link: "https://sites.google.com/view/afr-nl-s17-24-10/deel-1-vtt-sterk" },
+    { label: "Huiswerk na sessie 17", link: "https://sites.google.com/view/afrikdutchhuiswerk17-24-10/deel-1-woorden-voor-frequentie" },
+    { label: "Sessie 18 - Het weer", link: "https://sites.google.com/view/afr-nl-s20-01-2025/deel-1-woorden-voor-frequentie" },
+    { label: "Huiswerk na sessie 18", link: "https://sites.google.com/view/afridutchhuiswerk18-20012025/deel-1-herhaling-theorie" },
+    { label: "Sessie 19 - Herhaling verleden tijd + voorbereiding niveautest", link: "https://sites.google.com/view/dutchafr1920012025/deel-1-herhaling-verleden-tijd" },
+    { label: "Sessie 20 - Niveautest A2", link: "" },
   ];
 
   return (
@@ -100,20 +99,32 @@ export default function AfrikaansDutchClient() {
 
       {/* Content */}
       <div className="max-w-3xl mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold text-center text-black mb-8">Cursusoverzicht</h2>
+      <h2 className="text-3xl font-bold text-center text-black mb-8">Cursusoverzicht</h2>
         <ul className="space-y-3 text-center text-black">
-          {items.map((item, index) => (
+            {items.map((item, index) => (
             <li key={index}>
-              <a
-                href={item.link}
-                className={`text-lg hover:underline ${
-                  item.label.startsWith("Sessie") ? "font-semibold" : ""
-                }`}
-              >
-                {item.label}
-              </a>
+                {item.link ? (
+                <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`text-lg hover:underline ${
+                    item.label.startsWith("Sessie") ? "font-semibold" : ""
+                    }`}
+                >
+                    {item.label}
+                </a>
+                ) : (
+                <span
+                    className={`text-lg text-gray-500 ${
+                    item.label.startsWith("Sessie") ? "font-semibold" : ""
+                    }`}
+                >
+                    {item.label}
+                </span>
+                )}
             </li>
-          ))}
+            ))}
         </ul>
       </div>
     </div>
