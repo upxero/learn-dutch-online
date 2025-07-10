@@ -116,7 +116,7 @@ export default function AfrikaansDutchClient() {
                 </a>
                 ) : (
                 <span
-                    className={`text-lg text-gray-500 ${
+                    className={`text-lg text-black ${
                     item.label.startsWith("Sessie") ? "font-semibold" : ""
                     }`}
                 >
