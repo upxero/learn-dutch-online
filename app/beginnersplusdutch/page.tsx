@@ -1,4 +1,4 @@
-import BeginnersPlusClient from "./BeginnersPlusClient";
+import BeginnersPlusClient from "./client-component";
 
 export const metadata = {
   title: "Beginners Plus Nederlands (A1–A2)",
