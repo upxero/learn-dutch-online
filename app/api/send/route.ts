@@ -15,8 +15,8 @@ export async function POST(req: Request) {
 
   try {
     await transporter.sendMail({
-      from: `"Dutch Course Sign-up" <info@upxero.com>`,
-      to: 'info@upxero.com', // Vervang dit met je eigen e-mailadres
+      from: `"Dutch Course Sign-up" <info@learn-dutch-online.com>`,
+      to: 'info@learn-dutch-online.com', // Vervang dit met je eigen e-mailadres
       subject: `Nieuwe inschrijving van ${name}`,
       html: `
         <h3>Nieuwe aanmelding voor een cursus:</h3>
