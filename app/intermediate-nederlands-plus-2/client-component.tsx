@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import bannerImage from "@/public/images/banner-5.jpg";
+import bannerImage from "@/public/images/banner-6.jpg";
 
 export default function BeginnersPlusClient() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function BeginnersPlusClient() {
   useEffect(() => {
     const token = localStorage.getItem("auth_token");
     if (!token) {
-      const nextPath = encodeURIComponent("/intermediate-dutch-plus-1");
+      const nextPath = encodeURIComponent("/intermediate-nederlands-plus-2");
       router.push(`/signin?next=${nextPath}`);
       return;
     }
@@ -29,7 +29,7 @@ export default function BeginnersPlusClient() {
       .then(() => setLoading(false))
       .catch(() => {
         localStorage.removeItem("auth_token");
-        router.push(`/signin?next=/intermediate-dutch-plus-1`);
+        router.push(`/signin?next=/intermediate-nederlands-plus-2`);
       });
   }, []);
 
