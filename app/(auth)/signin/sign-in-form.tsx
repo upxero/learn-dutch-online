@@ -31,7 +31,7 @@ export default function SignInForm() {
         localStorage.setItem("refresh_token", data.data.refresh_token);
 
         // ✅ Externe redirect naar inhoudspagina
-        window.location.href = `https://learn-dutch-online.netlify.app${next}`;
+        window.location.href = `https://learn-dutch-online.com${next}`;
       } else {
         alert(data.errors?.[0]?.message || "Inloggen mislukt.");
       }
