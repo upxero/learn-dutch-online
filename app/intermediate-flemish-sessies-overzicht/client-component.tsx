@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import bannerImage from "@/public/images/banner-4.jpg";
+import bannerImage from "@/public/images/banner-8.jpg";
 
 export default function BeginnersPlusClient() {
   const router = useRouter();
