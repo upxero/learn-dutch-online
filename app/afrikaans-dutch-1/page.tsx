@@ -1,12 +1,10 @@
-import BeginnersFlemishClient from "./client-component";
+import AfrikaansDutchClient from "./client-component";
 
 export const metadata = {
-  title: "Beginners Vlaams – voor Afrikaans sprekers",
-  description:
-    "Overzicht van de cursus Beginners Vlaams voor Afrikaanssprekenden. Leer stap voor stap met sessies en huiswerkopdrachten in Vlaamse context.",
+  title: "Beginners Nederlands – voor Afrikaans sprekers",
+  description: "Overzicht van de cursus Nederlands voor Afrikaanssprekenden. Leer stap voor stap met sessies en huiswerkopdrachten.",
 };
 
 export default function Page() {
-  return <BeginnersFlemishClient />;
+  return <AfrikaansDutchClient />;
 }
-
