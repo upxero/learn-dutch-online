@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import bannerImage from "@/public/images/banner-7.jpg";
+import bannerImage from "@/public/images/banner-9.jpg";
 
 export default function BeginnersPlusClient() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function BeginnersPlusClient() {
   useEffect(() => {
     const token = localStorage.getItem("auth_token");
     if (!token) {
-      const nextPath = encodeURIComponent("/intermediate-flemish-1");
+      const nextPath = encodeURIComponent("/intermediate-flemish-plus-2");
       router.push(`/signin?next=${nextPath}`);
       return;
     }
@@ -29,23 +29,17 @@ export default function BeginnersPlusClient() {
       .then(() => setLoading(false))
       .catch(() => {
         localStorage.removeItem("auth_token");
-        router.push(`/signin?next=/intermediate-flemish-1`);
+        router.push(`/signin?next=/intermediate-flemish-plus-2`);
       });
   }, []);
 
   if (loading) return <p>Even laden...</p>;
 
   const items = [
-    { label: "Les 1 - Verkopen", link: "https://sites.google.com/view/int-plus-flm-01-23-1/deel-1-spreken" },
-    { label: "Les 2 - Vergaderen", link: "https://sites.google.com/view/int--flem-plus-02-23-01/deel-1-discussie" },
-    { label: "Les 3 - Media", link: "https://sites.google.com/view/int-plus-flem-03-23-01/deel-1-discussie" },
-    { label: "Les 4 - Mobiliteit", link: "https://sites.google.com/view/int-plus-flem-04-23-01/deel-1-discussie" },
-    { label: "Les 5 - Lichaamstaal", link: "https://sites.google.com/view/int-plus-flem-05-23-01/deel-1-discussie" },
-    { label: "Les 6 - Mens en techniek", link: "https://sites.google.com/view/int-plus-flem-06-23-01/deel-1-discussie" },
-    { label: "Les 7 - Sfeer op het werk", link: "https://sites.google.com/view/inter-plus-flem-07-23-01/deel-1-discussie" },
-    { label: "Les 8 - Burn out", link: "https://sites.google.com/view/inter-plus-flem-08-23-01/deel-1-discussie" },
-    { label: "Les 9 - Etiquette op het werk", link: "https://sites.google.com/view/inter-plus-flem-09-23-01/deel-1-discussie" },
-    { label: "Les 10 - Review 1", link: "https://sites.google.com/view/inter-plus-flem-ev-01-23-01/deel-1-luisteren-en-schrijven" },
+    { label: "Les 11 - Interculturele communicatie", link: "https://sites.google.com/view/int-flem-plus-10-23-01/deel-1-discussie" },
+    { label: "Les 12 - Slapen op het werk", link: "https://sites.google.com/view/int-flem-plus-11-23-01/deel-1-discussie" },
+    { label: "Les 13 - Sparen", link: "https://sites.google.com/view/int-flem-plus-13-23-01/deel-1-discussie" },
+    { label: "Les 14 - Mens en dier", link: "https://sites.google.com/view/int-flem-pl-13-23-01/deel-1-discussie" },
   ];
 
   return (
@@ -62,7 +56,7 @@ export default function BeginnersPlusClient() {
           <h1 className="text-white text-4xl md:text-5xl font-bold text-center px-4 leading-tight">
             Intermediate Flemish Plus
             <br />
-            <span className="text-2xl font-normal">Lessons 1 to 10</span>
+            <span className="text-2xl font-normal">Lessons 11 to 14</span>
           </h1>
         </div>
       </div>
