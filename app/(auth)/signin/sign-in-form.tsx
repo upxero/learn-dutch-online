@@ -16,7 +16,7 @@ export default function SignInForm() {
     const password = (e.target as HTMLFormElement).password.value;
 
     try {
-      const response = await fetch("https://www.upxero.be/auth/login", {
+      const response = await fetch("https://cms.learn-dutch-online.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
