@@ -77,7 +77,7 @@ export default function SignInForm() {
           </div>
         </div>
         <div className="mt-6">
-          <button type="submit" className="btn w-full bg-blue-600 text-white shadow-sm">
+          <button type="submit" className="btn w-full bg-blue-600 text-white shadow-sm cursor-pointer">
             Sign In
           </button>
         </div>
