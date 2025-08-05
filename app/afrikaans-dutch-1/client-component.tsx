@@ -18,7 +18,7 @@ export default function AfrikaansDutchClient() {
       return;
     }
 
-    fetch("https://upxero.be/users/me", {
+    fetch("https://cms.learn-dutch-online.com/users/me", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
