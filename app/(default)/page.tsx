@@ -1,6 +1,31 @@
 export const metadata = {
   title: "Learn Dutch Online - Practical affordable Dutch",
-  description: "The best place to learn Dutch, at your own pace and in your own time ",
+  description: "The best place to learn Dutch, at your own pace and in your own time",
+  keywords: ["dutch", "learn dutch", "online dutch course", "nederlandse les", "taal leren"],
+  robots: "index, follow",
+  openGraph: {
+    title: "Learn Dutch Online - Practical affordable Dutch",
+    description: "The best place to learn Dutch, at your own pace and in your own time",
+    url: "https://www.learn-dutch-online.com",
+    siteName: "Learn Dutch Online",
+    images: [
+      {
+        url: "https://www.learn-dutch-online.com/images/logo.png",
+        alt: "Learn Dutch Online Logo",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "nl_NL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@YourTwitterHandle",  
+    title: "Learn Dutch Online - Practical affordable Dutch",
+    description: "The best place to learn Dutch, at your own pace and in your own time",
+    image: "https://www.learn-dutch-online.com/images/logo.png",
+  },
 };
 
 import Hero from "@/components/hero-home";
@@ -17,6 +42,70 @@ import CookiePopup from "@/components/cookie-popup";
 import BackToTopButton from "@/components/back-to-top";
 
 export default function Home() {
+  const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Learn Dutch Online - Practical affordable Dutch",
+  "description": "The best place to learn Dutch, at your own pace and in your own time.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Learn Dutch Online",
+    "url": "https://www.learn-dutch-online.com",
+    "logo": "https://www.learn-dutch-online.com/images/logo.png",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+32 (0) 470 57 31 85",
+        "contactType": "customer service",
+        "email": "info@learn-dutch-online.com",
+        "availableLanguage": ["English", "Dutch", "French"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00",
+          "timeZone": "CET"
+        }
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+32 (0) 470 57 31 85",
+        "contactType": "customer service",
+        "email": "veronique.duvivier@gmail.com",
+        "availableLanguage": ["English", "Dutch", "French"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00",
+          "timeZone": "CET"
+        }
+      }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Veronique Duvivier",
+      "jobTitle": "Founder and Manager",
+      "sameAs": [
+        "https://www.facebook.com/learn-dutch-online",
+        "https://www.linkedin.com/company/learn-dutch-online"
+      ]
+    }
+  },
+  "educationalCredentialAwarded": "Dutch language proficiency",
+  "inLanguage": "nl",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Adults and children learning Dutch"
+  }
+};
+
   return (
     <>
       <Hero />
