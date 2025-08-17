@@ -14,20 +14,29 @@ export default function ResetPassword() {
     const email = (e.target as HTMLFormElement).email.value;
 
     try {
-      const response = await fetch("https://cms.learn-dutch-online.com/auth/password/request", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch(
+        "https://cms.learn-dutch-online.com/auth/password/request",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email }),
+        }
+      );
 
-      const data = await response.json();
+      // Probeer JSON te parsen, fallback naar null als het niet lukt
+      let data: any = null;
+      try {
+        data = await response.json();
+      } catch (err) {
+        data = null;
+      }
 
       if (response.ok) {
         setMessage("✅ A reset email has been sent. Please check your inbox.");
       } else {
-        setMessage(data.errors?.[0]?.message || "Unable to start password reset.");
+        setMessage(
+          data?.errors?.[0]?.message || "Unable to start password reset."
+        );
       }
     } catch (err) {
       console.error("Reset request error:", err);
@@ -46,7 +55,10 @@ export default function ResetPassword() {
       <form onSubmit={handleSubmit}>
         <div className="space-y-4">
           <div>
-            <label className="mb-1 block text-sm font-medium text-gray-700" htmlFor="email">
+            <label
+              className="mb-1 block text-sm font-medium text-gray-700"
+              htmlFor="email"
+            >
               Email
             </label>
             <input
@@ -63,7 +75,7 @@ export default function ResetPassword() {
           <button
             type="submit"
             disabled={loading}
-            className="btn w-full bg-blue-600 text-white shadow-sm cursor-pointer"
+            className="btn w-full bg-blue-600 text-white shadow-sm cursor-pointer hover:bg-blue-700 transition-colors"
           >
             {loading ? "Sending..." : "Reset Password"}
           </button>
