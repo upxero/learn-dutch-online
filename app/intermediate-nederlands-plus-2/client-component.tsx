@@ -36,16 +36,10 @@ export default function BeginnersPlusClient() {
   if (loading) return <p>Even laden...</p>;
 
   const items = [
-    { label: "Les 1 - Verkopen", link: "https://sites.google.com/view/int-dutch-pl-1-23-01/deel-1-spreken" },
-    { label: "Les 2 - Vergaderen", link: "https://sites.google.com/view/int-dutch-pl-2-23-01/deel-1-discussie" },
-    { label: "Les 3 - Media", link: "https://sites.google.com/view/int-dutch-pl-3-23-01/deel-1-discussie" },
-    { label: "Les 4 - Mobiliteit", link: "https://sites.google.com/view/int-dutch-pl-04-23-01/deel-1-discussie" },
-    { label: "Les 5 - Lichaamstaal", link: "https://sites.google.com/view/int-dutch-pl-5-23-01/deel-1-discussie" },
-    { label: "Les 6 - Mens en techniek", link: "https://sites.google.com/view/int-dutch-pl-6-23-01/deel-1-discussie" },
-    { label: "Les 7 - Sfeer op het werk", link: "https://sites.google.com/view/int-dutch-pl-7-23-01/deel-1-discussie" },
-    { label: "Les 8 - Burn out", link: "https://sites.google.com/view/int-dutch-pl-8-23-01/deel-1-discussie" },
-    { label: "Les 9 - Etiquette op het werk", link: "https://sites.google.com/view/int-dutch-pl-9-23-01/deel-1-discussie" },
-    { label: "Les 10 - Review 1", link: "https://sites.google.com/view/int-dutch-pl-eval-1-23-01/deel-1-luisteren-en-schrijven" },
+    { label: "Les 11 - Interculturele communicatie", link: "https://sites.google.com/view/int-dutch-pl-11-23-01/deel-1-discussie" },
+    { label: "Les 12 - Slapen op het werk", link: "https://sites.google.com/view/int-dutch-pl-12-23-01/deel-1-discussie" },
+    { label: "Les 13 - Sparen", link: "https://sites.google.com/view/int-dutch-pl-13-23-01/deel-1-discussie" },
+    { label: "Les 14 - Mens en dier", link: "https://sites.google.com/view/int-dutch-pl-14-23-01/deel-1-discussie" },
   ];
 
   return (

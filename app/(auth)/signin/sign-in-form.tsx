@@ -83,8 +83,8 @@ export default function SignInForm() {
         </div>
       </form>
       <div className="mt-6 text-center">
-        <Link className="text-sm text-gray-700 underline hover:no-underline" href="/reset-password">
-          Reset password
+        <Link className="text-sm text-gray-700 underline hover:no-underline" href="https://cms.learn-dutch-online.com/admin/reset-password">
+         
         </Link>
       </div>
     </>
