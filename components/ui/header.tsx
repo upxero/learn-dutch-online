@@ -33,7 +33,7 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3 md:mr-12">
             <li>
               <Link
-                href="signin"
+                href="https://dashboard.learn-dutch-online.com/"
                 className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
               >
                 Login
