@@ -1,0 +1,10 @@
+import A2NiveauDutchClient from "./client-component";
+
+export const metadata = {
+  title: "A2 Niveautest Nederlands",
+  description: "Maak de A2 niveautest Nederlands online en verstuur je antwoorden direct naar je docent.",
+};
+
+export default function Page() {
+  return <A2NiveauDutchClient />;
+}
