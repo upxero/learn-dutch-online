@@ -54,10 +54,12 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
       onSubmit={handleSubmit}
       className="p-6 bg-white shadow-md rounded-lg space-y-6"
     >
-      <h2 className="text-2xl font-bold mb-4">Schrijfopdracht 1</h2>
+      <h2 className="text-2xl font-bold mb-4">Deel 1: Schrijven</h2>
       <p className="text-gray-700 mb-2">
-        Schrijf een korte tekst (min. 80 woorden) waarin je jezelf voorstelt.
-        Vertel wie je bent, waar je vandaan komt en waarom je Nederlands leert.
+        Dit testgedeelte bestaat uit twee delen. <br/>
+        - In het eerste deel moet je zinnen verder afmaken. <br/>
+        - In het tweede deel moet je volledige tekst schrijven. Let goed op grammatica en spelling. <br/>
+        - Je hebt  10 minuten maximum voor alle schrijfoefeningen. Het schrijfgedeelte staat op 20 punten. 
       </p>
 
       <textarea

@@ -49,18 +49,15 @@ export default function A2NiveauDutchClient() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold text-center px-4 leading-tight">
-            A2 Niveautest Nederlands
+            A2 Niveautest
+            <br/>
+            <span className="text-2xl font-normal">Nederlands</span>
           </h1>
         </div>
       </div>
 
       {/* Content */}
       <div className="max-w-3xl mx-auto px-4 py-12 space-y-10">
-        <p className="text-lg text-center">
-          Vul de onderstaande opdrachten in. Je antwoorden worden automatisch
-          doorgestuurd naar je docent.
-        </p>
-
         {/* Writing Part 1 */}
         <WritingPart1 trainer="jur" />
 
