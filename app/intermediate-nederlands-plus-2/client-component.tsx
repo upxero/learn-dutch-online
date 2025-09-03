@@ -38,8 +38,8 @@ export default function BeginnersPlusClient() {
   const items = [
     { label: "Les 11 - Interculturele communicatie", link: "https://sites.google.com/view/int-dutch-pl-11-23-01/deel-1-discussie" },
     { label: "Les 12 - Slapen op het werk", link: "https://sites.google.com/view/int-dutch-pl-12-23-01/deel-1-discussie" },
-    { label: "Les 13 - Sparen", link: "https://sites.google.com/view/int-dutch-pl-13-23-01/deel-1-discussie" },
-    { label: "Les 14 - Mens en dier", link: "https://sites.google.com/view/int-dutch-pl-14-23-01/deel-1-discussie" },
+    { label: "Les 13 - Sparen", link: "https://sites.google.com/view/int-dutch-pl-13-23-01?usp=sharing" },
+    { label: "Les 14 - Mens en dier", link: "https://sites.google.com/view/int-dutch-pl-14-23-01?usp=sharing" },
   ];
 
   return (
