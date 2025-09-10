@@ -51,7 +51,7 @@ export default function A2NiveauDutchClient() {
           <h1 className="text-white text-4xl md:text-5xl font-bold text-center px-4 leading-tight">
             A2 Niveautest
             <br/>
-            <span className="text-2xl font-normal">Nederlands</span>
+            <span className="text-2xl font-normal">- Nederlands -</span>
           </h1>
         </div>
       </div>
