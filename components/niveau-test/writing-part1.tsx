@@ -8,7 +8,7 @@ interface WritingPart1Props {
 }
 
 export default function WritingPart1({ trainer }: WritingPart1Props) {
-  const [answers, setAnswers] = useState({
+  const [fields, setFields] = useState({
     fullname1: "",
     sentence1: "",
     sentence2: "",
@@ -16,20 +16,37 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
     sentence4: "",
     sentence5: "",
     fullname2: "",
-    to: "vrienden@debeste.nl",
     email: "",
     emailText: "",
   });
+
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setAnswers({ ...answers, [e.target.name]: e.target.value });
+    setFields({ ...fields, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
+
+    // Alle antwoorden bundelen in één string
+    const answer = `
+    --- Opdracht 1 ---
+    Naam: ${fields.fullname1}
+    1. ${fields.sentence1}
+    2. ${fields.sentence2}
+    3. ${fields.sentence3}
+    4. ${fields.sentence4}
+    5. ${fields.sentence5}
+
+    --- Opdracht 2 ---
+    Naam: ${fields.fullname2}
+    E-mail: ${fields.email}
+    Tekst:
+    ${fields.emailText}
+    `;
 
     try {
       const res = await fetch("/api/send-writing", {
@@ -37,12 +54,12 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ trainer, answers }),
+        body: JSON.stringify({ trainer, answer }),
       });
 
       if (res.ok) {
         setSuccess(true);
-        setAnswers({
+        setFields({
           fullname1: "",
           sentence1: "",
           sentence2: "",
@@ -50,7 +67,6 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
           sentence4: "",
           sentence5: "",
           fullname2: "",
-          to: "vrienden@debeste.nl",
           email: "",
           emailText: "",
         });
@@ -83,7 +99,7 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
         <p className="text-gray-700">
           Dit testgedeelte bestaat uit twee delen.
           <br />- In het eerste deel moet je zinnen verder afmaken.
-          <br />- In het tweede deel moet je volledige tekst schrijven. Let goed
+          <br />- In het tweede deel moet je een volledige tekst schrijven. Let goed
           op grammatica en spelling.
           <br />- Je hebt 10 minuten maximum voor alle schrijfoefeningen. Het
           schrijfgedeelte staat op 20 punten.
@@ -103,55 +119,72 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
         </div>
 
         {/* Rechts - vragen */}
-        <div className="space-y-3">
-          <input
-            type="text"
-            name="fullname1"
-            value={answers.fullname1}
-            onChange={handleChange}
-            placeholder="Naam en achternaam"
-            className="w-full border rounded p-2"
-          />
-          <input
-            type="text"
-            name="sentence1"
-            value={answers.sentence1}
-            onChange={handleChange}
-            placeholder="1. Ik woon in Zwolle, en ..."
-            className="w-full border rounded p-2"
-          />
-          <input
-            type="text"
-            name="sentence2"
-            value={answers.sentence2}
-            onChange={handleChange}
-            placeholder="2. Ik moet naar de dokter, maar ..."
-            className="w-full border rounded p-2"
-          />
-          <input
-            type="text"
-            name="sentence3"
-            value={answers.sentence3}
-            onChange={handleChange}
-            placeholder="3. Morgen gaat het regenen, dus ..."
-            className="w-full border rounded p-2"
-          />
-          <input
-            type="text"
-            name="sentence4"
-            value={answers.sentence4}
-            onChange={handleChange}
-            placeholder="4. Gisteren was ik ziek, omdat ..."
-            className="w-full border rounded p-2"
-          />
-          <input
-            type="text"
-            name="sentence5"
-            value={answers.sentence5}
-            onChange={handleChange}
-            placeholder="5. Ik waste vorige week mijn auto, want ..."
-            className="w-full border rounded p-2"
-          />
+        <div className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium mb-1">Naam en achternaam</label>
+            <input
+              type="text"
+              name="fullname1"
+              value={fields.fullname1}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">1. Ik woon in Zwolle, en ...</label>
+            <input
+              type="text"
+              name="sentence1"
+              value={fields.sentence1}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">2. Ik moet naar de dokter, maar ...</label>
+            <input
+              type="text"
+              name="sentence2"
+              value={fields.sentence2}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">3. Morgen gaat het regenen, dus ...</label>
+            <input
+              type="text"
+              name="sentence3"
+              value={fields.sentence3}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">4. Gisteren was ik ziek, omdat ...</label>
+            <input
+              type="text"
+              name="sentence4"
+              value={fields.sentence4}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">5. Ik waste vorige week mijn auto, want ...</label>
+            <input
+              type="text"
+              name="sentence5"
+              value={fields.sentence5}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
         </div>
       </div>
 
@@ -183,45 +216,46 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
 
           {/* Afbeeldingen */}
           <div className="flex gap-2">
-            <Image src="/images/opdracht-optreden.jpg" alt="Optreden" width={100} height={80} />
-            <Image src="/images/opdracht-tompouce.jpg" alt="Tompouce" width={100} height={80} />
+            <Image src="/images/opdracht-optreden.jpg" alt="Optredens" width={100} height={80} />
+            <Image src="/images/opdracht-tompouce.jpg" alt="Tompouce eten" width={100} height={80} />
             <Image src="/images/opdracht-vrijmarkt.jpg" alt="Vrijmarkt" width={100} height={80} />
           </div>
         </div>
 
         {/* Rechts - velden */}
-        <div className="space-y-3">
-          <input
-            type="text"
-            name="fullname2"
-            value={answers.fullname2}
-            onChange={handleChange}
-            placeholder="Jouw naam en achternaam"
-            className="w-full border rounded p-2"
-          />
-          <input
-            type="email"
-            name="to"
-            value={answers.to}
-            readOnly
-            className="w-full border rounded p-2 bg-gray-100"
-          />
-          <input
-            type="email"
-            name="email"
-            value={answers.email}
-            onChange={handleChange}
-            placeholder="Jouw e-mailadres"
-            className="w-full border rounded p-2"
-          />
-          <textarea
-            name="emailText"
-            value={answers.emailText}
-            onChange={handleChange}
-            placeholder="Schrijf hier je e-mail (50-70 woorden)..."
-            rows={6}
-            className="w-full border rounded p-2"
-          />
+        <div className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium mb-1">Jouw naam en achternaam</label>
+            <input
+              type="text"
+              name="fullname2"
+              value={fields.fullname2}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">Jouw e-mailadres</label>
+            <input
+              type="email"
+              name="email"
+              value={fields.email}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-1">E-mailtekst (50-70 woorden)</label>
+            <textarea
+              name="emailText"
+              value={fields.emailText}
+              onChange={handleChange}
+              rows={6}
+              className="w-full border rounded p-2"
+            />
+          </div>
         </div>
       </div>
 
