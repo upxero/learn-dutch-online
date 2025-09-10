@@ -59,7 +59,7 @@ export default function A2NiveauDutchClient() {
       {/* Content */}
       <div className="max-w-3xl mx-auto px-4 py-12 space-y-10">
         {/* Writing Part 1 */}
-        <WritingPart1 trainer="jur" />
+        <WritingPart1 trainer="michael" />
 
         {/* Later: WritingPart2, ReadingPart, ListeningPart, etc. */}
       </div>
