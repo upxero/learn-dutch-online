@@ -216,9 +216,9 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
 
           {/* Afbeeldingen */}
           <div className="flex gap-2">
-            <Image src="/images/opdracht-optreden.jpg" alt="Optredens" width={100} height={80} />
-            <Image src="/images/opdracht-tompouce.jpg" alt="Tompouce eten" width={100} height={80} />
-            <Image src="/images/opdracht-vrijmarkt.jpg" alt="Vrijmarkt" width={100} height={80} />
+            <Image src="/images/optredens-kijken.png" alt="Optredens" width={100} height={80} />
+            <Image src="/images/tompouce-eten.jpeg" alt="Tompouce eten" width={100} height={80} />
+            <Image src="/images/vrijmarkt-bezoeken.jpeg" alt="Vrijmarkt" width={100} height={80} />
           </div>
         </div>
 
