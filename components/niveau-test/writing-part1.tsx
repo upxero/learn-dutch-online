@@ -236,7 +236,7 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Jouw e-mailadres</label>
+            <label className="block text-sm font-medium mb-1">Aan:</label>
             <input
               type="email"
               name="email"
@@ -247,7 +247,7 @@ export default function WritingPart1({ trainer }: WritingPart1Props) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">E-mailtekst (50-70 woorden)</label>
+            <label className="block text-sm font-medium mb-1">E-mail:</label>
             <textarea
               name="emailText"
               value={fields.emailText}
