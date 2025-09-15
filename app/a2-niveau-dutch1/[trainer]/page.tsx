@@ -5,12 +5,7 @@ export const metadata = {
   description: "Maak de A2 niveautest Nederlands online en verstuur je antwoorden direct naar je docent.",
 };
 
-interface Props {
-  params: {
-    trainer: string;
-  };
-}
-
-export default function A2NiveauDutchPage({ params }: Props) {
+export default function A2NiveauDutchPage({ params }: { params: { trainer: string } }) {
   return <A2NiveauDutchClient trainer={params.trainer} />;
 }
+
