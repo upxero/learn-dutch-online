@@ -15,19 +15,19 @@ export async function POST(req: Request) {
 
   try {
     await transporter.sendMail({
-      from: `"Dutch Course Sign-up" <info@learn-dutch-online.com>`,
+      from: `"Information request" <info@learn-dutch-online.com>`,
       to: 'info@learn-dutch-online.com', // Vervang dit met je eigen e-mailadres
-      subject: `Nieuwe inschrijving van ${name}`,
+      subject: `New request from ${name}`,
       html: `
-        <h3>Nieuwe aanmelding voor een cursus:</h3>
-        <p><strong>Naam:</strong> ${name}</p>
+        <h3>New request for a course:</h3>
+        <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Niveau:</strong> ${currentLevel}</p>
-        <p><strong>Cursus:</strong> ${course}</p>
-        <p><strong>Motivatie:</strong> ${motivation}</p>
-        <p><strong>Moedertaal:</strong> ${motherTongue}</p>
-        <p><strong>Andere talen:</strong> ${otherLanguages}</p>
-        <p><strong>Verwijzing via:</strong> ${referral}</p>
+        <p><strong>Level:</strong> ${currentLevel}</p>
+        <p><strong>Course:</strong> ${course}</p>
+        <p><strong>Motivation:</strong> ${motivation}</p>
+        <p><strong>Mother Tongue:</strong> ${motherTongue}</p>
+        <p><strong>Other Languages:</strong> ${otherLanguages}</p>
+        <p><strong>Referral:</strong> ${referral}</p>
       `,
     });
 
