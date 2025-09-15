@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import WritingPart1 from "@/components/niveau-test/writing-part1";
+import bannerImage from "@/public/images/banner-3.jpg";
 
 export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
   const router = useRouter();
@@ -36,10 +38,19 @@ export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Banner */}
-      <div className="relative h-60 w-full bg-blue-600 flex items-center justify-center">
-        <h1 className="text-white text-4xl font-bold text-center">
-          A2 Niveautest Nederlands
-        </h1>
+      <div className="relative h-80 w-full">
+        <Image
+          src={bannerImage}
+          alt="Banner A2 Niveautest"
+          fill
+          className="object-cover brightness-75"
+          priority
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-white text-4xl md:text-5xl font-bold text-center px-4 leading-tight">
+            A2 Niveautest Nederlands
+          </h1>
+        </div>
       </div>
 
       {/* Content */}
@@ -55,4 +66,3 @@ export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
     </div>
   );
 }
-
