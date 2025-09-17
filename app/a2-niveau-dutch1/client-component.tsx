@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import WritingPart1 from "@/components/niveau-test/writing-part1";
+import ReadingPart from "@/components/niveau-test/reading-part";
 import bannerImage from "@/public/images/banner-3.jpg";
 
 export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
@@ -60,6 +61,8 @@ export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
         
         {/* Schrijven onderdeel */}
         <WritingPart1 trainer={trainer} />
+        {/* Lezen onderdeel */}
+        <ReadingPart trainer={trainer} />
       </div>
     </div>
   );

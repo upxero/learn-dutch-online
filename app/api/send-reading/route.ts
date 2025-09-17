@@ -18,7 +18,7 @@ export async function POST(req: Request) {
   };
 
   // fallback naar info als trainer niet bestaat
-  const toEmail = trainerEmails[trainer] || "info@learn-dutch-online.com";
+  const toEmail = trainerEmails[trainer.toLowerCase()] || "info@learn-dutch-online.com";
 
   const transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
@@ -52,4 +52,3 @@ export async function POST(req: Request) {
     );
   }
 }
-
