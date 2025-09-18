@@ -7,6 +7,7 @@ import WritingPart1 from "@/components/niveau-test/writing-part1";
 import ReadingPart from "@/components/niveau-test/reading-part";
 import ListenPart from "@/components/niveau-test/listen-part";
 import SpeakingPart from "@/components/niveau-test/speaking-part";
+import ReviewPart from "@/components/niveau-test/review-part";
 import bannerImage from "@/public/images/banner-3.jpg";
 
 export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
@@ -69,6 +70,8 @@ export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
         <ListenPart trainer={trainer} />
         {/* Luisteren onderdeel */}
         <SpeakingPart />
+        {/* Review onderdeel */}
+        <ReviewPart />
       </div>
     </div>
   );
