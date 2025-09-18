@@ -22,7 +22,7 @@ export default function ReviewPart() {
           href="https://www.facebook.com/tutordutchfrench/reviews"
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full bg-blue-900 text-white py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
+          className="block w-full bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
         >
           Facebook
         </a>
@@ -30,7 +30,7 @@ export default function ReviewPart() {
           href="https://g.page/r/CVM0jtnTUo1LEAI/review"
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full bg-blue-900 text-white py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
+          className="block w-full bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
         >
           Google
         </a>
@@ -38,7 +38,7 @@ export default function ReviewPart() {
           href="https://www.linkedin.com/company/learn-dutch-online/?viewAsMember=true"
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full bg-blue-900 text-white py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
+          className="block w-full bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
         >
           LinkedIn
         </a>
