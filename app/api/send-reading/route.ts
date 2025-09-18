@@ -35,7 +35,7 @@ export async function POST(req: Request) {
       to: toEmail,
       subject: `Nieuwe reading test inzending voor ${trainer}`,
       html: `
-        <h3>Nieuwe writing test ingestuurd:</h3>
+        <h3>Nieuwe reading test ingestuurd:</h3>
         <p><strong>Trainer:</strong> ${trainer}</p>
         <hr />
         <h4>Antwoord:</h4>
