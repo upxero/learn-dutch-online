@@ -14,6 +14,7 @@ export async function POST(req: Request) {
     femke: "femke@learn-dutch-online.com",
     birgit: "birgit@learn-dutch-online.com",
     lise: "lise@learn-dutch-online.com",
+    veronique: "veronique@learn-dutch-online.com",
     reserve: "reserve@learn-dutch-online.com",
   };
 
