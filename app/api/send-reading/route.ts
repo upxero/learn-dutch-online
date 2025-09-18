@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: `"Dutch Writing Test" <info@learn-dutch-online.com>`,
       to: toEmail,
-      subject: `Nieuwe writing test inzending voor ${trainer}`,
+      subject: `Nieuwe reading test inzending voor ${trainer}`,
       html: `
         <h3>Nieuwe writing test ingestuurd:</h3>
         <p><strong>Trainer:</strong> ${trainer}</p>
