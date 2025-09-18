@@ -17,30 +17,30 @@ export default function ReviewPart() {
       </div>
 
       {/* Buttons */}
-      <div className="space-y-4">
+      <div className="space-y-4 text-center">
         <a
-          href="https://www.facebook.com/tutordutchfrench/reviews"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
+            href="https://www.facebook.com/tutordutchfrench/reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
         >
-          Facebook
+            Facebook
         </a>
         <a
-          href="https://g.page/r/CVM0jtnTUo1LEAI/review"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
+            href="https://g.page/r/CVM0jtnTUo1LEAI/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
         >
-          Google
+            Google
         </a>
         <a
-          href="https://www.linkedin.com/company/learn-dutch-online/?viewAsMember=true"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
+            href="https://www.linkedin.com/company/learn-dutch-online/?viewAsMember=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-900 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-blue-800 transition"
         >
-          LinkedIn
+            LinkedIn
         </a>
       </div>
 
