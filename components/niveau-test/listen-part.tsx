@@ -1,13 +1,12 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import Image from "next/image";
 
-interface ReadingPartProps {
+interface ListenPartProps {
   trainer: string;
 }
 
-export default function ReadingPart({ trainer }: ReadingPartProps) {
+export default function ListenPart({ trainer }: ListenPartProps) {
   const [fields, setFields] = useState({
     fullname: "",
     q1: "",
@@ -29,27 +28,27 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
     setLoading(true);
 
     const answer = `
-    --- Deel 2: Lezen ---
+    --- Deel 3: Luisteren ---
     Naam: ${fields.fullname}
 
-    1. Hoe kun je een afspraak verzetten?
+    1. Wat krijgen de patiënten extra met Kerst?
     Antwoord: ${fields.q1}
 
-    2. Hoeveel uur van tevoren moet je verzetten?
+    2. Waarom krijgen de patiënten iets extra met Kerst?
     Antwoord: ${fields.q2}
 
-    3. Wat betaal je als je minder dan 24 uur van tevoren verzet?
+    3. Vindt het personeel het vervelend om te werken op Kerst?
     Antwoord: ${fields.q3}
 
-    4. Wat gebeurt er als je te laat bent?
+    4. Wat doet het personeel samen op Kerst?
     Antwoord: ${fields.q4}
 
-    5. Wat is het telefoonnummer?
+    5. Waarom werkt Lieke liever met Kerst?
     Antwoord: ${fields.q5}
     `;
 
     try {
-      const res = await fetch("/api/send-reading", {
+      const res = await fetch("/api/send-listening", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ trainer, answer }),
@@ -62,7 +61,7 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
         alert("Er ging iets mis. Probeer opnieuw.");
       }
     } catch (err) {
-      console.error("Error submitting reading:", err);
+      console.error("Error submitting listening:", err);
       alert("Versturen mislukt.");
     } finally {
       setLoading(false);
@@ -80,77 +79,48 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-12">
       {/* Titel */}
-      <h2 className="text-3xl font-bold text-center">Deel 2: Lezen</h2>
+      <h2 className="text-3xl font-bold text-center">Deel 3: Luisteren</h2>
       <p className="text-center text-gray-600">5 punten</p>
 
       {/* Info blok */}
       <div className="bg-white p-6 rounded-lg shadow-md">
         <p className="text-gray-700">
-          Dit testgedeelte bestaat uit een leestekst met vragen.
-          <br />- Lees de tekst
+          Dit testgedeelte bestaat uit een luistertekst met meerkeuzevragen.
+          <br />- Lees eerst de situatie.
+          <br />- Bekijk de video 1 keer
           <br />- Beantwoord de vragen.
-          <br />- Je hebt hier 5 minuten voor.
+          <br />- U krijgt hier 5 minuten voor.
         </p>
       </div>
 
-      {/* Leesopdracht blok */}
+      {/* Luisteropdracht blok */}
       <div className="bg-blue-50 p-6 rounded-lg shadow-md grid md:grid-cols-2 gap-6">
-        {/* Links - tekst */}
+        {/* Links - situatie + video */}
         <div>
-          <div className="flex items-center gap-3 mb-4">
-            <Image
-              src="/images/tandarts-afspraak.jpeg"
-              alt="Tandartsafspraak"
-              width={100}
-              height={100}
-            />
-            <h3 className="text-xl font-semibold">
-              Lezen: Een afspraak verzetten bij Tandartspraktijk Glimlach
-            </h3>
+          <h3 className="text-xl font-semibold mb-2">
+            Luisteren 1: Werken op feestdagen
+          </h3>
+          <p className="mb-4">
+            <strong>Situatie:</strong> Loes en Lieke werken in het Bravis
+            ziekenhuis. Ze vertellen hoe het is om te werken met Kerst.
+          </p>
+
+          <div className="aspect-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/O3497cgSUso"
+              title="Luisteren opdracht"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
-
-          <p className="text-gray-700">
-            Heb je een afspraak bij Tandartspraktijk Glimlach, maar kun je niet
-            komen? Hier lees je hoe je je afspraak kunt verzetten en wat er
-            gebeurt als je te laat bent.
-          </p>
-
-          <h4 className="mt-4 font-semibold">Hoe verzet je een afspraak?</h4>
-          <p>
-            Bel de praktijk op 030-1234567. De receptie is open van maandag tot
-            vrijdag van 8:00 uur tot 17:00 uur.
-          </p>
-          <p>
-            Stuur een e-mail naar <em>afspraken@glimlach.nl</em>. Vermeld je
-            naam, de datum van de afspraak en een nieuwe datum die je wilt.
-          </p>
-          <p>Verzet je afspraak minstens 24 uur van tevoren. Dan zijn er geen kosten.</p>
-
-          <h4 className="mt-4 font-semibold">Gevolgen van te laat zijn</h4>
-          <p>
-            Als je minder dan 24 uur van tevoren je afspraak verzet of afzegt,
-            betaal je €25.
-          </p>
-          <p>
-            Als je niet komt zonder te melden, betaal je €50.
-          </p>
-          <p>
-            Als je te laat bent voor je afspraak, kan de tandarts je misschien
-            niet helpen. Je moet dan een nieuwe afspraak maken.
-          </p>
-
-          <h4 className="mt-4 font-semibold">Tips</h4>
-          <p>
-            Zet je afspraak in je agenda, zodat je het niet vergeet.
-            <br />
-            Bel zo snel mogelijk als je weet dat je niet kunt komen.
-            <br />
-            Heb je vragen? Bel 030-1234567 of kijk op www.tandartsglimlach.nl.
-          </p>
         </div>
 
         {/* Rechts - vragen */}
         <div className="space-y-4">
+          {/* Naam */}
           <div>
             <label className="block text-sm font-medium mb-1">
               Jouw naam en achternaam
@@ -166,8 +136,15 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
 
           {/* Vraag 1 */}
           <div>
-            <p className="font-medium">1. Hoe kun je een afspraak verzetten?</p>
-            {["Alleen via de website", "Via telefoon of e-mail", "Alleen via een brief", "Via een app"].map((opt) => (
+            <p className="font-medium">
+              1. Wat krijgen de patiënten extra met Kerst?
+            </p>
+            {[
+              "een extra koffie en gebakjes.",
+              "een gebakje, bobonnetjes, kerststolletje en een extra drankje.",
+              "een extra onderzoek en een extra prik.",
+              "een extra maaltijd met toetje.",
+            ].map((opt) => (
               <label key={opt} className="block">
                 <input
                   type="radio"
@@ -185,10 +162,13 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
           {/* Vraag 2 */}
           <div>
             <p className="font-medium">
-              2. Hoeveel uur van tevoren moet je verzetten om geen kosten te
-              betalen?
+              2. Waarom krijgen de patiënten iets extra met Kerst?
             </p>
-            {["12 uur", "24 uur", "48 uur", "72 uur"].map((opt) => (
+            {[
+              "Omdat de verpleegsters willen laten merken dat zij niet willen werken met Kerst.",
+              "Omdat de patiënten dan weten dat ze extra onderzoeken krijgen.",
+              "Omdat de verpleegsters willen laten merken dat ze er zijn voor de patiënten.",
+            ].map((opt) => (
               <label key={opt} className="block">
                 <input
                   type="radio"
@@ -206,10 +186,13 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
           {/* Vraag 3 */}
           <div>
             <p className="font-medium">
-              3. Wat betaal je als je minder dan 24 uur van tevoren je afspraak
-              verzet?
+              3. Vindt het personeel het vervelend om te werken op Kerst?
             </p>
-            {["25 euro", "50 euro", "75 euro", "niets"].map((opt) => (
+            {[
+              "Ja, ze hadden liever op Oud en Nieuw gewerkt.",
+              "Ja, nu moeten ze het gezellig maken op het werk.",
+              "Nee, ze maken het gezellig voor de patiënten en voor elkaar.",
+            ].map((opt) => (
               <label key={opt} className="block">
                 <input
                   type="radio"
@@ -227,13 +210,12 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
           {/* Vraag 4 */}
           <div>
             <p className="font-medium">
-              4. Wat gebeurt er als je te laat bent voor je afspraak?
+              4. Wat doet het personeel samen op Kerst?
             </p>
             {[
-              "Je krijgt een gratis behandeling",
-              "De tandarts kan je misschien niet helpen",
-              "Je hoeft geen nieuwe afspraak te maken",
-              "Je krijgt een korting",
+              "Tijdens de pauze eten ze lekkere hapjes die iedereen heeft meegebracht.",
+              "Niets, ze doen gewoon hun werk.",
+              "Tijdens de pauze versieren ze de kerstboom in de kantine.",
             ].map((opt) => (
               <label key={opt} className="block">
                 <input
@@ -252,9 +234,13 @@ export default function ReadingPart({ trainer }: ReadingPartProps) {
           {/* Vraag 5 */}
           <div>
             <p className="font-medium">
-              5. Wat is het telefoonnummer van Tandartspraktijk Glimlach?
+              5. Waarom werkt Lieke liever met Kerst?
             </p>
-            {["030-9876543", "030-4567890", "030-1234567", "030-1112223"].map((opt) => (
+            {[
+              "Omdat haar familie in het buitenland woont en ze niemand heeft om te feesten.",
+              "Omdat ze op Oud en Nieuw wil gaan feesten.",
+              "Omdat er op Oud en Nieuw te veel werk is en met Kerst is het gezelliger om te werken.",
+            ].map((opt) => (
               <label key={opt} className="block">
                 <input
                   type="radio"
