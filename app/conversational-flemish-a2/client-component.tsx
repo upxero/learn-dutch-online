@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function ConversationalDutchClient() {
+export default function ConversationalFlemishClient() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const token = localStorage.getItem("auth_token");
     if (!token) {
-      const nextPath = encodeURIComponent("/conversational-dutch-a2");
+      const nextPath = encodeURIComponent("/conversational-flemish-a2");
       router.push(`/signin?next=${nextPath}`);
       return;
     }
@@ -27,17 +27,17 @@ export default function ConversationalDutchClient() {
       .then(() => setLoading(false))
       .catch(() => {
         localStorage.removeItem("auth_token");
-        router.push(`/signin?next=/conversational-dutch-a2`);
+        router.push(`/signin?next=/conversational-flemish-a2`);
       });
   }, []);
 
   if (loading) return <p>Even laden...</p>;
 
   const sessions = [
-    { label: "BN'ers", link: "https://sites.google.com/view/conv-bners/introducties" },
+    { label: "BV´s", link: "https://sites.google.com/view/c1-bvs/ik-zie-ik-zie-wie-jij-niet-ziet" },
     { label: "Sport", link: "https://sites.google.com/view/c2sport/introducties" },
-    { label: "Eten", link: "https://sites.google.com/view/c1-etennl/introducties" },
-    { label: "Feest", link: "https://sites.google.com/view/c4-feestnl/introducties" },
+    { label: "Eten", link: "https://sites.google.com/view/conversatie-3be/ik-zie-ik-zie-wie-jij-niet-ziet" },
+    { label: "Feest", link: "https://sites.google.com/view/conversatie4be/introducties" },
     { label: "Reizen", link: "https://sites.google.com/view/conversatie-5eu/het-rad" },
   ];
 
