@@ -59,7 +59,7 @@ export default function ConversationalFlemishClient() {
         {/* Overlay content */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <h1 className="text-white text-4xl md:text-5xl font-bold text-center px-4 leading-tight">
-            Conversational Dutch
+            Conversational Flemish
             <br />
             <span className="text-2xl font-normal">- A2 -</span>
           </h1>
