@@ -1,10 +1,11 @@
-import ConversationalDutchClient from "./client-component";
+import CorporateLandingClient from "./client-component";
 
 export const metadata = {
-  title: "Conversational Dutch - A2",
-  description: "Overzicht van de cursus Conversational Dutch - A2. Leer vlot Nederlands praten in verschillende thema's.",
+  title: "Effective Dutch Integration Solutions for Your Team | Learn Dutch Online",
+  description:
+    "Corporate Dutch training designed to improve team integration and communication in Dutch-speaking environments.",
 };
 
 export default function Page() {
-  return <ConversationalDutchClient />;
+  return <CorporateLandingClient />;
 }

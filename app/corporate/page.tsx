@@ -4,7 +4,7 @@ export const metadata = {
     "Corporate Dutch training designed to improve team integration and communication in Dutch-speaking environments.",
 };
 
-import CorporateLandingClient from "./CorporateLandingClient";
+import CorporateLandingClient from "./client-component";
 
 export default function CorporateLandingPage() {
   return <CorporateLandingClient />;
