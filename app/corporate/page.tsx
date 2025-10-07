@@ -1,11 +1,10 @@
+"use client";
+
 export const metadata = {
   title: "Effective Dutch Integration Solutions for Your Team | Learn Dutch Online",
   description:
     "Corporate Dutch training designed to improve team integration and communication in Dutch-speaking environments.",
 };
-
-
-"use client";
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
