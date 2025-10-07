@@ -95,7 +95,7 @@ export default function ConversationalDutchMonteursClient() {
           <h1 className="text-white text-4xl md:text-5xl font-bold text-center px-4 leading-tight">
             Conversational Dutch
             <br />
-            <span className="text-2xl font-normal">voor monteurs</span>
+            <span className="text-2xl font-normal">- voor monteurs -</span>
           </h1>
         </div>
 
