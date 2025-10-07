@@ -1,7 +1,7 @@
 export default function CorporateLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="grow">
+    <div className="font-sans text-gray-800 max-w-6xl mx-auto p-6">
       {children}
-    </main>
+    </div>
   );
 }
