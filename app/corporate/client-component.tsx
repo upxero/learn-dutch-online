@@ -53,14 +53,14 @@ export default function CorporateLandingClient() {
             <p className="max-w-3xl mx-auto mb-8 leading-relaxed">
               Our clients achieve faster proficiency and stronger team performance because our
               training combines practical skills with tailored support, addressing real-world
-              challenges for immediate results.
+              challenges like scheduling flexibility and cultural adaptation for immediate results.
             </p>
             <div>
               <a
                 href="#contact"
                 className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
-                Explore Corporate Solutions
+                Explore Our Corporate Solutions
               </a>
               <a
                 href="#contact"
@@ -76,39 +76,41 @@ export default function CorporateLandingClient() {
             <h2 className="text-3xl font-bold mb-4 text-blue-800">
               Addressing Your Challenges with Proven Solutions
             </h2>
-            <p className="leading-relaxed text-gray-700">
-              We understand the hurdles international teams face—rigid schedules, cultural gaps, and
-              certification stress. Our programs directly tackle these issues, helping your teams
-              grow in confidence and efficiency.
+            <p className="leading-relaxed text-gray-700 mb-6">
+              We understand the hurdles international teams face—rigid schedules that disrupt work,
+              motivation dips in demanding roles, cultural gaps that slow collaboration, and exam
+              pressures that add stress. Our solutions tackle these directly, delivering practical
+              training that builds confidence and efficiency.
             </p>
 
             <ul className="list-disc pl-6 space-y-3 text-gray-700">
               <li>
-                <strong>Faster Onboarding:</strong> Beginner (A1–A2) courses integrate daily
-                workplace communication early for smoother adaptation.
+                <strong>Overcoming Onboarding Delays:</strong> Beginner (A1–A2) courses integrate
+                workplace scenarios early for faster adaptation and retention.
               </li>
               <li>
-                <strong>Practical Communication:</strong> Intermediate (B1) sessions target
-                job-related dialogues — from logistics to IT.
+                <strong>Building Productivity:</strong> Intermediate (B1) focuses on real dialogues
+                like logistics or IT discussions for smoother operations.
               </li>
               <li>
-                <strong>Cultural Awareness:</strong> Dutch and Flemish norms are embedded in every
-                level to foster better teamwork.
+                <strong>Bridging Cultural Gaps:</strong> Dutch and Flemish insights woven through all
+                levels to boost teamwork.
               </li>
               <li>
-                <strong>Certification Prep:</strong> B2 and Integration programs cover NT2 and
-                Inburgering requirements.
+                <strong>Certification Prep:</strong> Advanced (B2) and Integration programs ensure
+                compliance and fluency for professional use.
               </li>
               <li>
-                <strong>Custom Support:</strong> Specialized tracks for medical, technical, and
-                Afrikaans-speaking professionals.
+                <strong>Specialized Support:</strong> Tailored paths for medical or Afrikaans-speaking
+                professionals.
               </li>
               <li>
-                <strong>Transparent Progress:</strong> Dashboards track attendance and improvement.
+                <strong>Transparent Tracking:</strong> Real-time dashboards for attendance and
+                progress monitoring.
               </li>
             </ul>
 
-            <h2 className="text-3xl font-bold mt-8 mb-4 text-blue-800">
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-blue-800">
               Validated by Client Experiences
             </h2>
             <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
@@ -117,8 +119,8 @@ export default function CorporateLandingClient() {
                 of courses offered allows everyone to find what suits them perfectly."
               </p>
               <p>
-                "Thanks Learn Dutch Online! This is a well-tailored course for Afrikaans-speaking
-                people who want to learn Dutch effectively."
+                "Thanks Learn Dutch Online! This is a well tailored course for Afrikaans speaking
+                people that want to learn Dutch effectively."
               </p>
             </blockquote>
 
@@ -134,15 +136,15 @@ export default function CorporateLandingClient() {
             </div>
 
             <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
-              With thousands of lessons successfully delivered, we continue to set a reliable
-              standard in team language training.
+              With thousands of lessons delivered successfully, we set a reliable standard in team
+              language training.
             </p>
           </section>
 
           {/* CONTACT EN */}
           <section
             id="contact"
-            className="text-center mt-16 p-8 bg-blue-50 rounded-lg shadow-sm max-w-6xl mx-auto"
+            className="text-center mt-16 p-8 bg-blue-50 rounded-lg shadow-sm max-w-6xl mx-auto mb-20"
           >
             <h2 className="text-3xl font-bold mb-4 text-blue-800">Contact Us</h2>
             <p className="text-gray-700 mb-6">
@@ -185,8 +187,8 @@ export default function CorporateLandingClient() {
               Versterk de Integratie van Je Team in Nederlandstalige Omgevingen
             </h1>
             <p className="max-w-3xl mx-auto mb-8 leading-relaxed">
-              Onze cliënten behalen sneller resultaat dankzij onze praktische, flexibele en
-              op maat gemaakte trainingen.
+              Onze cliënten bereiken snellere resultaten en sterkere teamprestaties dankzij onze
+              praktische, flexibele en op maat gemaakte trainingen.
             </p>
             <div>
               <a
@@ -204,20 +206,45 @@ export default function CorporateLandingClient() {
             </div>
           </section>
 
-          {/* TESTIMONIALS NL */}
+          {/* MAIN INFO NL */}
           <section className="bg-white mt-12 p-8 rounded-lg shadow-sm max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-blue-800">
+              Je Uitdagingen Aanpakken met Bewezen Oplossingen
+            </h2>
+            <p className="leading-relaxed text-gray-700 mb-6">
+              We begrijpen de obstakels die internationale teams tegenkomen—rigide schema’s, culturele kloofjes, en examenstress. Onze oplossingen pakken deze direct aan met praktische trainingen die vertrouwen en efficiëntie opbouwen.
+            </p>
+
+            <ul className="list-disc pl-6 space-y-3 text-gray-700">
+              <li>
+                <strong>Snellere Onboarding:</strong> Beginner (A1–A2) cursussen integreren werkplekscenario’s vroeg voor soepelere aanpassing.
+              </li>
+              <li>
+                <strong>Gerichte Communicatie:</strong> Intermediate (B1) richt zich op echte dialogen zoals logistiek of IT.
+              </li>
+              <li>
+                <strong>Cultuurinzicht:</strong> Nederlandse en Vlaamse gebruiken zijn op elk niveau verweven voor betere samenwerking.
+              </li>
+              <li>
+                <strong>Certificatievoorbereiding:</strong> Geavanceerde (B2) en Inburgeringsprogramma’s garanderen naleving én vloeiend taalgebruik.
+              </li>
+              <li>
+                <strong>Gespecialiseerde Ondersteuning:</strong> Voor medische en Afrikaans sprekende professionals.
+              </li>
+              <li>
+                <strong>Transparante Voortgang:</strong> Dashboards tonen aanwezigheid en leerresultaten duidelijk.
+              </li>
+            </ul>
+
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-blue-800">
               Gevalideerd door Cliëntervaringen
             </h2>
             <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
               <p>
-                "Learn Dutch Online heeft geweldige docenten die geduldig en behulpzaam zijn. De
-                brede variëteit aan cursussen stelt iedereen in staat om te vinden wat perfect bij
-                hen past."
+                "Learn Dutch Online heeft geweldige docenten die geduldig en behulpzaam zijn. De brede variëteit aan cursussen stelt iedereen in staat om te vinden wat perfect bij hen past."
               </p>
               <p>
-                "Bedankt Learn Dutch Online! Dit is een goed afgestemde cursus voor Afrikaans
-                sprekende mensen die Nederlands effectief willen leren."
+                "Bedankt Learn Dutch Online! Dit is een goed afgestemde cursus voor Afrikaans sprekende mensen die Nederlands effectief willen leren."
               </p>
             </blockquote>
 
@@ -233,15 +260,14 @@ export default function CorporateLandingClient() {
             </div>
 
             <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
-              Met duizenden lessen die met succes zijn gegeven, stellen we een betrouwbare standaard
-              in teamtaaltraining.
+              Met duizenden lessen die met succes zijn gegeven, stellen we een betrouwbare standaard in teamtaaltraining.
             </p>
           </section>
 
           {/* CONTACT NL */}
           <section
             id="contact"
-            className="text-center mt-16 p-8 bg-blue-50 rounded-lg shadow-sm max-w-6xl mx-auto"
+            className="text-center mt-16 p-8 bg-blue-50 rounded-lg shadow-sm max-w-6xl mx-auto mb-20"
           >
             <h2 className="text-3xl font-bold mb-4 text-blue-800">Contacteer Ons</h2>
             <p className="text-gray-700 mb-6">
@@ -280,4 +306,3 @@ export default function CorporateLandingClient() {
     </>
   );
 }
-
