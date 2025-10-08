@@ -1,5 +1,6 @@
 "use client";
 
+import HeroCorporate from "@/components/hero-corporate";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -19,6 +20,7 @@ export default function CorporateLandingClient() {
 
   return (
     <>
+      <HeroCorporate/>
       {/* Language Toggle */}
       <nav className="text-right mb-6">
         <button onClick={() => switchLang("en")} className="mx-1 text-blue-600 hover:underline">
