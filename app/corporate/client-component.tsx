@@ -20,14 +20,25 @@ export default function CorporateLandingClient() {
 
   return (
     <>
-      <HeroCorporate/>
+      <HeroCorporate />
+
       {/* Language Toggle */}
-      <nav className="text-right mb-6">
-        <button onClick={() => switchLang("en")} className="mx-1 text-blue-600 hover:underline">
+      <nav className="text-right mb-6 mt-4">
+        <button
+          onClick={() => switchLang("en")}
+          className={`mx-2 text-blue-700 font-medium hover:underline ${
+            lang === "en" ? "underline" : ""
+          }`}
+        >
           English
         </button>
-        |
-        <button onClick={() => switchLang("nl")} className="mx-1 text-blue-600 hover:underline">
+        <span className="text-gray-400">|</span>
+        <button
+          onClick={() => switchLang("nl")}
+          className={`mx-2 text-blue-700 font-medium hover:underline ${
+            lang === "nl" ? "underline" : ""
+          }`}
+        >
           Nederlands
         </button>
       </nav>
@@ -35,161 +46,188 @@ export default function CorporateLandingClient() {
       {lang === "en" ? (
         <>
           {/* HERO */}
-          <section className="bg-green-100 text-green-800 text-center py-16 px-6 rounded-xl shadow-sm">
+          <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm">
             <h1 className="text-4xl font-bold mb-4">
               Strengthen Your Team's Integration in Dutch-Speaking Environments
             </h1>
-            <p className="max-w-3xl mx-auto mb-8">
+            <p className="max-w-3xl mx-auto mb-8 leading-relaxed">
               Our clients achieve faster proficiency and stronger team performance because our
               training combines practical skills with tailored support, addressing real-world
-              challenges like scheduling flexibility and cultural adaptation for immediate results.
+              challenges for immediate results.
             </p>
             <div>
-              <a href="#contact" className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700 transition">
-                Explore Our Corporate Solutions
+              <a
+                href="#contact"
+                className="bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-blue-800 transition"
+              >
+                Explore Corporate Solutions
               </a>
-              <a href="#contact" className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700 transition">
+              <a
+                href="#contact"
+                className="bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-blue-800 transition"
+              >
                 Contact Us
               </a>
             </div>
           </section>
 
-          {/* FULL INFO */}
-          <section className="bg-gray-50 mt-12 p-8 rounded-lg shadow-sm space-y-6">
-            <h2 className="text-3xl font-bold mb-4">Addressing Your Challenges with Proven Solutions</h2>
+          {/* MAIN INFO */}
+          <section className="bg-white mt-12 p-8 rounded-lg shadow-sm space-y-6">
+            <h2 className="text-3xl font-bold mb-4 text-blue-800">
+              Addressing Your Challenges with Proven Solutions
+            </h2>
+            <p className="leading-relaxed text-gray-700">
+              We understand the hurdles international teams face—rigid schedules, cultural gaps, and
+              certification stress. Our programs directly tackle these issues, helping your teams
+              grow in confidence and efficiency.
+            </p>
 
-            <p>We understand the hurdles international teams face—rigid schedules that disrupt work, motivation dips in demanding roles, cultural gaps that slow collaboration, and exam pressures that add stress. Our solutions tackle these directly, delivering practical training that builds confidence and efficiency. With over 90% of clients reaching proficiency ahead of typical timelines, here's how we make it happen:</p>
-
-            <ul className="list-disc pl-6 space-y-3">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700">
               <li>
-                <strong>Overcoming Onboarding Delays for Stronger Retention:</strong> Beginner courses (A1-A2) teach greetings, directions, and basic vocabulary. After A2, employees handle everyday exchanges, with workplace scenarios incorporated early for faster integration and stronger team loyalty.
+                <strong>Faster Onboarding:</strong> Beginner (A1–A2) courses integrate daily
+                workplace communication early for smoother adaptation.
               </li>
               <li>
-                <strong>Building Productivity with Targeted Conversations:</strong> Intermediate courses (B1) focus on real dialogues, covering logistics for blue-collar roles or tech discussions for IT pros. Digital materials reinforce learning for lasting retention.
+                <strong>Practical Communication:</strong> Intermediate (B1) sessions target job-related dialogues — from logistics to IT.
               </li>
               <li>
-                <strong>Bridging Cultural Gaps for Better Teamwork:</strong> Dutch and Flemish etiquette, traditions, and social norms are woven into all levels to foster genuine connections and smooth collaboration.
+                <strong>Cultural Awareness:</strong> Dutch and Flemish norms are embedded in every
+                level to foster better teamwork.
               </li>
               <li>
-                <strong>Preparing for Certifications Without the Overwhelm:</strong> Advanced courses (B2) and Civic Integration programs provide structured guidance for NT2 and Inburgering, ensuring fluency while meeting compliance requirements.
+                <strong>Certification Prep:</strong> B2 and Integration programs cover NT2 and
+                Inburgering requirements.
               </li>
               <li>
-                <strong>Specialized Support for Unique Needs:</strong> Staatexamen Programma 2 (B2) for medical professionals prepares for the AKV exam; Dutch for Afrikaans bridges practical gaps for South African expats.
+                <strong>Custom Support:</strong> Specialized tracks for medical, technical, and
+                Afrikaans-speaking professionals.
               </li>
               <li>
-                <strong>Delivering Value with Transparent Tracking:</strong> Real-time dashboards track attendance, milestones, and growth, helping HR measure impact efficiently.
+                <strong>Transparent Progress:</strong> Dashboards track attendance and improvement.
               </li>
             </ul>
 
-            <p>These approaches, supported by proprietary digital materials (included at no extra cost), help teams move from basic communication to confident, nuanced use—proving our edge in practical, results-driven training.</p>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Our Practical Framework: Designed for Real Results</h2>
-
-            <ul className="list-disc pl-6 space-y-3">
-              <li>Formats: One-on-one or small groups (up to 4).</li>
-              <li>Scheduling: Monday–Friday 9:00–21:30 CET, Saturday mornings; flexible changes possible.</li>
-              <li>Tutors: Native Dutch and Flemish instructors who keep sessions motivating and effective.</li>
-              <li>Resources: Secure digital materials including vocab guides, cultural notes, exercises.</li>
-              <li>Corporate Programs: Tailored to SMEs and enterprises with industry-focused practical Dutch.</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Validated by Client Experiences</h2>
-            <p>Our results are backed by consistent feedback praising our practical, tailored methods. Check our Google reviews for firsthand accounts:</p>
-            <blockquote className="border-l-4 border-green-600 pl-4 italic space-y-2">
-              <p>"Learn Dutch Online has great tutors who are patient and helpful. The wide variety of courses offered allows everyone to find what suits them perfectly."</p>
-              <p>"Thanks Learn Dutch Online! This is a well tailored course for Afrikaans speaking people that want to learn Dutch effectively."</p>
+            <h2 className="text-3xl font-bold mt-8 mb-4 text-blue-800">
+              Validated by Client Experiences
+            </h2>
+            <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
+              <p>
+                "Learn Dutch Online has great tutors who are patient and helpful. The wide variety
+                of courses offered allows everyone to find what suits them perfectly."
+              </p>
+              <p>
+                "Thanks Learn Dutch Online! This is a well-tailored course for Afrikaans-speaking
+                people who want to learn Dutch effectively."
+              </p>
             </blockquote>
+            <a
+              href="https://www.facebook.com/tutordutchfrench/reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition"
+            >
+              Review Us on Facebook
+            </a>
+
+            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed">
+              With thousands of lessons successfully delivered, we continue to set a reliable
+              standard in team language training.
+            </p>
           </section>
 
-          {/* CTA */}
-          <section id="contact" className="text-center mt-16 p-8 border-t">
-            <h2 className="text-3xl font-bold mb-2">Take the Next Step for Your Team</h2>
-            <p className="mb-6">Reach out to discuss how our solutions can support your goals.</p>
-            <div>
+          {/* CTA EN */}
+          <section
+            id="contact"
+            className="text-center mt-16 p-8 border-t bg-blue-50 rounded-lg"
+          >
+            <h2 className="text-3xl font-bold mb-2 text-blue-800">
+              Take the Next Step for Your Team
+            </h2>
+            <p className="mb-6 text-gray-700">
+              Reach out to discuss how our corporate solutions can support your organization.
+            </p>
+
+            <div className="mb-6">
               <a
                 href="mailto:veronique@learn-dutch-online.eu?subject=Corporate Dutch Training Inquiry"
-                className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700"
+                className="bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-blue-800 transition"
               >
-                Send an Inquiry
+                Send Inquiry
               </a>
               <a
                 href="https://wa.me/message/YELWRA57AJMBG1"
-                className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700"
+                className="bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-blue-800 transition"
               >
                 Chat on WhatsApp
               </a>
             </div>
+
+            <p className="text-gray-700">
+              Or visit our{" "}
+              <a href="/contact" className="text-blue-700 font-medium hover:underline">
+                contact page
+              </a>{" "}
+              for more details.
+            </p>
           </section>
         </>
       ) : (
         <>
           {/* HERO NL */}
-          <section className="bg-green-100 text-green-800 text-center py-16 px-6 rounded-xl shadow-sm">
+          <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm">
             <h1 className="text-4xl font-bold mb-4">
               Versterk de Integratie van Je Team in Nederlandstalige Omgevingen
             </h1>
-            <p className="max-w-3xl mx-auto mb-8">
-              Onze cliënten bereiken snellere proficiency en sterkere teamprestaties dankzij onze praktische, flexibele en op maat gemaakte aanpak.
+            <p className="max-w-3xl mx-auto mb-8 leading-relaxed">
+              Onze cliënten behalen sneller resultaat dankzij onze praktische, flexibele en
+              op maat gemaakte trainingen.
             </p>
             <div>
-              <a href="#contact" className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700 transition">
+              <a
+                href="#contact"
+                className="bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-blue-800 transition"
+              >
                 Verken Onze Corporate Oplossingen
               </a>
-              <a href="#contact" className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700 transition">
+              <a
+                href="#contact"
+                className="bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-blue-800 transition"
+              >
                 Contacteer Ons
               </a>
             </div>
           </section>
 
-          {/* FULL INFO NL */}
-          <section className="bg-gray-50 mt-12 p-8 rounded-lg shadow-sm space-y-6">
-            <h2 className="text-3xl font-bold mb-4">Je Uitdagingen Aanpakken met Bewezen Oplossingen</h2>
-
-            <p>We begrijpen de obstakels die internationale teams tegenkomen—rigide schema's, motivatiedips, culturele kloofjes en examenstress. Onze oplossingen pakken deze direct aan...</p>
-
-            <ul className="list-disc pl-6 space-y-3">
-              <li><strong>Onboarding Vertragingen Overwinnen voor Sterkere Retentie:</strong> Beginnercursussen (A1-A2) voor basiswoordenschat, begroetingen, richtingen. Werkplekscenario's vroeg toegevoegd voor snellere integratie en teamloyaliteit.</li>
-              <li><strong>Productiviteit Opbouwen met Gerichte Gesprekken:</strong> Intermediate cursussen (B1) met echte dialogen, logistiek voor blue-collar rollen of techbesprekingen voor IT. Digitale materialen versterken de lessen.</li>
-              <li><strong>Culturele Kloofjes Overbruggen voor Betere Teamwerk:</strong> Nederlandse en Vlaamse etiquette, tradities, sociale normen door alle niveaus voor betere samenwerking.</li>
-              <li><strong>Voorbereiden op Certificeringen Zonder Overweldiging:</strong> Geavanceerde cursussen (B2) en Inburgering bieden gestructureerde begeleiding voor NT2 en Inburgering, voor professionele fluency.</li>
-              <li><strong>Gespecialiseerde Ondersteuning voor Unieke Behoeften:</strong> Staatexamen Programma 2 (B2) voor medische professionals; Nederlands voor Afrikaans voor Zuid-Afrikanen.</li>
-              <li><strong>Waarde Leveren met Transparante Tracking:</strong> Real-time dashboards voor aanwezigheid, mijlpalen en groei; competitieve prijzen voor sterke waarde.</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Ons Praktische Framework: Ontworpen voor Echte Resultaten</h2>
-            <ul className="list-disc pl-6 space-y-3">
-              <li>Formaten: Eén-op-één of kleine groepen (max 4).</li>
-              <li>Planning: Ma-Vr 09:00-21:30 CET, Zaterdagmorgen; flexibel aanpasbaar.</li>
-              <li>Docenten: Native Nederlandse en Vlaamse instructeurs, motiverend en effectief.</li>
-              <li>Middelen: Veilige digitale materialen, vocab guides, culturele notities, oefeningen.</li>
-              <li>Corporate Programma's: Op maat voor KMO's en ondernemingen, praktijkgericht Nederlands.</li>
-            </ul>
-
-            <h2 className="text-3xl font-bold mt-8 mb-4">Gevalideerd door Cliëntervaringen</h2>
-            <blockquote className="border-l-4 border-green-600 pl-4 italic space-y-2">
-              <p>"Learn Dutch Online heeft geweldige docenten die geduldig en behulpzaam zijn. De brede variëteit aan cursussen stelt iedereen in staat om te vinden wat perfect bij hen past."</p>
-              <p>"Bedankt Learn Dutch Online! Dit is een goed afgestemde cursus voor Afrikaans sprekende mensen die Nederlands effectief willen leren."</p>
+          {/* TESTIMONIALS NL */}
+          <section className="bg-white mt-12 p-8 rounded-lg shadow-sm">
+            <h2 className="text-3xl font-bold mb-4 text-blue-800">
+              Gevalideerd door Cliëntervaringen
+            </h2>
+            <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
+              <p>
+                "Learn Dutch Online heeft geweldige docenten die geduldig en behulpzaam zijn.
+                De brede variëteit aan cursussen stelt iedereen in staat om te vinden wat perfect
+                bij hen past."
+              </p>
+              <p>
+                "Bedankt Learn Dutch Online! Dit is een goed afgestemde cursus voor Afrikaans
+                sprekende mensen die Nederlands effectief willen leren."
+              </p>
             </blockquote>
-          </section>
 
-          {/* CTA NL */}
-          <section id="contact" className="text-center mt-16 p-8 border-t">
-            <h2 className="text-3xl font-bold mb-2">Neem de Volgende Stap voor Jouw Team</h2>
-            <p className="mb-6">Neem contact met ons op om te bespreken hoe wij jullie kunnen ondersteunen.</p>
-            <div>
-              <a
-                href="mailto:veronique@learn-dutch-online.eu?subject=Corporate Dutch Training Aanvraag"
-                className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700"
-              >
-                Stuur een Bericht
-              </a>
-              <a
-                href="https://wa.me/message/YELWRA57AJMBG1"
-                className="bg-green-600 text-white px-6 py-3 rounded-md mx-2 inline-block hover:bg-green-700"
-              >
-                Chat via WhatsApp
-              </a>
-            </div>
+            <a
+              href="https://www.facebook.com/tutordutchfrench/reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition mt-4"
+            >
+              Review ons op Facebook
+            </a>
+
+            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed">
+              Met duizenden lessen die met succes zijn gegeven, stellen we een betrouwbare
+              standaard in teamtaaltraining.
+            </p>
           </section>
         </>
       )}
