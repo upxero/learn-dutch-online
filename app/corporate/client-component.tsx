@@ -23,7 +23,7 @@ export default function CorporateLandingClient() {
       <HeroCorporate />
 
       {/* Language Toggle */}
-      <nav className="text-right mb-6 mt-4">
+      <nav className="text-right mb-6 mt-4 max-w-6xl mx-auto px-6">
         <button
           onClick={() => switchLang("en")}
           className={`mx-2 text-blue-700 font-medium hover:underline ${
@@ -46,7 +46,7 @@ export default function CorporateLandingClient() {
       {lang === "en" ? (
         <>
           {/* HERO EN */}
-          <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm">
+          <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm max-w-6xl mx-auto">
             <h1 className="text-4xl font-bold mb-4">
               Strengthen Your Team's Integration in Dutch-Speaking Environments
             </h1>
@@ -58,13 +58,13 @@ export default function CorporateLandingClient() {
             <div>
               <a
                 href="#contact"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md transition"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
                 Explore Corporate Solutions
               </a>
               <a
                 href="#contact"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md transition"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
                 Contact Us
               </a>
@@ -72,7 +72,7 @@ export default function CorporateLandingClient() {
           </section>
 
           {/* MAIN INFO EN */}
-          <section className="bg-white mt-12 p-8 rounded-lg shadow-sm space-y-6">
+          <section className="bg-white mt-12 p-8 rounded-lg shadow-sm max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-blue-800">
               Addressing Your Challenges with Proven Solutions
             </h2>
@@ -88,7 +88,8 @@ export default function CorporateLandingClient() {
                 workplace communication early for smoother adaptation.
               </li>
               <li>
-                <strong>Practical Communication:</strong> Intermediate (B1) sessions target job-related dialogues — from logistics to IT.
+                <strong>Practical Communication:</strong> Intermediate (B1) sessions target
+                job-related dialogues — from logistics to IT.
               </li>
               <li>
                 <strong>Cultural Awareness:</strong> Dutch and Flemish norms are embedded in every
@@ -106,15 +107,11 @@ export default function CorporateLandingClient() {
                 <strong>Transparent Progress:</strong> Dashboards track attendance and improvement.
               </li>
             </ul>
-          </section>
 
-          {/* TESTIMONIALS EN */}
-          <section className="bg-white mt-12 p-8 rounded-lg shadow-sm text-center">
-            <h2 className="text-3xl font-bold mb-4 text-blue-800">
+            <h2 className="text-3xl font-bold mt-8 mb-4 text-blue-800">
               Validated by Client Experiences
             </h2>
-
-            <blockquote className="border-l-4 border-blue-600 pl-6 italic text-gray-700 max-w-2xl mx-auto text-left space-y-3">
+            <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
               <p>
                 "Learn Dutch Online has great tutors who are patient and helpful. The wide variety
                 of courses offered allows everyone to find what suits them perfectly."
@@ -125,18 +122,18 @@ export default function CorporateLandingClient() {
               </p>
             </blockquote>
 
-            <div className="mt-6">
+            <div className="text-center mt-6">
               <a
                 href="https://www.facebook.com/tutordutchfrench/reviews"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md inline-block transition"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
               >
-                Review Us on Facebook →
+                Review Us on Facebook
               </a>
             </div>
 
-            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
               With thousands of lessons successfully delivered, we continue to set a reliable
               standard in team language training.
             </p>
@@ -145,39 +142,37 @@ export default function CorporateLandingClient() {
           {/* CONTACT EN */}
           <section
             id="contact"
-            className="text-center mt-16 p-10 bg-blue-50 rounded-xl shadow-sm"
+            className="text-center mt-16 p-8 bg-blue-50 rounded-lg shadow-sm max-w-6xl mx-auto"
           >
             <h2 className="text-3xl font-bold mb-4 text-blue-800">Contact Us</h2>
-            <p className="text-gray-700 mb-2">
+            <p className="text-gray-700 mb-6">
               Lesson hours may vary due to Language Trainer time zones
             </p>
+            <p className="text-gray-700 mb-4">
+              <strong>Office Hours:</strong>
+              <br />
+              Monday to Friday: 09:00 - 17:00 CET
+              <br />
+              Saturday: 09:00 - 13:00 CET
+            </p>
+            <p className="text-gray-700 mb-4">
+              <strong>Phone Number or Email Address</strong>
+              <br />
+              Veronique Duvivier / Founder and Manager at Learn Dutch Online
+            </p>
 
-            <div className="max-w-md mx-auto mt-6 text-gray-700 leading-relaxed">
-              <p className="font-semibold mb-1">Office Hours:</p>
-              <p>Monday to Friday: 09:00 - 17:00 CET</p>
-              <p>Saturday: 09:00 - 13:00 CET</p>
-
-              <div className="border-t border-blue-200 my-6"></div>
-
-              <p className="font-semibold mb-1">Phone Number or Email Address</p>
-              <p>
-                <span className="font-medium">Veronique Duvivier</span> / Founder and Manager at
-                Learn Dutch Online
-              </p>
-            </div>
-
-            <div className="mt-8 space-x-3">
+            <div className="mt-6">
               <a
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md inline-block"
                 href="mailto:veronique@learn-dutch-online.eu?subject=Corporate Dutch Training Inquiry"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
-                Send Email →
+                Send Email
               </a>
               <a
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md inline-block"
                 href="https://wa.me/message/YELWRA57AJMBG1"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
-                WhatsApp →
+                Chat on WhatsApp
               </a>
             </div>
           </section>
@@ -185,7 +180,7 @@ export default function CorporateLandingClient() {
       ) : (
         <>
           {/* HERO NL */}
-          <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm">
+          <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm max-w-6xl mx-auto">
             <h1 className="text-4xl font-bold mb-4">
               Versterk de Integratie van Je Team in Nederlandstalige Omgevingen
             </h1>
@@ -196,13 +191,13 @@ export default function CorporateLandingClient() {
             <div>
               <a
                 href="#contact"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md transition"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
                 Verken Onze Corporate Oplossingen
               </a>
               <a
                 href="#contact"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md transition"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
                 Contacteer Ons
               </a>
@@ -210,16 +205,15 @@ export default function CorporateLandingClient() {
           </section>
 
           {/* TESTIMONIALS NL */}
-          <section className="bg-white mt-12 p-8 rounded-lg shadow-sm text-center">
+          <section className="bg-white mt-12 p-8 rounded-lg shadow-sm max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-blue-800">
               Gevalideerd door Cliëntervaringen
             </h2>
-
-            <blockquote className="border-l-4 border-blue-600 pl-6 italic text-gray-700 max-w-2xl mx-auto text-left space-y-3">
+            <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
               <p>
-                "Learn Dutch Online heeft geweldige docenten die geduldig en behulpzaam zijn.
-                De brede variëteit aan cursussen stelt iedereen in staat om te vinden wat perfect
-                bij hen past."
+                "Learn Dutch Online heeft geweldige docenten die geduldig en behulpzaam zijn. De
+                brede variëteit aan cursussen stelt iedereen in staat om te vinden wat perfect bij
+                hen past."
               </p>
               <p>
                 "Bedankt Learn Dutch Online! Dit is een goed afgestemde cursus voor Afrikaans
@@ -227,59 +221,57 @@ export default function CorporateLandingClient() {
               </p>
             </blockquote>
 
-            <div className="mt-6">
+            <div className="text-center mt-6">
               <a
                 href="https://www.facebook.com/tutordutchfrench/reviews"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md inline-block transition"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
               >
-                Review ons op Facebook →
+                Review ons op Facebook
               </a>
             </div>
 
-            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed">
-              Met duizenden lessen die met succes zijn gegeven, stellen we een betrouwbare
-              standaard in teamtaaltraining.
+            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
+              Met duizenden lessen die met succes zijn gegeven, stellen we een betrouwbare standaard
+              in teamtaaltraining.
             </p>
           </section>
 
           {/* CONTACT NL */}
           <section
             id="contact"
-            className="text-center mt-16 p-10 bg-blue-50 rounded-xl shadow-sm"
+            className="text-center mt-16 p-8 bg-blue-50 rounded-lg shadow-sm max-w-6xl mx-auto"
           >
             <h2 className="text-3xl font-bold mb-4 text-blue-800">Contacteer Ons</h2>
-            <p className="text-gray-700 mb-2">
+            <p className="text-gray-700 mb-6">
               Lesuren kunnen variëren vanwege tijdzones van Taaldocenten
             </p>
+            <p className="text-gray-700 mb-4">
+              <strong>Kantooruren:</strong>
+              <br />
+              Maandag tot Vrijdag: 09:00 - 17:00 CET
+              <br />
+              Zaterdag: 09:00 - 13:00 CET
+            </p>
+            <p className="text-gray-700 mb-4">
+              <strong>Telefoonnummer of E-mailadres</strong>
+              <br />
+              Veronique Duvivier / Oprichter en Manager bij Learn Dutch Online
+            </p>
 
-            <div className="max-w-md mx-auto mt-6 text-gray-700 leading-relaxed">
-              <p className="font-semibold mb-1">Kantooruren:</p>
-              <p>Maandag tot Vrijdag: 09:00 - 17:00 CET</p>
-              <p>Zaterdag: 09:00 - 13:00 CET</p>
-
-              <div className="border-t border-blue-200 my-6"></div>
-
-              <p className="font-semibold mb-1">Telefoonnummer of E-mailadres</p>
-              <p>
-                <span className="font-medium">Veronique Duvivier</span> / Oprichter en Manager bij
-                Learn Dutch Online
-              </p>
-            </div>
-
-            <div className="mt-8 space-x-3">
+            <div className="mt-6">
               <a
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md inline-block"
                 href="mailto:veronique@learn-dutch-online.eu?subject=Corporate Dutch Training Inquiry"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
-                Stuur E-mail →
+                Verstuur E-mail
               </a>
               <a
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md inline-block"
                 href="https://wa.me/message/YELWRA57AJMBG1"
+                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
-                WhatsApp →
+                Chat op WhatsApp
               </a>
             </div>
           </section>
@@ -288,3 +280,4 @@ export default function CorporateLandingClient() {
     </>
   );
 }
+
