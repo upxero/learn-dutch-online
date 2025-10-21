@@ -22,20 +22,36 @@ export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
       return;
     }
 
-    // Haal ingelogde gebruiker op
+    let userId = "";
+
+    // Stap 1: haal ingelogde user op
     fetch("https://cms.learn-dutch-online.com/users/me", {
-      headers: { Authorization: `Bearer ${token}` },
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
     })
       .then(res => {
         if (!res.ok) throw new Error("Unauthorized");
         return res.json();
       })
       .then(data => {
-        // Controleer of de user het recht heeft om de test te doen
-        if (data.data.can_take_test) {
+        userId = data.data.id;
+
+        // Stap 2: check in test_access collectie of can_take_test true is voor deze student
+        return fetch(
+          `https://cms.learn-dutch-online.com/items/test_access?filter[user][_eq]=${userId}`,
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.data.length > 0 && data.data[0].can_take_test) {
           setCanTakeTest(true);
         } else {
-          router.push("/no-access"); // of toon een meldingpagina
+          // geen toegang
+          router.push("/no-access"); // of een melding tonen
         }
       })
       .catch(() => {
