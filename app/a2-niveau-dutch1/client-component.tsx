@@ -13,6 +13,7 @@ import bannerImage from "@/public/images/banner-3.jpg";
 export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const [canTakeTest, setCanTakeTest] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem("auth_token");
@@ -21,23 +22,47 @@ export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
       return;
     }
 
+    let userId = "";
+
+    // Stap 1: haal ingelogde user op
     fetch("https://cms.learn-dutch-online.com/users/me", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     })
-      .then((res) => {
+      .then(res => {
         if (!res.ok) throw new Error("Unauthorized");
         return res.json();
       })
-      .then(() => setLoading(false))
+      .then(data => {
+        userId = data.data.id;
+
+        // Stap 2: check in test_access collectie of can_take_test true is voor deze student
+        return fetch(
+          `https://cms.learn-dutch-online.com/items/test_access?filter[user][_eq]=${userId}`,
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.data.length > 0 && data.data[0].can_take_test) {
+          setCanTakeTest(true);
+        } else {
+          // geen toegang
+          router.push("/no-access"); // of een melding tonen
+        }
+      })
       .catch(() => {
         localStorage.removeItem("auth_token");
         router.push(`/signin?next=/a2-niveau-dutch1/${trainer}`);
-      });
+      })
+      .finally(() => setLoading(false));
   }, [router, trainer]);
 
   if (loading) return <p>Even laden...</p>;
+  if (!canTakeTest) return <p>Je hebt geen toegang tot deze test.</p>;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -61,16 +86,10 @@ export default function A2NiveauDutchClient({ trainer }: { trainer: string }) {
 
       {/* Content */}
       <div className="max-w-3xl mx-auto px-4 py-12 space-y-10">
-        
-        {/* Schrijven onderdeel */}
         <WritingPart1 trainer={trainer} />
-        {/* Lezen onderdeel */}
         <ReadingPart trainer={trainer} />
-        {/* Luisteren onderdeel */}
         <ListenPart trainer={trainer} />
-        {/* Luisteren onderdeel */}
         <SpeakingPart />
-        {/* Review onderdeel */}
         <ReviewPart />
       </div>
     </div>
