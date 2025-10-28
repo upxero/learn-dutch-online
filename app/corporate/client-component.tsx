@@ -48,20 +48,13 @@ export default function CorporateLandingClient() {
           {/* HERO EN */}
           <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm max-w-6xl mx-auto">
             <h1 className="text-4xl font-bold mb-4">
-              Strengthen Your Team's Integration in Dutch-Speaking Environments
+              Successful Collaborations in Dutch-Speaking Workplaces
             </h1>
             <p className="max-w-3xl mx-auto mb-8 leading-relaxed">
-              Our clients achieve faster proficiency and stronger team performance because our
-              training combines practical skills with tailored support, addressing real-world
-              challenges like scheduling flexibility and cultural adaptation for immediate results.
+              Our clients achieve faster results and stronger team performance through practical 
+              and flexible language training. We tailor every course to real business needs.
             </p>
             <div>
-              <a
-                href="#contact"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
-              >
-                Explore Our Corporate Solutions
-              </a>
               <a
                 href="#contact"
                 className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
@@ -77,36 +70,29 @@ export default function CorporateLandingClient() {
               Addressing Your Challenges with Proven Solutions
             </h2>
             <p className="leading-relaxed text-gray-700 mb-6">
-              We understand the hurdles international teams face—rigid schedules that disrupt work,
-              motivation dips in demanding roles, cultural gaps that slow collaboration, and exam
-              pressures that add stress. Our solutions tackle these directly, delivering practical
-              training that builds confidence and efficiency.
+              We understand the challenges international teams face — tight schedules, motivation dips, cultural differences, and certification pressures.
+              Our flexible, practical programs build confidence, boost efficiency, and help your team succeed from day one.
+              How We Help:
             </p>
 
             <ul className="list-disc pl-6 space-y-3 text-gray-700">
               <li>
-                <strong>Overcoming Onboarding Delays:</strong> Beginner (A1–A2) courses integrate
-                workplace scenarios early for faster adaptation and retention.
+                <strong>Faster Onboarding:</strong> Employees contribute sooner with beginner courses (A1–A2) that simulate real workplace tasks.
               </li>
               <li>
-                <strong>Building Productivity:</strong> Intermediate (B1) focuses on real dialogues
-                like logistics or IT discussions for smoother operations.
+                <strong>Smoother Operations:</strong> Intermediate (B1) courses cover everyday professional conversations — from logistics to IT — reducing errors and improving workflow.
               </li>
               <li>
-                <strong>Bridging Cultural Gaps:</strong> Dutch and Flemish insights woven through all
-                levels to boost teamwork.
+                <strong>Stronger Collaboration:</strong> Cultural insights help teams work together more effectively and avoid misunderstandings.
               </li>
               <li>
-                <strong>Certification Prep:</strong> Advanced (B2) and Integration programs ensure
-                compliance and fluency for professional use.
+                <strong>Certification Confidence:</strong> Advanced (B2) and Integration programs prepare employees to meet professional standards with ease.
               </li>
               <li>
-                <strong>Specialized Support:</strong> Tailored paths for medical or Afrikaans-speaking
-                professionals.
+                <strong>Tailored Expertise:</strong> Specialized paths for medical professionals and Afrikaans speakers make training relevant and practical.
               </li>
               <li>
-                <strong>Transparent Tracking:</strong> Real-time dashboards for attendance and
-                progress monitoring.
+                <strong>Clear Progress Tracking:</strong> Dashboards show attendance, engagement, and results at a glance — making performance easy to monitor.
               </li>
             </ul>
 
@@ -126,12 +112,12 @@ export default function CorporateLandingClient() {
 
             <div className="text-center mt-6">
               <a
-                href="https://www.facebook.com/tutordutchfrench/reviews"
+                href="https://www.google.com/search?q=%22Learn+Dutch+Online%22+Dilsen-Stokkem+reviews"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
               >
-                Review Us on Facebook
+                View Our Google Reviews
               </a>
             </div>
 
@@ -184,19 +170,13 @@ export default function CorporateLandingClient() {
           {/* HERO NL */}
           <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm max-w-6xl mx-auto">
             <h1 className="text-4xl font-bold mb-4">
-              Versterk de Integratie van Je Team in Nederlandstalige Omgevingen
+              Succesvol Samenwerken in Nederlandstalige Teams
             </h1>
             <p className="max-w-3xl mx-auto mb-8 leading-relaxed">
-              Onze cliënten bereiken snellere resultaten en sterkere teamprestaties dankzij onze
-              praktische, flexibele en op maat gemaakte trainingen.
+              Onze cliënten boeken sneller resultaten en behalen sterkere teamprestaties dankzij praktische en flexibele 
+              taaltraining. Elke cursus stemmen we af op de behoeften van de organisatie.
             </p>
             <div>
-              <a
-                href="#contact"
-                className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
-              >
-                Verken Onze Corporate Oplossingen
-              </a>
               <a
                 href="#contact"
                 className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
@@ -212,27 +192,29 @@ export default function CorporateLandingClient() {
               Je Uitdagingen Aanpakken met Bewezen Oplossingen
             </h2>
             <p className="leading-relaxed text-gray-700 mb-6">
-              We begrijpen de obstakels die internationale teams tegenkomen—rigide schema’s, culturele kloofjes, en examenstress. Onze oplossingen pakken deze direct aan met praktische trainingen die vertrouwen en efficiëntie opbouwen.
+              We begrijpen de uitdagingen die internationale teams tegenkomen - drukke schema’s, motivatieverlies, culturele verschillen en certificatie-eisen.
+              Onze praktische, flexibele trainingen bouwen vertrouwen op, verhogen de efficiëntie en zorgen dat je team vanaf dag één effectief kan presteren.
+              Zo Helpen We:
             </p>
 
             <ul className="list-disc pl-6 space-y-3 text-gray-700">
               <li>
-                <strong>Snellere Onboarding:</strong> Beginner (A1–A2) cursussen integreren werkplekscenario’s vroeg voor soepelere aanpassing.
+                <strong>Snellere Onboarding:</strong> Beginners (A1–A2) passen nieuwe vaardigheden sneller toe dankzij praktijkvoorbeelden uit de werkplek.
               </li>
               <li>
-                <strong>Gerichte Communicatie:</strong> Intermediate (B1) richt zich op echte dialogen zoals logistiek of IT.
+                <strong>Vlottere Werkwijze:</strong> Halfgevorderden (B1) oefenen dagelijkse professionele gesprekken — van logistiek tot IT — waardoor fouten verminderen en processen soepeler verlopen.
               </li>
               <li>
-                <strong>Cultuurinzicht:</strong> Nederlandse en Vlaamse gebruiken zijn op elk niveau verweven voor betere samenwerking.
+                <strong>Betere Samenwerking:</strong> Inzicht in Nederlandse en Vlaamse gewoonten helpt teams effectiever samen te werken en misverstanden te voorkomen.
               </li>
               <li>
-                <strong>Certificatievoorbereiding:</strong> Geavanceerde (B2) en Inburgeringsprogramma’s garanderen naleving én vloeiend taalgebruik.
+                <strong>Certificatievoorbereiding:</strong> Gevorderden (B2) en inburgeringsprogramma’s bereiden medewerkers voor op professionele eisen met vloeiend taalgebruik.
               </li>
               <li>
-                <strong>Gespecialiseerde Ondersteuning:</strong> Voor medische en Afrikaans sprekende professionals.
+                <strong>Gespecialiseerde Trajecten:</strong> Training op maat voor medische professionals en Afrikaans sprekende medewerkers zorgt dat de inhoud altijd relevant is.
               </li>
               <li>
-                <strong>Transparante Voortgang:</strong> Dashboards tonen aanwezigheid en leerresultaten duidelijk.
+                <strong>Duidelijk Overzicht:</strong> Dashboards geven in één oogopslag inzicht in aanwezigheid, betrokkenheid en resultaten, zodat voortgang eenvoudig te volgen is.
               </li>
             </ul>
 
@@ -255,7 +237,7 @@ export default function CorporateLandingClient() {
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
               >
-                Review ons op Facebook
+                Bekijk Onze Google Reviews
               </a>
             </div>
 
