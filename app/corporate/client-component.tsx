@@ -3,6 +3,8 @@
 import HeroCorporate from "@/components/hero-corporate";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import CorporateTestimonials from "@/components/corporate-testimonials";
+
 
 export default function CorporateLandingClient() {
   const router = useRouter();
@@ -66,6 +68,7 @@ export default function CorporateLandingClient() {
 
           {/* MAIN INFO EN */}
           <section className="bg-white mt-12 p-8 rounded-lg shadow-sm max-w-6xl mx-auto">
+            {/* Probleemoplossing gedeelte */}
             <h2 className="text-3xl font-bold mb-4 text-blue-800">
               Addressing Your Challenges with Proven Solutions
             </h2>
@@ -75,7 +78,7 @@ export default function CorporateLandingClient() {
               How We Help:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-8">
               <li>
                 <strong>Faster Onboarding:</strong> Employees contribute sooner with beginner courses (A1–A2) that simulate real workplace tasks.
               </li>
@@ -96,34 +99,17 @@ export default function CorporateLandingClient() {
               </li>
             </ul>
 
-            <h2 className="text-3xl font-bold mt-10 mb-4 text-blue-800">
+            {/* Titel boven de slider, gecentreerd */}
+            <h2 className="text-3xl font-bold mb-4 text-blue-800 text-center">
               Validated by Client Experiences
             </h2>
-            <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
-              <p>
-                "Learn Dutch Online has great tutors who are patient and helpful. The wide variety
-                of courses offered allows everyone to find what suits them perfectly."
-              </p>
-              <p>
-                "Thanks Learn Dutch Online! This is a well tailored course for Afrikaans speaking
-                people that want to learn Dutch effectively."
-              </p>
-            </blockquote>
 
-            <div className="text-center mt-6">
-              <a
-                href="https://www.google.com/search?q=%22Learn+Dutch+Online%22+Dilsen-Stokkem+reviews"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
-              >
-                View Our Google Reviews
-              </a>
-            </div>
+            {/* Slider / testimonials */}
+            <CorporateTestimonials />
 
-            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
-              With thousands of lessons delivered successfully, we set a reliable standard in team
-              language training.
+            {/* Tekst onder de slider, dichterbij de slider */}
+            <p className="mt-4 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
+              With thousands of lessons delivered successfully, we set a reliable standard in team language training.
             </p>
           </section>
 
@@ -167,6 +153,7 @@ export default function CorporateLandingClient() {
         </>
       ) : (
         <>
+
           {/* HERO NL */}
           <section className="bg-blue-50 text-blue-900 text-center py-16 px-6 rounded-xl shadow-sm max-w-6xl mx-auto">
             <h1 className="text-4xl font-bold mb-4">
@@ -188,6 +175,7 @@ export default function CorporateLandingClient() {
 
           {/* MAIN INFO NL */}
           <section className="bg-white mt-12 p-8 rounded-lg shadow-sm max-w-6xl mx-auto">
+            {/* Probleemoplossing gedeelte */}
             <h2 className="text-3xl font-bold mb-4 text-blue-800">
               Je Uitdagingen Aanpakken met Bewezen Oplossingen
             </h2>
@@ -197,7 +185,7 @@ export default function CorporateLandingClient() {
               Zo Helpen We:
             </p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-700">
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-8">
               <li>
                 <strong>Snellere Onboarding:</strong> Beginners (A1–A2) passen nieuwe vaardigheden sneller toe dankzij praktijkvoorbeelden uit de werkplek.
               </li>
@@ -218,30 +206,16 @@ export default function CorporateLandingClient() {
               </li>
             </ul>
 
-            <h2 className="text-3xl font-bold mt-10 mb-4 text-blue-800">
+            {/* Titel boven de slider, gecentreerd */}
+            <h2 className="text-3xl font-bold mb-4 text-blue-800 text-center">
               Gevalideerd door Cliëntervaringen
             </h2>
-            <blockquote className="border-l-4 border-blue-600 pl-4 italic space-y-2 text-gray-700">
-              <p>
-                "Learn Dutch Online heeft geweldige docenten die geduldig en behulpzaam zijn. De brede variëteit aan cursussen stelt iedereen in staat om te vinden wat perfect bij hen past."
-              </p>
-              <p>
-                "Bedankt Learn Dutch Online! Dit is een goed afgestemde cursus voor Afrikaans sprekende mensen die Nederlands effectief willen leren."
-              </p>
-            </blockquote>
 
-            <div className="text-center mt-6">
-              <a
-                href="https://www.google.com/search?q=%22Learn+Dutch+Online%22+Dilsen-Stokkem+reviews"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
-              >
-                Bekijk Onze Google Reviews
-              </a>
-            </div>
+            {/* Slider / testimonials */}
+            <CorporateTestimonials />
 
-            <p className="mt-8 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
+            {/* Tekst onder de slider, dichterbij de slider */}
+            <p className="mt-4 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
               Met duizenden lessen die met succes zijn gegeven, stellen we een betrouwbare standaard in teamtaaltraining.
             </p>
           </section>
