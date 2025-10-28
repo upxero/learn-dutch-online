@@ -56,7 +56,7 @@ export default function CorporateLandingClient() {
             </p>
             <div>
               <a
-                href="#contact"
+                href="https://learn-dutch-online.com/contact-corporate"
                 className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
                 Contact Us
@@ -151,10 +151,10 @@ export default function CorporateLandingClient() {
 
             <div className="mt-6">
               <a
-                href="mailto:veronique@learn-dutch-online.eu?subject=Corporate Dutch Training Inquiry"
+                href="https://learn-dutch-online.com/contact-corporate"
                 className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
-                Send Email
+                Contact Us
               </a>
               <a
                 href="https://wa.me/message/YELWRA57AJMBG1"
@@ -178,7 +178,7 @@ export default function CorporateLandingClient() {
             </p>
             <div>
               <a
-                href="#contact"
+                href="https://learn-dutch-online.com/contact-corporate"
                 className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
                 Contacteer Ons
@@ -232,7 +232,7 @@ export default function CorporateLandingClient() {
 
             <div className="text-center mt-6">
               <a
-                href="https://www.facebook.com/tutordutchfrench/reviews"
+                href="https://www.google.com/search?q=%22Learn+Dutch+Online%22+Dilsen-Stokkem+reviews"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
@@ -270,10 +270,10 @@ export default function CorporateLandingClient() {
 
             <div className="mt-6">
               <a
-                href="mailto:veronique@learn-dutch-online.eu?subject=Corporate Dutch Training Inquiry"
+                href="https://learn-dutch-online.com/contact-corporate"
                 className="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md mx-2 inline-block shadow-md"
               >
-                Verstuur E-mail
+                Contacteer Ons
               </a>
               <a
                 href="https://wa.me/message/YELWRA57AJMBG1"
