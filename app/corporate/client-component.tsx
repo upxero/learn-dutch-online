@@ -100,15 +100,17 @@ export default function CorporateLandingClient() {
             </ul>
 
             {/* Titel boven de slider, gecentreerd */}
-            <h2 className="text-3xl font-bold mb-4 text-blue-800 text-center">
+            <h2 className="text-3xl font-bold mb-2 text-blue-800 text-center">
               Validated by Client Experiences
             </h2>
 
             {/* Slider / testimonials */}
-            <CorporateTestimonials />
+            <div className="mb-2">
+              <CorporateTestimonials />
+            </div>
 
             {/* Tekst onder de slider, dichterbij de slider */}
-            <p className="mt-4 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
+            <p className="mt-2 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
               With thousands of lessons delivered successfully, we set a reliable standard in team language training.
             </p>
           </section>
@@ -207,15 +209,17 @@ export default function CorporateLandingClient() {
             </ul>
 
             {/* Titel boven de slider, gecentreerd */}
-            <h2 className="text-3xl font-bold mb-4 text-blue-800 text-center">
+            <h2 className="text-3xl font-bold mb-2 text-blue-800 text-center">
               Gevalideerd door Cliëntervaringen
             </h2>
 
             {/* Slider / testimonials */}
-            <CorporateTestimonials />
+            <div className="mb-2">
+              <CorporateTestimonials />
+            </div>
 
             {/* Tekst onder de slider, dichterbij de slider */}
-            <p className="mt-4 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
+            <p className="mt-2 text-gray-700 max-w-2xl mx-auto leading-relaxed text-center">
               Met duizenden lessen die met succes zijn gegeven, stellen we een betrouwbare standaard in teamtaaltraining.
             </p>
           </section>

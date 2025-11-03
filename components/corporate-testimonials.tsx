@@ -69,12 +69,12 @@ export default function CorporateTestimonials() {
 
         <div className="flex justify-center mt-8">
           <a
-            href="https://www.google.com/search?q=%22Learn+Dutch+Online%22+Dilsen-Stokkem+reviews"
+            href="https://g.page/r/CVM0jtnTUo1LEAE/review"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md shadow-md transition"
           >
-            View Our Google Reviews
+            Google Reviews
           </a>
         </div>
       </div>
