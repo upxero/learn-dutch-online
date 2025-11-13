@@ -37,7 +37,8 @@ export default function SignInForm() {
       document.cookie = `directus_token=${token}; path=/; domain=.learn-dutch-online.com; Secure; SameSite=Lax`;
 
       // ✅ Externe redirect naar inhoudspagina
-      window.location.href = `https://lessons.learn-dutch-online.com${next}`;
+      const currentDomain = window.location.origin; // detecteert automatisch het huidige domein
+      window.location.href = `${currentDomain}${next}`;
     } else {
       alert(data.errors?.[0]?.message || "Inloggen mislukt.");
     }
