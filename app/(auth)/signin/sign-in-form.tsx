@@ -9,37 +9,43 @@ export default function SignInForm() {
   const searchParams = useSearchParams();
   const next = searchParams.get("next") || "/dashboard";
 
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
+ async function handleSubmit(e: FormEvent) {
+  e.preventDefault();
 
-    const email = (e.target as HTMLFormElement).email.value;
-    const password = (e.target as HTMLFormElement).password.value;
+  const email = (e.target as HTMLFormElement).email.value;
+  const password = (e.target as HTMLFormElement).password.value;
 
-    try {
-      const response = await fetch("https://cms.learn-dutch-online.com/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+  try {
+    const response = await fetch("https://cms.learn-dutch-online.com/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    });
 
-      const data = await response.json();
+    const data = await response.json();
 
-      if (response.ok) {
-        localStorage.setItem("auth_token", data.data.access_token);
-        localStorage.setItem("refresh_token", data.data.refresh_token);
+    if (response.ok) {
+      const token = data.data.access_token;
 
-        // ✅ Externe redirect naar inhoudspagina
-        window.location.href = `https://learn-dutch-online.com${next}`;
-      } else {
-        alert(data.errors?.[0]?.message || "Inloggen mislukt.");
-      }
-    } catch (error) {
-      console.error("Login error:", error);
-      alert("Er is iets misgegaan bij het inloggen.");
+      // ✅ Sla JWT op in localStorage
+      localStorage.setItem("auth_token", token);
+      localStorage.setItem("refresh_token", data.data.refresh_token);
+
+      // ✅ Zet JWT ook als cookie voor WordPress (MU-plugin)
+      document.cookie = `directus_token=${token}; path=/; domain=.learn-dutch-online.com; Secure; SameSite=Lax`;
+
+      // ✅ Externe redirect naar inhoudspagina
+      window.location.href = `https://lessons.learn-dutch-online.com${next}`;
+    } else {
+      alert(data.errors?.[0]?.message || "Inloggen mislukt.");
     }
+  } catch (error) {
+    console.error("Login error:", error);
+    alert("Er is iets misgegaan bij het inloggen.");
   }
+}
 
   return (
     <>
