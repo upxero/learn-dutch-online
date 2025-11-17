@@ -6,7 +6,8 @@ import { FormEvent } from "react";
 export default function SignInForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const next = searchParams.get("next") || "/dashboard";
+  const nextParam = searchParams.get("next");
+  const next = nextParam ? decodeURIComponent(nextParam) : "/dashboard";
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -26,14 +27,14 @@ export default function SignInForm() {
       if (response.ok) {
         const token = data.data.access_token;
 
-        // ✅ Opslaan in localStorage
+        // Opslaan in localStorage (optioneel)
         localStorage.setItem("auth_token", token);
         localStorage.setItem("refresh_token", data.data.refresh_token);
 
-        // ✅ Cookie voor hoofddomein + subdomein (SameSite=None voor cross-site)
+        // Cookie voor hoofddomein + subdomeinen
         document.cookie = `directus_token=${token}; path=/; domain=.learn-dutch-online.com; Secure; SameSite=None`;
 
-        // ✅ Redirect naar 'next' (kan subdomein zijn)
+        console.log("Redirecting to:", next);
         window.location.href = next;
       } else {
         alert(data.errors?.[0]?.message || "Inloggen mislukt.");

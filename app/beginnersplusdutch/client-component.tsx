@@ -36,7 +36,7 @@ export default function BeginnersPlusClient() {
   if (loading) return <p>Even laden...</p>;
 
   const items = [
-    { label: "Sessie 1 - Separabele verba", link: "https://sites.google.com/view/begplussessie1/deel-1-theorie" },
+    { label: "Sessie 1 - Separabele verba", link: "https://lessons.learn-dutch-online.com/sessie-1-uitspraak-en-groeten/" },
     { label: "Huiswerk na sessie 1", link: "https://sites.google.com/view/beginnersplushuina1/deel-1-grammatica-separabele-verba" },
     { label: "Sessie 2 - Huren en kopen", link: "https://sites.google.com/view/begplussessie2/deel-1-trappen-van-vergelijking" },
     { label: "Huiswerk na sessie 2", link: "https://sites.google.com/view/beginners-plus-hswna2/deel-1-grammatica" },
