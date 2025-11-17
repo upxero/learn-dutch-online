@@ -2,102 +2,59 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent } from "react";
-import Link from "next/link";
 
 export default function SignInForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const next = searchParams.get("next") || "/dashboard";
 
- async function handleSubmit(e: FormEvent) {
-  e.preventDefault();
+  async function handleSubmit(e: FormEvent) {
+    e.preventDefault();
 
-  const email = (e.target as HTMLFormElement).email.value;
-  const password = (e.target as HTMLFormElement).password.value;
+    const email = (e.target as HTMLFormElement).email.value;
+    const password = (e.target as HTMLFormElement).password.value;
 
-  try {
-    const response = await fetch("https://cms.learn-dutch-online.com/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
+    try {
+      const response = await fetch("https://cms.learn-dutch-online.com/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (response.ok) {
-      const token = data.data.access_token;
+      if (response.ok) {
+        const token = data.data.access_token;
 
-      // ✅ Sla JWT op in localStorage
-      localStorage.setItem("auth_token", token);
-      localStorage.setItem("refresh_token", data.data.refresh_token);
+        // ✅ Opslaan in localStorage
+        localStorage.setItem("auth_token", token);
+        localStorage.setItem("refresh_token", data.data.refresh_token);
 
-      // ✅ Zet JWT ook als cookie voor WordPress (MU-plugin)
-      document.cookie = `directus_token=${token}; path=/; domain=.learn-dutch-online.com; Secure; SameSite=Lax`;
+        // ✅ Cookie voor hoofddomein + subdomein (SameSite=None voor cross-site)
+        document.cookie = `directus_token=${token}; path=/; domain=.learn-dutch-online.com; Secure; SameSite=None`;
 
-      // ✅ Externe redirect naar inhoudspagina
-      let redirectUrl = next.startsWith("http")
-        ? next
-        : `${window.location.origin}${next}`;
-
-      // 🟦 Redirect
-      window.location.href = redirectUrl;
-    } else {
-      alert(data.errors?.[0]?.message || "Inloggen mislukt.");
+        // ✅ Redirect naar 'next' (kan subdomein zijn)
+        window.location.href = next;
+      } else {
+        alert(data.errors?.[0]?.message || "Inloggen mislukt.");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Er is iets misgegaan bij het inloggen.");
     }
-  } catch (error) {
-    console.error("Login error:", error);
-    alert("Er is iets misgegaan bij het inloggen.");
   }
-}
 
   return (
-    <>
-      <div className="mb-10">
-        <h1 className="text-4xl font-bold">Sign in to your account</h1>
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div>
+        <label htmlFor="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="your@email.com" required className="form-input w-full" />
       </div>
-      <form onSubmit={handleSubmit}>
-        <div className="space-y-4">
-          <div>
-            <label className="mb-1 block text-sm font-medium text-gray-700" htmlFor="email">
-              Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              className="form-input w-full py-2"
-              type="email"
-              placeholder="your@email.com"
-              required
-            />
-          </div>
-          <div>
-            <label className="mb-1 block text-sm font-medium text-gray-700" htmlFor="password">
-              Password
-            </label>
-            <input
-              id="password"
-              name="password"
-              className="form-input w-full py-2"
-              type="password"
-              autoComplete="on"
-              placeholder="••••••••"
-              required
-            />
-          </div>
-        </div>
-        <div className="mt-6">
-          <button type="submit" className="btn w-full bg-blue-600 text-white shadow-sm cursor-pointer">
-            Sign In
-          </button>
-        </div>
-      </form>
-      <div className="mt-6 text-center">
-        <Link className="text-sm text-gray-700 underline hover:no-underline" href="https://cms.learn-dutch-online.com/admin/reset-password">
-         
-        </Link>
+      <div>
+        <label htmlFor="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="••••••••" autoComplete="on" required className="form-input w-full" />
       </div>
-    </>
+      <button type="submit" className="btn w-full bg-blue-600 text-white">Sign In</button>
+    </form>
   );
 }
