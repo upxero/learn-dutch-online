@@ -103,7 +103,6 @@ export default function BeginnersPlusClient() {
               {item.link ? (
                 <a
                   href={item.link}
-                  target="_blank"
                   rel="noopener noreferrer"
                   className={`text-lg hover:underline ${
                     item.label.startsWith("Sessie") ? "font-semibold" : ""
