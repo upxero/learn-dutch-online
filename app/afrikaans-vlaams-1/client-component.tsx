@@ -37,9 +37,9 @@ export default function AfrikaansDutchClient() {
   if (loading) return <p>Even laden...</p>;
 
   const items = [
-    { label: "Sessie 1 - Uitspraak en groeten", link: "https://sites.google.com/view/begin-flem-1s-23-01/sessie-1-deel-1-introducties" },
-    { label: "Huiswerk na sessie 1", link: "https://sites.google.com/view/begin-flem-01hw-23-01/deel-1-luisteren" },
-    { label: "Sessie 2 - Introducties", link: "https://sites.google.com/view/begin-flem-afr-2-23-01/deel-1-de-het-een" },
+    { label: "Sessie 1 - Uitspraak en groeten", link: "https://sites.google.com/view/begin-flem-1s-25-12/sessie-1-deel-1-introducties" },
+    { label: "Huiswerk na sessie 1", link: "https://sites.google.com/view/begin-flem-01hw-25-12/deel-1-luisteren" },
+    { label: "Sessie 2 - Introducties", link: "https://sites.google.com/view/begin-flem-afr-2-25-12" },
     { label: "Huiswerk na sessie 2", link: "https://sites.google.com/view/flem-afr-2hw-23-01/deel-1-getallen-en-cijfers" },
     { label: "Sessie 3 - Afspreken", link: "https://sites.google.com/view/begin-flem-afr-3-23-01/deel-3-afspreken" },
     { label: "Huiswerk na sessie 3", link: "https://sites.google.com/view/begin-flem-afr-3hw-23-01/deel-1-de-familie" },
